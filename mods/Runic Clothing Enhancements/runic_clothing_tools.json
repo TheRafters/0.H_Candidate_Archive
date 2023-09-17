@@ -1,0 +1,118 @@
+[
+    {
+		"id": "tailors_kit",
+		"type": "TOOL",
+		"name": {
+		"str": "tailor's kit"
+		},
+		"description": "This is a high quality kit consisting of a variety of needles, some plastic spools for thread, some small scissors, and an awl.  Use a tailor's kit to customize your clothing and armor.  This uses your tailoring skill.",
+		"weight": "100 g",
+		"volume": "500 ml",
+		"price": 1000,
+		"to_hit": -2,
+		"material": [ "plastic", "steel" ],
+		"symbol": ";",
+		"color": "red",
+        "ammo": [ "thread" ],
+        "sub": "sewing_kit",
+        "charges_per_use": 1,
+        "qualities": [ [ "SEW", 4 ], [ "SEW_CURVED", 1 ], [ "KNIT", 1 ], [ "LEATHER_AWL", 2 ], [ "CUT", 2 ], [ "FABRIC_CUT", 2 ] ],
+        "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "thread": 400 } } ],
+		"use_action": [{
+				"type": "repair_item",
+				"item_action_type": "repair_fabric",
+				"materials": ["cotton", "leather", "lycra", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "neoprene", "gutskin", "denim", "canvas" ],
+				"skill": "tailor",
+				"tool_quality": 1,
+				"cost_scaling": 0.1,
+				"move_cost": 800
+			},
+			{
+				"type": "sew_advanced",
+				"materials": [
+					"cotton",
+					"leather",
+					"lycra",
+					"nylon",
+					"wool",
+					"fur",
+					"faux_fur",
+					"nomex",
+					"kevlar",
+					"neoprene",
+					"gutskin",
+                    "denim",
+                    "canvas",
+					"plastic",
+					"kevlar_rigid"
+				],
+				"skill": "tailor",
+				"clothing_mods": [
+				    "leather_padded", "steel_padded", "kevlar_padded", "furred", "wooled", "chitin_insert", "chitin_insert_thick", "acidchitin_insert", "acidchitin_insert_thick",
+				    
+					"lesser_featherweight_enchantment", "lesser_featherweight_enchantment_thick", "lesser_corrosionward_enchantment", "lesser_corrosionward_enchantment_thick", "lesser_refreshingchill_enchantment", "lesser_refreshingchill_enchantment_thick", "lesser_soothingwarmth_enchantment", "lesser_soothingwarmth_enchantment_thick", "lesser_flameward_enchantment", "lesser_flameward_enchantment_thick", "lesser_bladeturn_enchantment", "lesser_bladeturn_enchantment_thick", "lesser_impactshield_enchantment", "lesser_impactshield_enchantment_thick", "lesser_bulletshield_enchantment", "lesser_bulletshield_enchantment_thick",
+					
+					"featherweight_enchantment", "featherweight_enchantment_thick", "corrosionward_enchantment", "corrosionward_enchantment_thick", "refreshingchill_enchantment", "refreshingchill_enchantment_thick", "soothingwarmth_enchantment", "soothingwarmth_enchantment_thick", "flameward_enchantment", "flameward_enchantment_thick", "bladeturn_enchantment", "bladeturn_enchantment_thick", "impactshield_enchantment", "impactshield_enchantment_thick", "bulletshield_enchantment", "bulletshield_enchantment_thick",
+					
+					"greater_featherweight_enchantment", "greater_featherweight_enchantment_thick", "greater_corrosionward_enchantment", "greater_corrosionward_enchantment_thick", "greater_refreshingchill_enchantment", "greater_refreshingchill_enchantment_thick", "greater_soothingwarmth_enchantment", "greater_soothingwarmth_enchantment_thick", "greater_flameward_enchantment", "greater_flameward_enchantment_thick", "greater_bladeturn_enchantment", "greater_bladeturn_enchantment_thick", "greater_impactshield_enchantment", "greater_impactshield_enchantment_thick", "greater_bulletshield_enchantment", "greater_bulletshield_enchantment_thick"
+				]
+			}
+		],
+		"flags": ["ALLOWS_REMOTE_USE"]
+	},
+	{
+		"id": "mtailors_kit",
+		"copy-from": "tailors_kit",
+		"type": "TOOL",
+		"name": "enchanted tailor's kit",
+		"description": "This is a high quality, engraved steel kit with a variety of needles, some plastic spools for thread, some small scissors, even a small heating element for melting and joining plastic.  Use a tailor's kit to customize your clothing and armor.  This uses your tailoring skill.  It also contains one of those magic spiders that constantly, if slowly, makes new thread.",
+		"price": 100000,
+		"material": [ "steel" ],
+        "ammo": [ "thread" ],
+        "sub": "sewing_kit",
+        "charges_per_use": 1,
+        "qualities": [ [ "SEW", 4 ], [ "SEW_CURVED", 1 ], [ "KNIT", 1 ], [ "LEATHER_AWL", 2 ], [ "CUT", 2 ], [ "FABRIC_CUT", 2 ] ],
+        "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "thread": 1000 } } ],
+        "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "10 m", "regenerate_ammo": true } },
+
+		"use_action": [{
+				"type": "repair_item",
+				"item_action_type": "repair_fabric",
+				"materials": [
+					"cotton",
+					"leather",
+					"wool",
+					"fur",
+					"faux_fur",
+					"nomex",
+					"kevlar",
+					"neoprene",
+					"gutskin",
+                    "denim",
+                    "canvas",
+					"black_dragon_hide",
+					"demon_chitin"
+				],
+				"skill": "tailor",
+				"tool_quality": 1,
+				"cost_scaling": 0.1,
+				"move_cost": 500
+			},
+			{
+				"type": "sew_advanced",
+				"materials": ["cotton", "leather", "wool", "fur", "faux_fur", "nomex", "kevlar", "neoprene", "gutskin", "denim", "canvas", "plastic", "kevlar_rigid", "black_dragon_hide", "demon_chitin" ],
+				"skill": "tailor",
+				"clothing_mods": [
+				    "leather_padded", "steel_padded", "kevlar_padded", "furred", "wooled", "chitin_insert", "chitin_insert_thick", "acidchitin_insert", "acidchitin_insert_thick",
+				    
+					"lesser_featherweight_enchantment", "lesser_featherweight_enchantment_thick", "lesser_corrosionward_enchantment", "lesser_corrosionward_enchantment_thick", "lesser_refreshingchill_enchantment", "lesser_refreshingchill_enchantment_thick", "lesser_soothingwarmth_enchantment", "lesser_soothingwarmth_enchantment_thick", "lesser_flameward_enchantment", "lesser_flameward_enchantment_thick", "lesser_bladeturn_enchantment", "lesser_bladeturn_enchantment_thick", "lesser_impactshield_enchantment", "lesser_impactshield_enchantment_thick", "lesser_bulletshield_enchantment", "lesser_bulletshield_enchantment_thick",
+					
+					"featherweight_enchantment", "featherweight_enchantment_thick", "corrosionward_enchantment", "corrosionward_enchantment_thick", "refreshingchill_enchantment", "refreshingchill_enchantment_thick", "soothingwarmth_enchantment", "soothingwarmth_enchantment_thick", "flameward_enchantment", "flameward_enchantment_thick", "bladeturn_enchantment", "bladeturn_enchantment_thick", "impactshield_enchantment", "impactshield_enchantment_thick", "bulletshield_enchantment", "bulletshield_enchantment_thick",
+					
+					"greater_featherweight_enchantment", "greater_featherweight_enchantment_thick", "greater_corrosionward_enchantment", "greater_corrosionward_enchantment_thick", "greater_refreshingchill_enchantment", "greater_refreshingchill_enchantment_thick", "greater_soothingwarmth_enchantment", "greater_soothingwarmth_enchantment_thick", "greater_flameward_enchantment", "greater_flameward_enchantment_thick", "greater_bladeturn_enchantment", "greater_bladeturn_enchantment_thick", "greater_impactshield_enchantment", "greater_impactshield_enchantment_thick", "greater_bulletshield_enchantment", "greater_bulletshield_enchantment_thick"
+				]
+			}
+		],
+		"flags": ["ALLOWS_REMOTE_USE"]
+	}
+]

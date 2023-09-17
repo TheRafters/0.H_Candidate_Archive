@@ -1,0 +1,295 @@
+[
+  {
+    "id": "elbow_skewer",
+    "type": "ARMOR",
+    "name": { "str_sp": "skewer elbow guard" },
+    "description": "A pair of metal braces, each with a single sturdy spike attached.  When strapped to your hands, the spikes protrude 5 centimeters past your clenched fists.",
+    "weight": "250 g",
+    "volume": "300 ml",
+    "price": 1100,
+    "price_postapoc": 250,
+    "melee_damage": { "bash": 2, "cutting": 10, "stab": 3 },
+    "to_hit": { "grip": "weapon", "length": "hand", "surface": "any", "balance": "good" },
+    "material": [ "steel" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "warmth": 0,
+    "material_thickness": 2,
+    "flags": [ "WATER_FRIENDLY", "DURABLE_MELEE", "OUTER" ],
+    "armor": [
+      {
+        "covers": [ "arm_l", "arm_r" ],
+        "encumbrance": 5,
+        "coverage": 20,
+        "specifically_covers": [ "arm_elbow_r", "arm_elbow_l" ]
+      }
+    ]
+  },
+  {
+    "id": "knee_skewer",
+    "type": "ARMOR",
+    "name": { "str_sp": "skewer knee guard" },
+    "description": "A pair of metal braces, each with a single sturdy spike attached.  When strapped to your hands, the spikes protrude 5 centimeters past your clenched fists.",
+    "weight": "250 g",
+    "volume": "300 ml",
+    "price": 1100,
+    "price_postapoc": 250,
+    "melee_damage": { "bash": 2, "cutting": 10, "stab": 3 },
+    "to_hit": { "grip": "weapon", "length": "hand", "surface": "any", "balance": "good" },
+    "material": [ "steel" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "warmth": 0,
+    "material_thickness": 2,
+    "flags": [ "WATER_FRIENDLY", "DURABLE_MELEE", "OUTER" ],
+    "armor": [
+      {
+        "covers": [ "leg_l", "leg_r" ],
+        "encumbrance": 5,
+        "coverage": 20,
+        "specifically_covers": [ "leg_knee_l", "leg_knee_r" ]
+      }
+    ]
+  },
+  {
+    "id": "foot_skewer",
+    "type": "ARMOR",
+    "name": { "str_sp": "skewer sabatons" },
+    "description": "A pair of metal braces, each with a single sturdy spike attached.  When strapped to your hands, the spikes protrude 5 centimeters past your clenched fists.",
+    "weight": "250 g",
+    "volume": "300 ml",
+    "price": 1100,
+    "price_postapoc": 250,
+    "melee_damage": { "bash": 2, "cutting": 10, "stab": 3 },
+    "to_hit": { "grip": "weapon", "length": "hand", "surface": "any", "balance": "good" },
+    "material": [ "steel" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "warmth": 0,
+    "material_thickness": 2,
+    "flags": [ "WATER_FRIENDLY", "DURABLE_MELEE", "OUTER" ],
+    "armor": [ { "encumbrance": 5, "coverage": 20, "covers": [ "foot_l", "foot_r" ] } ]
+  },
+  {
+    "id": "feder",
+    "type": "TOOL",
+    "symbol": "/",
+    "color": "light_gray",
+    "name": { "str": "feder" },
+    "looks_like": "longsword",
+    "description": "A training sword made of metal, usually with a folded or curled tip.",
+    "price": 13000,
+    "price_postapoc": 6000,
+    "material": [ "steel" ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ],
+    "weapon_category": [ "MEDIEVAL_SWORDS", "LONG_SWORDS", "GREAT_SWORDS" ],
+    "techniques": [ "WBLOCK_2", "BRUTAL", "RAPID" ],
+    "weight": "1414 g",
+    "volume": "2750 ml",
+    "longest_side": "120 cm",
+    "melee_damage": { "bash": 22 },
+    "to_hit": { "grip": "weapon", "length": "long", "surface": "line", "balance": "good" },
+    "category": "weapons"
+  },
+  {
+    "id": "redsteel_morningstar",
+    "type": "TOOL",
+    "symbol": "/",
+    "color": "light_gray",
+    "name": { "str": "redsteel morningstar" },
+    "description": "A brutal morningstar made of red metal with a mana pearl stuck in it's hilt. The blade is made of redsteel, a substance that's nearly impossible to find or create. It adores the taste of blood above all else, draining it from anyone it touches.",
+    "price": 80000,
+    "looks_like": "morningstar",
+    "material": [ "glassteel" ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_KNIFE", "MAGIC_FOCUS" ],
+    "weapon_category": [ "MACES" ],
+    "techniques": [ "WBLOCK_1", "SWEEP" ],
+    "weight": "1600 g",
+    "volume": "1500 ml",
+    "longest_side": "100 cm",
+    "melee_damage": { "bash": 33, "cutting": 10, "stab": 6 },
+    "to_hit": { "grip": "weapon", "length": "short", "surface": "any", "balance": "good" },
+    "category": "weapons",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "DEXTERITY", "add": 2 } ],
+          "hit_you_effect": [ { "id": "bleed" } ]
+        }
+      ]
+    },
+    "qualities": [ [ "HAMMER", 1 ] ]
+  },
+  {
+    "id": "greensteel_spear",
+    "type": "TOOL",
+    "symbol": "/",
+    "color": "light_gray",
+    "name": { "str": "greensteel spear" },
+    "description": "A long, menacing spear made of green metal with a mana pearl stuck in it's hilt. The blade and shaft are made of greensteel, a substance that's nearly impossible to find or create. It adores lifeforce above all else, draining it from anyone it touches.",
+    "price": 80000,
+    "looks_like": "spear_steel",
+    "material": [ "glassteel" ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SPEAR", "MAGIC_FOCUS", "SPEAR", "REACH_ATTACK" ],
+    "weapon_category": [ "SPEARS", "POLEARMS" ],
+    "techniques": [ "WBLOCK_1", "IMPALE" ],
+    "weight": "1050 g",
+    "volume": "1250 ml",
+    "longest_side": "180 cm",
+    "melee_damage": { "bash": 5, "cutting": 35 },
+    "to_hit": { "grip": "weapon", "length": "long", "surface": "point", "balance": "good" },
+    "category": "weapons",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "PERCEPTION", "add": 2 } ],
+          "hit_you_effect": [ { "id": "devour" } ]
+        }
+      ]
+    },
+    "qualities": [ [ "COOK", 1 ], [ "BUTCHER", -10 ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "elbow_skewer",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "time": "10 m",
+    "autolearn": true,
+    "components": [ [ [ "knuckle_skewer", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "knee_skewer",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "time": "10 m",
+    "autolearn": true,
+    "components": [ [ [ "knuckle_skewer", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "foot_skewer",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "time": "10 m",
+    "autolearn": true,
+    "components": [ [ [ "knuckle_skewer", 1 ] ] ]
+  },
+    {
+    "id": "crossbow_magazine",
+    "type": "GUNMOD",
+    "name": { "str": "crossbow magazine attachment" },
+    "description": "A magazine with a 5 bolt capacity.",
+    "weight": "50 g",
+    "volume": "250 ml",
+    "price": 500,
+    "price_postapoc": 250,
+    "install_time": "5 m",
+    "material": [ "wood", "steel" ],
+    "symbol": ":",
+    "color": "brown",
+    "location": "dampening",
+    "mod_targets": [ "bow", "crossbow" ],
+	"gun_data": {
+      "ammo": "bolt",
+      "skill": "rifle",
+      "range": 16,
+      "ranged_damage": { "damage_type": "stab", "amount": 6 },
+      "dispersion": 180,
+      "durability": 10,
+      "clip_size": 5
+    },
+    "dispersion_modifier": 60,
+    "flags": [ "NON_FOULING" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 5 } } ]
+  },
+    {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "crossbow_magazine",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "35 m",
+    "book_learn": [ [ "recipe_bows", 3 ], [ "manual_archery", 5 ], [ "book_archery", 4 ] ],
+    "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_gunsmithing_spring" }, { "proficiency": "prof_bowyery" } ],
+    "qualities": [
+      { "id": "CUT", "level": 2 },
+      { "id": "HAMMER", "level": 2 },
+      { "id": "SCREW", "level": 1 },
+      { "id": "SAW_W", "level": 1 }
+    ],
+    "components": [
+      [ [ "2x4", 1 ], [ "stick", 2 ] ],
+      [ [ "cordage_superior_short", 1, "LIST" ] ],
+      [ [ "spring", 1 ] ],
+      [ [ "scrap", 4 ] ],
+      [ [ "nail", 10 ] ]
+    ]
+  },
+      {
+    "id": "compound_crossbow_magazine",
+    "type": "GUNMOD",
+    "name": { "str": "crossbow magazine attachment (compound)" },
+    "description": "A magazine with a 5 bolt capacity.",
+    "weight": "100 g",
+    "volume": "250 ml",
+    "price": 500,
+    "price_postapoc": 250,
+    "install_time": "5 m",
+    "material": [ "wood", "steel" ],
+    "symbol": ":",
+    "color": "brown",
+    "location": "dampening",
+    "mod_targets": [ "compcrossbow" ],
+	"gun_data": {
+      "ammo": "bolt",
+      "skill": "rifle",
+      "range": 22,
+      "ranged_damage": { "damage_type": "stab", "amount": 13 },
+      "dispersion": 180,
+      "durability": 10,
+      "clip_size": 7
+    },
+    "dispersion_modifier": 60,
+    "flags": [ "NON_FOULING" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 7 } } ]
+  },
+    {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "compound_crossbow_magazine",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "35 m",
+    "book_learn": [ [ "recipe_bows", 3 ], [ "manual_archery", 5 ], [ "book_archery", 4 ] ],
+    "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_gunsmithing_spring" }, { "proficiency": "prof_bowyery" } ],
+    "qualities": [
+      { "id": "CUT", "level": 2 },
+      { "id": "HAMMER", "level": 2 },
+      { "id": "SCREW", "level": 1 },
+      { "id": "SAW_W", "level": 1 }
+    ],
+    "components": [
+      [ [ "2x4", 1 ], [ "stick", 2 ] ],
+      [ [ "cordage_superior_short", 1, "LIST" ] ],
+      [ [ "spring", 1 ] ],
+      [ [ "scrap", 4 ] ],
+      [ [ "nail", 10 ] ]
+    ]
+  }
+]

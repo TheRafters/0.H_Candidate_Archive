@@ -1,0 +1,26 @@
+[
+  {
+    "id": "integrated_hand_closedfist",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "callused fists" },
+    "description": "You've dealt so many blows your hands are rough with calluses.  The bottoms of your hand can deal blows hard enough to hammer or finely crush objects.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "qt_steel" ],
+    "material_thickness": 2,
+    "symbol": "x",
+    "color": "magenta",
+    "flags": [ "WATERPROOF", "SOFT", "ALLOWS_NATURAL_ATTACKS", "NONCONDUCTIVE", "SEMITANGIBLE", "INTEGRATED", "UNBREAKABLE", "PERSONAL", "ZERO_WEIGHT", "NO_SALVAGE" ],
+    "armor": [ 
+        { 
+        "encumbrance": -2,
+        "coverage": 100,
+        "cover_vitals": 110,
+        "covers": [ "hand_l", "hand_r", "arm_l", "arm_r" ]
+        }
+    ],
+    "qualities": [ [ "HAMMER", 3 ], [ "HAMMER_FINE", 1 ], [ "FINE_GRIND", 1 ] ],
+    "melee_damage": { "bash": 5, "cut": 1 }
+  }
+]

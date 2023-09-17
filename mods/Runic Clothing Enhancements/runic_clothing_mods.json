@@ -1,0 +1,584 @@
+[
+  {
+    "type": "clothing_mod",
+    "id": "chitin_insert",
+    "flag": "chitin_insert",
+    "item": "chitin_piece",
+    "implement_prompt": "Insert chitin pieces(C)",
+    "destroy_prompt": "Remove chitin pieces",
+    "mod_value": [
+      { "type": "bash", "value": 3, "proportion": [ "coverage" ] },
+      { "type": "cut", "value": 5, "proportion": [ "coverage" ] },
+      { "type": "encumbrance", "value": 1.5, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+   },
+  {
+    "type": "clothing_mod",
+    "id": "chitin_insert_thick",
+    "flag": "chitin_insert_thick",
+    "item": "chitin_piece",
+    "implement_prompt": "Insert chitin pieces",
+    "destroy_prompt": "Remove chitin pieces",
+    "mod_value": [
+      { "type": "bash", "value": 3, "proportion": [ "thickness" ] },
+      { "type": "cut", "value": 5, "proportion": [ "thickness" ] },
+      { "type": "encumbrance", "value": 1.5, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+   },
+   {
+    "type": "clothing_mod",
+    "id": "acidchitin_insert",
+    "flag": "acidchitin_insert",
+    "item": "acidchitin_piece",
+    "implement_prompt": "Insert biosilicified chitin pieces(C)",
+    "destroy_prompt": "Remove biosilicified chitin pieces",
+    "mod_value": [
+      { "type": "bash", "value": 4.5, "round_up": true, "proportion": [ "coverage" ] },
+      { "type": "cut", "value": 6, "round_up": true, "proportion": [ "coverage" ] },
+	  { "type": "acid", "value": 4.5, "round_up": true, "proportion": [ "coverage" ] },
+      { "type": "encumbrance", "value": 2.0, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+   },
+   {
+    "type": "clothing_mod",
+    "id": "acidchitin_insert_thick",
+    "flag": "acidchitin_insert_thick",
+    "item": "acidchitin_piece",
+    "implement_prompt": "Insert biosilicified chitin pieces",
+    "destroy_prompt": "Remove biosilicified chitin pieces",
+    "mod_value": [
+      { "type": "bash", "value": 4.5, "round_up": true, "proportion": [ "thickness" ] },
+      { "type": "cut", "value": 6, "round_up": true, "proportion": [ "thickness" ] },
+	  { "type": "acid", "value": 4.5, "round_up": true, "proportion": [ "thickness" ] },
+      { "type": "encumbrance", "value": 2.0, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+   },
+   {
+    "type": "clothing_mod",
+    "id": "lesser_corrosionward_enchantment",
+    "flag": "lesser_corrosionward_enchantment",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Corrosion Warding(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "acid", "value": 1.5, "round_up": true, "proportion": [ "coverage" ] }
+      ]
+  },
+   {
+    "type": "clothing_mod",
+    "id": "lesser_corrosionward_enchantment_thick",
+    "flag": "lesser_corrosionward_enchantment_thick",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Corrosion Warding",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "acid", "value": 1.5, "round_up": true, "proportion": [ "thickness" ] }
+      ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "lesser_refreshingchill_enchantment",
+    "flag": "lesser_refreshingchill_enchantment",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Refreshing Chill(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": -1.5, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "lesser_refreshingchill_enchantment_thick",
+    "flag": "lesser_refreshingchill_enchantment_thick",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Refreshing Chill",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": -1.5, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "lesser_soothingwarmth_enchantment",
+    "flag": "lesser_soothingwarmth_enchantment",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Soothing Warmth(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": 1.5, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "lesser_soothingwarmth_enchantment_thick",
+    "flag": "lesser_soothingwarmth_enchantment_thick",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Soothing Warmth",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": 1.5, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "lesser_featherweight_enchantment",
+    "flag": "lesser_featherweight_enchantment",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Featherweight(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "encumbrance", "value": -1.5, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "lesser_featherweight_enchantment_thick",
+    "flag": "lesser_featherweight_enchantment_thick",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Featherweight",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "encumbrance", "value": -1.5, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+  },
+ {
+    "type": "clothing_mod",
+    "id": "lesser_flameward_enchantment",
+    "flag": "lesser_flameward_enchantment",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Flameward(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "fire", "value": 1.5, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+ {
+    "type": "clothing_mod",
+    "id": "lesser_flameward_enchantment_thick",
+    "flag": "lesser_flameward_enchantment_thick",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Flameward",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "fire", "value": 1.5, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "lesser_bladeturn_enchantment",
+    "flag": "lesser_bladeturn_enchantment",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Bladeturn(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "cut", "value": 1.5, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "lesser_bladeturn_enchantment_thick",
+    "flag": "lesser_bladeturn_enchantment_thick",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Bladeturn",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "cut", "value": 1.5, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "lesser_impactshield_enchantment",
+    "flag": "lesser_impactshield_enchantment",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Impactshield(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bash", "value": 1.5, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "lesser_impactshield_enchantment_thick",
+    "flag": "lesser_impactshield_enchantment_thick",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Impactshield",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bash", "value": 1.5, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "lesser_bulletshield_enchantment",
+    "flag": "lesser_bulletshield_enchantment",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Bulletshield(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bullet", "value": 1.5, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "lesser_bulletshield_enchantment_thick",
+    "flag": "lesser_bulletshield_enchantment_thick",
+    "item": "lesser_rune_stencil",
+    "implement_prompt": "Enchant with Lesser Bulletshield",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bullet", "value": 1.5, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+ {
+    "type": "clothing_mod",
+    "id": "corrosionward_enchantment",
+    "flag": "corrosionward_enchantment",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Corrosion Warding(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "acid", "value": 5, "round_up": true, "proportion": [ "coverage" ] }
+      ]
+  },
+ {
+    "type": "clothing_mod",
+    "id": "corrosionward_enchantment_thick",
+    "flag": "corrosionward_enchantment_thick",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Corrosion Warding",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "acid", "value": 5, "round_up": true, "proportion": [ "thickness" ] }
+      ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "refreshingchill_enchantment",
+    "flag": "refreshingchill_enchantment",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Refreshing Chill(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": -5, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "refreshingchill_enchantment_thick",
+    "flag": "refreshingchill_enchantment_thick",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Refreshing Chill",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": -5, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "soothingwarmth_enchantment",
+    "flag": "soothingwarmth_enchantment",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Soothing Warmth(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": 5, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "soothingwarmth_enchantment_thick",
+    "flag": "soothingwarmth_enchantment_thick",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Soothing Warmth",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": 5, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "featherweight_enchantment",
+    "flag": "featherweight_enchantment",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Featherweight(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "encumbrance", "value": -5, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "featherweight_enchantment_thick",
+    "flag": "featherweight_enchantment_thick",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Featherweight",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "encumbrance", "value": -5, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+  },
+ {
+    "type": "clothing_mod",
+    "id": "flameward_enchantment",
+    "flag": "flameward_enchantment",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Flameward(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "fire", "value": 5, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+ {
+    "type": "clothing_mod",
+    "id": "flameward_enchantment_thick",
+    "flag": "flameward_enchantment_thick",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Flameward",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "fire", "value": 5, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "bladeturn_enchantment",
+    "flag": "bladeturn_enchantment",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Bladeturn(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "cut", "value": 5, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "bladeturn_enchantment_thick",
+    "flag": "bladeturn_enchantment_thick",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Bladeturn",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "cut", "value": 5, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "impactshield_enchantment",
+    "flag": "impactshield_enchantment",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Impactshield(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bash", "value": 5, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "impactshield_enchantment_thick",
+    "flag": "impactshield_enchantment_thick",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Impactshield",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bash", "value": 5, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "bulletshield_enchantment",
+    "flag": "bulletshield_enchantment",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Bulletshield(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bullet", "value": 5, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "bulletshield_enchantment_thick",
+    "flag": "bulletshield_enchantment_thick",
+    "item": "rune_stencil",
+    "implement_prompt": "Enchant with Bulletshield",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bullet", "value": 5, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "greater_corrosionward_enchantment",
+    "flag": "greater_corrosionward_enchantment",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Corrosion Warding(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "acid", "value": 10, "round_up": true, "proportion": [ "coverage" ] }
+      ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "greater_corrosionward_enchantment_thick",
+    "flag": "greater_corrosionward_enchantment_thick",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Corrosion Warding",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "acid", "value": 10, "round_up": true, "proportion": [ "thickness" ] }
+      ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "greater_refreshingchill_enchantment",
+    "flag": "greater_refreshingchill_enchantment",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Refreshing Chill(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": -10, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "greater_refreshingchill_enchantment_thick",
+    "flag": "greater_refreshingchill_enchantment_thick",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Refreshing Chill",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": -10, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "greater_soothingwarmth_enchantment",
+    "flag": "greater_soothingwarmth_enchantment",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Soothing Warmth(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": 10, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "greater_soothingwarmth_enchantment_thick",
+    "flag": "greater_soothingwarmth_enchantment_thick",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Soothing Warmth",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "warmth", "value": 10, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "greater_featherweight_enchantment",
+    "flag": "greater_featherweight_enchantment",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Featherweight(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "encumbrance", "value": -10, "round_up": true, "proportion": [ "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "greater_featherweight_enchantment_thick",
+    "flag": "greater_featherweight_enchantment_thick",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Featherweight",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "encumbrance", "value": -10, "round_up": true, "proportion": [ "thickness" ] }
+    ]
+  },
+ {
+    "type": "clothing_mod",
+    "id": "greater_flameward_enchantment",
+    "flag": "greater_flameward_enchantment",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Flameward(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "fire", "value": 10, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+ {
+    "type": "clothing_mod",
+    "id": "greater_flameward_enchantment_thick",
+    "flag": "greater_flameward_enchantment_thick",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Flameward",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "fire", "value": 10, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "greater_bladeturn_enchantment",
+    "flag": "greater_bladeturn_enchantment",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Bladeturn(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "cut", "value": 10, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "greater_bladeturn_enchantment_thick",
+    "flag": "greater_bladeturn_enchantment_thick",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Bladeturn",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "cut", "value": 10, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "greater_impactshield_enchantment",
+    "flag": "greater_impactshield_enchantment",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Impactshield(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bash", "value": 10, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "greater_impactshield_enchantment_thick",
+    "flag": "greater_impactshield_enchantment_thick",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Impactshield",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bash", "value": 10, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "greater_bulletshield_enchantment",
+    "flag": "greater_bulletshield_enchantment",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Bulletshield(C)",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bullet", "value": 10, "round_up": true, "proportion": [ "coverage" ] } 
+    ]
+  },
+{
+    "type": "clothing_mod",
+    "id": "greater_bulletshield_enchantment_thick",
+    "flag": "greater_bulletshield_enchantment_thick",
+    "item": "greater_rune_stencil",
+    "implement_prompt": "Enchant with Greater Bulletshield",
+    "destroy_prompt": "Remove enchantment",
+    "mod_value": [
+      { "type": "bullet", "value": 10, "round_up": true, "proportion": [ "thickness" ] } 
+    ]
+  }
+]

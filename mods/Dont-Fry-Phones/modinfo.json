@@ -1,0 +1,18 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "dont_fry_phones",
+    "name": "Don't Fry Phones",
+    "authors": [ "AndiBanandi" ],
+    "maintainers": [ "AndiBanandi" ],
+    "description": "Stops EMPs from frying your electronics. This is needed until simple faraday shielding for your electronics is implemented.",
+    "category": "rebalance",
+    "dependencies": [ "dda" ]
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "EMP_DISABLE_ELECTRONICS",
+    "stype": "bool",
+    "value": false
+  }
+]

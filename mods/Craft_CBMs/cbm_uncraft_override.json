@@ -1,0 +1,22 @@
+[
+  {
+    "type": "uncraft",
+    "result": "bio_power_storage",
+    "skill_used": "electronics",
+    "difficulty": 6,
+    "time": "500 s",
+    "using": [ [ "soldering_standard", 20 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [ [ [ "power_supply", 6 ] ], [ [ "amplifier", 4 ] ], [ [ "plut_cell", 1 ] ], [ [ "burnt_out_bionic", 1 ] ] ]
+  },
+  {
+    "type": "uncraft",
+    "result": "bio_power_storage_mkII",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": "700 s",
+    "using": [ [ "soldering_standard", 32 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [ [ [ "power_supply", 10 ] ], [ [ "amplifier", 6 ] ], [ [ "plut_cell", 2 ] ], [ [ "burnt_out_bionic", 1 ] ] ]
+  }
+]

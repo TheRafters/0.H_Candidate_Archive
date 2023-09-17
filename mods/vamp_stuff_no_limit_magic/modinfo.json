@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "vamp_stuff_nolimit",
+    "name": "<color_blue>Vampiric Stuff Unlimited</color>",
+    "authors": [ "Cobweb" ],
+    "maintainers": [ "PlayerUnknown" ],
+    "description": "Remove limits on Vampiric Stuff Magic classes.",
+    "category": "misc_additions",
+    "dependencies": [ "dda", "vamp_stuff" ]
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "respawn_sky_island",
+    "name": "<color_green>Respawn plus Sky Island</color>",
+    "authors": [ "Cobweb" ],
+    "maintainers": [ "PlayerUnknown" ],
+    "description": "Required for Respawn and Sky Island to play nice together. You'll never get home without it.  Works on 0.G Experimental version cdda-android-x64-2023-07-27-0727.  ",
+    "category": "misc_additions",
+    "dependencies": [ "dda", "skyisland", "respawn" ]
+  }
+]

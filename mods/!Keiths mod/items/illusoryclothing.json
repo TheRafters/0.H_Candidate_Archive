@@ -1,0 +1,1012 @@
+[
+  {
+    "id": "blazer_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory blazer" },
+    "description": "A blazer that you can see (and fits you perfectly) but cannot feel in any way.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "looks_like": "blazer",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
+    "material": [ "cotton" ],
+    "symbol": ".",
+    "color": "black"
+  },
+  {
+    "id": "tricorne_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory tricorne" },
+    "description": "A tricorne that you can see (and fits you perfectly) but cannot feel in any way.",
+    "looks_like": "tricorne",
+    "copy-from": "blazer_aura"
+  },
+  {
+    "id": "pants_leather_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory slacks" },
+    "description": "A pair of slacks that you can see (and fits you perfectly) but cannot feel in any way.",
+    "looks_like": "pants_leather",
+    "copy-from": "blazer_aura"
+  },
+  {
+    "id": "suit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory cotton suit" },
+    "description": "A full size suit that you can see (and fits you perfectly) but cannot feel in any way.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "looks_like": "suit",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
+    "material": [ "cotton" ],
+    "symbol": ".",
+    "color": "white"
+  },
+  {
+    "id": "shirt_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory dress shirt" },
+    "description": "A button-down shirt that you can see (and fits you perfectly) but cannot feel in any way.",
+    "looks_like": "dress_shirt",
+    "copy-from": "suit_aura"
+  },
+  {
+    "id": "shoes_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory dress shoes" },
+    "description": "A pair of black dress shoes that you can see (and fits you perfectly) but cannot feel in any way.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "looks_like": "dress_shoes",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
+    "material": [ "leather" ],
+    "symbol": ".",
+    "color": "black"
+  },
+  {
+    "id": "tie_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory tie" },
+    "description": "A necktie that you can see (and fits you perfectly) but cannot feel in any way.",
+    "looks_like": "tie_skinny",
+    "copy-from": "blazer_aura"
+  },
+  {
+    "id": "socks_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory socks" },
+    "description": "A pair of socks that you can see (and fits you perfectly) but cannot feel in any way.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "looks_like": "socks",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
+    "material": [ "concentrated_mana" ],
+    "symbol": ".",
+    "color": "black"
+  },
+  {
+    "id": "bondage_suit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory bondage suit" },
+    "description": "A bondage suit that you can see (and fits you perfectly) but cannot feel in any way.",
+    "looks_like": "bondage_suit",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "clown_suit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory clown suit" },
+    "description": "A clown suit that you can see (and fits you perfectly) but cannot feel in any way.",
+    "looks_like": "clown_suit",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "dinosuit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory dinosuit" },
+    "description": "A dinosuit that you can see (and fits you perfectly) but cannot feel in any way.",
+    "looks_like": "dinosuit",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "dragonsuit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory dragonsuit" },
+    "description": "A dragonsuit that you can see (and fits you perfectly) but cannot feel in any way.",
+    "looks_like": "dragonsuit",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "felinesuit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory felinesuit" },
+    "description": "A felinesuit that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "felinesuit",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "flag_jumpsuit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory flag jumpsuit" },
+    "description": "A flag jumpsuit that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "flag_jumpsuit",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "jumpsuit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory jumpsuit" },
+    "description": "A jumpsuit that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "jumpsuit",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "jumpsuit_skeleton_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory skeleton jumpsuit" },
+    "description": "A skeleton jumpsuit that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "jumpsuit_skeleton",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "wolfsuit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory wolfsuit" },
+    "description": "A wolfsuit that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "wolfsuit",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "touring_suit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory touring suit" },
+    "description": "A touring suit that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "touring_suit",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "zentai_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory zentai" },
+    "description": "A zentai that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "zentai",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "apron_cotton_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory cotton apron" },
+    "description": "A cotton apron that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "apron_cotton",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "apron_leather_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory leather apron" },
+    "description": "A leather apron that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "apron_leather",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "dress_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory dress" },
+    "description": "A dress that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "dress",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "sundress_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory sundress" },
+    "description": "A sundress that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "sundress",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "tank_top_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory tank top" },
+    "description": "A tank top that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "tank_top",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "jacket_army_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory army jacket" },
+    "description": "An army jacket that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "jacket_army",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "tshirt_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory tshirt" },
+    "description": "A tshirt that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "tshirt",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "vest_leather_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory leather vest" },
+    "description": "A leather vest that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "vest_leather",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "sweater_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory sweater" },
+    "description": "A sweater that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "sweater",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "leotard_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory leotard" },
+    "description": "A leotard that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "leotard",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "maid_dress_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory maid dress" },
+    "description": "A maid dress that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "maid_dress",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "polo_shirt_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory polo shirt" },
+    "description": "A polo shirt that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "polo_shirt",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "santa_dress_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory santa dress" },
+    "description": "A santa dress that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "santa_dress",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "camisole_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory camisole" },
+    "description": "A camisole that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "camisole",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "gown_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory gown" },
+    "description": "A gown that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "gown",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "hoodie_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory hoodie" },
+    "description": "A hoodie that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "hoodie",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "kilt_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory kilt" },
+    "description": "A kilt that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "kilt",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "shorts_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory shorts" },
+    "description": "A shorts that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "shorts",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "pants_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory pants" },
+    "description": "A pair of pants that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "pants",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "skirt_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory skirt" },
+    "description": "A skirt that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "skirt",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "pants_ski_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory ski pants" },
+    "description": "A pair of ski pants that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "pants_ski",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "boxer_briefs_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory boxer briefs" },
+    "description": "A pair of boxer briefs that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "boxer_briefs",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "hot_pants_leather_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory leather hot pants" },
+    "description": "A pair of leather hot pants that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "hot_pants_leather",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "hot_pants_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory hot pants" },
+    "description": "A pair of hot pants that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "hot_pants",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "jeans_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory jeans" },
+    "description": "A pair of jeans that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "jeans",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "leg_warmers_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory leg warmers" },
+    "description": "A pair of leg warmers that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "leg_warmers",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "briefs_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory briefs" },
+    "description": "A pair of briefs that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "briefs",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "panties_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory panties" },
+    "description": "A pair of panties that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "panties",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "bra_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory bra" },
+    "description": "A bra that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "bra",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "loincloth_leather_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory leather loincloth" },
+    "description": "A leather loincloth that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "loincloth_leather",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "loincloth_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory loincloth" },
+    "description": "A loincloth that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "loincloth",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "pants_cargo_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory cargo pants" },
+    "description": "A pair of cargo pants that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "pants_cargo",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "shorts_cargo_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory cargo shorts" },
+    "description": "A pair of cargo shorts that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "shorts_cargo",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "boxer_shorts_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory boxer shorts" },
+    "description": "A pair of boxer shorts that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "boxer_shorts",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "pants_checkered_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory checkered pants" },
+    "description": "A pair of checkered pants that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "pants_checkered",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "pants_army_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory army pants" },
+    "description": "A pair of army pants that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "pants_army",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "flip_flops_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory flip flops" },
+    "description": "A pair of flip flops that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "flip_flops",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "boots_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory boots" },
+    "description": "A pair of boots that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "boots",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "boots_steel_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory steel boots" },
+    "description": "A pair of steel boots that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "boots_steel",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "boots_combat_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory combat boots" },
+    "description": "A pair of combat boots that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "boots_combat",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "sneakers_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory sneakers" },
+    "description": "A pair of sneakers that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "sneakers",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "boots_larmor_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory leather boots" },
+    "description": "A pair of leather boots that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "boots_larmor",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "leathersandals_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory leather sandals" },
+    "description": "A pair of leather sandals that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "leathersandals",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "clogs_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory clogs" },
+    "description": "A pair of clogs that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "clogs",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "knee_high_boots_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory knee high boots" },
+    "description": "A pair of knee high boots that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "knee_high_boots",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "rollerskates_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory rollerskates" },
+    "description": "A pair of rollerskates that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "rollerskates",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "shoes_bowling_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory bowling shoes" },
+    "description": "A pair of bowling shoes that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "shoes_bowling",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "clownshoes_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory clownshoes" },
+    "description": "A pair of clownshoes that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "clownshoes",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "cowboy_hat_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory cowboy hat" },
+    "description": "A cowboy hat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "cowboy_hat",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "scarf_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory scarf" },
+    "description": "A scarf that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "scarf",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "scarf_long_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory long scarf" },
+    "description": "A long scarf that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "scarf_long",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "hat_cotton_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory cotton hat" },
+    "description": "A cotton hat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "hat_cotton",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "beret_wool_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory wool beret" },
+    "description": "A wool beret that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "beret_wool",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "bowhat_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory bowhat" },
+    "description": "A bowhat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "bowhat",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "hat_ball_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory baseball cap" },
+    "description": "A baseball cap that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "hat_ball",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "hat_knit_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory knit hat" },
+    "description": "A knit hat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "hat_knit",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "hat_hard_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory hard hat" },
+    "description": "A hard hat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "hat_hard",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "porkpie_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory porkpie" },
+    "description": "A porkpie that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "porkpie",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "straw_hat_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory straw hat" },
+    "description": "A straw hat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "straw_hat",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "bandana_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory bandana" },
+    "description": "A bandana that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "bandana",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "balclava_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory balclava" },
+    "description": "A balclava that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "balclava",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "mask_hockey_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory hockey mask" },
+    "description": "A hockey mask that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "mask_hockey",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "mask_gas_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory gas mask" },
+    "description": "A gas mask that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "mask_gas",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "coat_winter_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory winter coat" },
+    "description": "A winter coat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "coat_winter",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "robe_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory robe" },
+    "description": "A robe that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "robe",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "coat_fur_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory fur coat" },
+    "description": "A fur coat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "coat_fur",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "coat_rain_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory rain coat" },
+    "description": "A rain coat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "coat_rain",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "trenchcoat_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory trenchcoat" },
+    "description": "A trenchcoat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "trenchcoat",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "duster_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory duster" },
+    "description": "A duster that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "duster_leather",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "coat_lab_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory lab coat" },
+    "description": "A lab coat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "coat_lab",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "house_coat_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory house coat" },
+    "description": "A house coat that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "house_coat",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "jacket_jean_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory jean jacket" },
+    "description": "A jean jacket that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "jacket_jean",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "kimono_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory kimono" },
+    "description": "A kimono that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "kimono",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "judo_gi_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory gi" },
+    "description": "A gi that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "judo_gi",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "cloak_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory cloak" },
+    "description": "A cloak that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "cloak",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "jacket_leather_red_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory red leather jacket" },
+    "description": "A red leather jacket that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "jacket_leather_red",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "duster_fur_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory fur duster" },
+    "description": "A fur duster that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "duster_fur",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "tunic_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory tunic" },
+    "description": "A tunic that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "tunic",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "cloak_wool_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory wool cloak" },
+    "description": "A wool cloak that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "cloak_wool",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "gloves_leather_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory leather gloves" },
+    "description": "A pair of leather gloves that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "gloves_leather",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "gloves_medical_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory medical gloves" },
+    "description": "A pair of medical gloves that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "gloves_medical",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "gloves_wraps_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory hand wraps" },
+    "description": "A pair of hand wraps that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "gloves_wraps",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "gloves_light_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory light gloves" },
+    "description": "A pair of light gloves that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "gloves_light",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "gloves_fingerless_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory fingerless gloves" },
+    "description": "A pair of fingerless gloves that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "gloves_fingerless",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "fire_gauntlets_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory fire gauntlets" },
+    "description": "A pair of fire gauntlets that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "fire_gauntlets",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "gloves_fur_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory fur gloves" },
+    "description": "A pait of fur gloves that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "gloves_fur",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "gloves_work_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory work gloves" },
+    "description": "A pair of work gloves that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "gloves_work",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "mittens_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory mittens" },
+    "description": "A pair of mittens that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "mittens",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "arm_warmers_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory arm warmers" },
+    "description": "A pair of arm warmers that you can see (and fits you perfectly) but cannot feel in any way.",
+
+    "looks_like": "arm_warmers",
+    "copy-from": "socks_aura"
+  },
+  {
+    "id": "tieclip_aura",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "illusory tieclip" },
+    "description": "A tieclip warmers that you can see (and fits you perfectly) but cannot feel in any way.",
+    "looks_like": "tieclip",
+    "copy-from": "socks_aura",
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "LEARNSUITSPELL" ] } ] },
+    "use_action": [ { "type": "cast_spell", "spell_id": "tieclip", "no_fail": true, "level": 1, "need_worn": true } ]
+  }
+]

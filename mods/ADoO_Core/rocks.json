@@ -1,0 +1,67 @@
+[
+  {
+    "id": "feral_human_thrown_rock",
+    "type": "GUN",
+    "symbol": "%",
+    "color": "red",
+    "name": { "str": "hurled rubble" },
+    "description": "Stone at the ready to crush that which isn't part of the blob.",
+    "material": [ "stone" ],
+    "flags": [
+      "PRIMITIVE_RANGED_WEAPON",
+      "NEVER_JAMS",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "WATERPROOF_GUN",
+      "NO_SALVAGE",
+      "NO_UNLOAD",
+      "NO_TURRET"
+    ],
+    "skill": "throw",
+    "ammo": [ "rock" ],
+    "ammo_effects": [ "NO_PENETRATE_OBSTACLES", "NEVER_MISFIRES" ],
+    "ranged_damage": { "damage_type": "bash", "amount": -1 },
+    "clip_size": 1,
+    "weight": "540 g",
+    "volume": "210 ml",
+    "longest_side": "75 mm",
+    "to_hit": 1,
+    "loudness": 2,
+    "range": 7,
+    "dispersion": 250,
+    "durability": 8,
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "max_contains_volume": "200 L",
+        "max_contains_weight": "400 kg",
+        "max_item_length": "2000 m",
+        "ammo_restriction": { "rock": 5 }
+      }
+    ],
+    "melee_damage": { "bash": 2 }
+  },
+  {
+    "type": "AMMO",
+    "id": "rock",
+    "symbol": "*",
+    "color": "light_gray",
+    "name": { "str": "rock", "ctxt": "stone" },
+    "description": "A rock the size of a baseball.  Makes a decent melee weapon, and is also good for throwing at enemies.",
+    "category": "spare_parts",
+    "material": [ "stone" ],
+    "ammo_type": "rock",
+    "flags": [ "TRADER_AVOID", "NPC_THROWN" ],
+    "weight": "657 g",
+    "volume": "250 ml",
+    "damage": { "damage_type": "bash", "amount": 7 },
+    "range": 10,
+    "dispersion": 140,
+    "loudness": 0,
+    "to_hit": -1,
+    "effects": [ "NEVER_MISFIRES", "NON_FOULING", "RECOVER_80", "ALLOWS_BODY_BLOCK" ],
+    "qualities": [ [ "HAMMER", 1 ] ],
+    "melee_damage": { "bash": 7 }
+  }
+]

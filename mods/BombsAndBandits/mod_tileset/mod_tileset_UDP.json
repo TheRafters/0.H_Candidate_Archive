@@ -1,0 +1,45 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "Chibi_Ultica",
+      "UltimateCataclysm",
+      "MshockXottoplus",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY",
+      "UlticaShell",
+      "MshockXottoplus12",
+      "MSX++DEAD_PEOPLE",
+      "MXplus12_for_cosmetics",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "mod_tileset/bombsandbandits_undeadpeople_tiles.png",
+        "tiles": [
+          { "id": "mon_bandits_looter", "fg": 0 },
+          { "id": "mon_bandits_scrapper", "fg": 0 },
+          { "id": "mon_bandits_glock", "fg": 0 },
+          { "id": "mon_bandits_m1911", "fg": 0 },
+          { "id": "mon_bandits_smg", "fg": 0 },
+          { "id": "mon_bandits_alpha", "fg": 0 },
+          { "id": "mon_bandits_melee", "fg": 0 },
+          { "id": "mon_bandits_pyro", "fg": 0 },
+          { "id": "mon_bandits_super_psycho", "fg": 0 },
+          { "id": "mon_bandits_suicide_bomber", "fg": 0 },
+          { "id": "mon_bandits_shotgun", "fg": 0 },
+          { "id": "mon_bandits_raider", "fg": 0 },
+          { "id": "mon_bandits_rifle", "fg": 0 },
+          { "id": "mon_bandits_super_sniper", "fg": 0 },
+          { "id": "mon_bandits_high_explosive_bomb", "fg": 1 },
+          { "id": "mon_bandits_incendiary_bomb", "fg": 1 },
+          { "id": "bandits_high_explosive_bomb", "fg": 1 }
+        ],
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0
+      }
+    ]
+  }
+]

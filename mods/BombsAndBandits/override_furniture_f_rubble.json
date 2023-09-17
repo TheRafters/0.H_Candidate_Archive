@@ -1,0 +1,27 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_rubble",
+    "name": "pile of rubble",
+    "symbol": "^",
+    "description": "A pile of various metals, bricks, and other building materials.  You could clear it with a shovel.",
+    "color": "light_gray",
+    "move_cost_mod": 6,
+    "max_volume": "750 L",
+    "required_str": -1,
+    "flags": [
+      "TRANSPARENT",
+      "UNSTABLE",
+      "ROUGH",
+      "PLACE_ITEM",
+      "MOUNTABLE",
+      "CONTAINER",
+      "SEALED",
+      "ALLOW_FIELD_EFFECT",
+      "TINY",
+      "RUBBLE",
+      "ALLOW_ON_OPEN_AIR"
+    ],
+    "examine_action": "rubble"
+  }
+]

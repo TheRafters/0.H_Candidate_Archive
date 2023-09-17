@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "runic_clothing",
+    "name": "Runic Enchantment Modifications",
+    "authors": [ "DrPariah" ],
+    "maintainers": [ "DrPariah" ],
+    "description": "A simple mod. Use copper, silver, and gold to apply varying degrees of enchantment to your gear (clothing mods, in other words). No encumberance, as it's basically stencilling runes into your clothes. Could be considered a cheat mod, so use your discretion if that matters to you.",
+    "category": "content",
+    "dependencies": [ "dda", "magiclysm" ]
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "rc_textbook_infseeds",
+    "type": "BOOK",
+    "name": { "str": "Report on project \"S.L.O.T.H\"", "str_pl": "copies of Report on project \"S.L.O.T.H\"" },
+    "description": "A group of researchers were tasked to find out about the effects of mutagen on seeds. And while the collateral damge of the project was quite high they seem to have succeeded on creating mutated fauna that will absorb materials around it under certain conditions. They were hoping for those seeds to sprout into more durable plants with some attributes of what they absorbed but it seems the cataclysm shut the experiment short.",
+    "weight": "50 g",
+    "volume": "500 ml",
+    "price": "1250 USD",
+    "price_postapoc": "20 USD",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "light_green",
+    "skill": "fabrication",
+    "required_level": 3,
+    "max_level": 5,
+    "intelligence": 13,
+    "time": "40 m",
+    "fun": -1
+  },
+  {
+    "abstract": "mutagen_flavor_solid",
+    "type": "COMESTIBLE",
+    "name": { "str": "abstract mutagen flavor" },
+    "description": "A rare substance of uncertain origins.  Causes you to mutate.",
+    "price": "2500 USD",
+    "price_postapoc": "50 cent",
+    "//": "Not commercially traded, in case there was any question.",
+    "comestible_type": "MED",
+    "category": "mutagen",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "phase": "solid",
+    "symbol": "~",
+    "color": "light_green",
+    "healthy": -2,
+    "addiction_potential": 2,
+    "addiction_type": "mutagen",
+    "flags": [ "NO_INGEST", "NUTRIENT_OVERRIDE" ],
+    "vitamins": [  ],
+    "material": [ "water" ],
+    "freezing_point": -8
+  },
+  {
+    "id": "purifier_solid",
+    "copy-from": "mutagen_flavor_solid",
+    "type": "COMESTIBLE",
+    "name": { "str": "purifier gel" },
+    "description": "This thick, flesh-hued gel helps revert the mutated to baseline humanity, but cannot remove mutagen present in the bloodstream.  Not for use on animals.",
+    "price": "6000 USD",
+    "price_postapoc": "250 cent",
+    "color": "pink",
+    "healthy": -3,
+    "addiction_potential": 8,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You drink the purifier.",
+      "vitamins": [ [ "mutagen_human", 225 ], [ "mutagen", 125 ] ]
+    }
+  },
+  {
+    "id": "rc_purifier_solid",
+    "type": "COMESTIBLE",
+    "copy-from": "purifier_solid",
+    "name": { "str": "pure fruit" },
+    "description": "Let's hope the scientists figured this out and this is really a fruit filled with purifier."
+  },
+  {
+    "id": "rc_anesthetic_solid",
+    "type": "AMMO",
+    "copy-from": "anesthetic",
+    "name": { "str": "Blackout fruit" },
+    "description": "A fruit filled with anesthetic. Smells like chloroform.",
+    "phase": "solid",
+    "count": 100
+  }
+]

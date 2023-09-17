@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "lutn",
+    "name": "<color_green>Light Up The Night</color>",
+    "authors": [ "Cobweb" ],
+    "maintainers": [ "Eirenex" ],
+    "description": "mod id 'lutn' Street and traffic lights manage to maintain emergency lighting via solar panels and microciruitry. O,O Any 5 year old can plug a battery into one and obtain brighter lighting, but moving one would be a project. Added craftable makeshift light pole, less durable, but far easier to move around. ( Compatible Version: Experimental, September 8th 2023 )  TODO: Convert overwrites to copy-from/extend.",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]

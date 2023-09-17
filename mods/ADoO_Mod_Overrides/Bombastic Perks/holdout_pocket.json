@@ -1,0 +1,36 @@
+[
+  {
+    "id": "integrated_holdout_pocket",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "holdout pocket" },
+    "description": "A secret pocket no one knows about that can easily store a weapon. This thing is like a magic pouch, things shrink as they're being placed inside. Time seems to slow as well, making food last longer.",
+    "volume": "10 L",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "flesh" ],
+    "symbol": "x",
+    "color": "magenta",
+    "flags": [ "WATERPROOF", "SKINTIGHT", "SOFT", "ALLOWS_NATURAL_ATTACKS", "NONCONDUCTIVE", "SEMITANGIBLE", "INTEGRATED", "UNBREAKABLE", "PERSONAL", "NO_SALVAGE" ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "holster": false,
+        "airtight": true,
+        "watertight": true,
+        "min_item_volume": "0 ml",
+        "max_contains_volume": "160 L",
+        "max_contains_weight": "160400 g",
+        "max_item_length": "24000 cm",
+        "moves": 0,
+        "volume_multiplier": 0.01,
+        "weight_multiplier": 0.8,
+        "spoil_multiplier": 0.1,
+        "volume_encumber_modifier": 0.005,
+        "fire_protection": true
+      }
+    ],
+    "armor": [ { "covers": [ "torso" ], "coverage": 0, "encumbrance": -1 } ]
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "type": "proficiency",
+    "id": "prof_helicopter_pilot",
+    "category": "prof_mechanic",
+    "name": { "str": "Helicopter Piloting" },
+    "copy-from": "prof_helicopter_pilot",
+	"can_learn": true,
+    "default_time_multiplier": 1.0,
+    "default_skill_penalty": 1.0,
+    "time_to_learn": "3 h"
+  }
+]

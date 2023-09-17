@@ -1,0 +1,10 @@
+[{
+		"type": "MOD_INFO",
+		"ident": "crow_SpiderDigestion",
+		"name": "Arachnid Digestion",
+		"authors": ["Crow"],
+		"description": "Modifications of the Arachnid post-threshold mutations to perform external digestion of prey. Why the fuck am I doing this.",
+		"category": "content",
+		"dependencies": ["dda"]
+	}
+	]

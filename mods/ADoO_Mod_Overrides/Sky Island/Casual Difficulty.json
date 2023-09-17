@@ -1,0 +1,19 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_difficultycheck1",
+    "//": "Want to play casual?",
+    "condition": {
+      "u_query": "In Casual difficulty, time limits are nearly unlimited.\nWarp pulses occur every 999 days.  This means warp sickness sets in after 12000ish days of being earthside, and disintegration at 18000ish days.  You will have more time for activities and reaching the extract should generally not be a problem.\n\nDo you wish to play in Casual Difficulty?  Choosing no will provide other options.",
+      "default": false
+    },
+    "effect": [
+      {
+        "u_message": "Difficulty set to Casual.  You can use the Difficulty Adjuster if you wish to change your setting at any time."
+      },
+      { "arithmetic": [ { "global_val": "var", "var_name": "sicknessintervals" }, "=", { "time": "999 d" } ] },
+      { "math": [ "has_set_difficulty", "=", "1" ] }
+    ],
+    "false_effect": [ { "run_eocs": [ "EOC_difficultycheck2" ] } ]
+  }
+]

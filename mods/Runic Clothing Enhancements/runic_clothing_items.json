@@ -1,0 +1,46 @@
+[{
+		"id": "lesser_rune_stencil",
+		"looks_like": "rune_alchemist",
+		"type": "TOOL",
+		"symbol": "=",
+		"color": "black",
+		"name": {
+			"str": "lesser rune stencil"
+		},
+		"description": "This small piece of thin copper has a seemingly abstract pattern cut from the center of it. The pattern changes when you look away. You can use this in conjunction with a tailor's kit to apply a runic clothing enhancement, but multiples may be necessary depending on the item.",
+		"volume": "5ml",
+		"weight": "1 g",
+		"material": ["copper"],
+		"flags": ["TRADER_AVOID"]
+	},
+	{
+		"id": "rune_stencil",
+		"looks_like": "rune_alchemist",
+		"type": "TOOL",
+		"symbol": "=",
+		"color": "black",
+		"name": {
+			"str": "rune stencil"
+		},
+		"description": "This small piece of thin silver has a seemingly abstract pattern cut from the center of it. The pattern changes when you look away. You can use this in conjunction with a tailor's kit to apply a runic clothing enhancement, but multiples may be necessary depending on the item.",
+		"volume": "5ml",
+		"weight": "1 g",
+		"material": ["silver"],
+		"flags": ["TRADER_AVOID"]
+	},
+	{
+		"id": "greater_rune_stencil",
+		"looks_like": "rune_alchemist",
+		"type": "TOOL",
+		"symbol": "=",
+		"color": "black",
+		"name": {
+			"str": "greater rune stencil"
+		},
+		"description": "This small piece of thin gold has a seemingly abstract pattern cut from the center of it. The pattern changes when you look away. You can use this in conjunction with a tailor's kit to apply a runic clothing enhancement, but multiples may be necessary depending on the item.",
+		"volume": "5ml",
+		"weight": "1 g",
+		"material": ["gold"],
+		"flags": ["TRADER_AVOID"]
+	}
+]

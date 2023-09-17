@@ -1,0 +1,207 @@
+[{
+		"type": "ter_furn_transform",
+		"id": "cocoon_normal_to_digested",
+		"furniture": [{
+			"result": "f_null",
+			"valid_furniture": ["f_cocoon_full"]
+		}]
+	},
+	{
+		"type": "ter_furn_transform",
+		"id": "cocoon_tiny_to_digested",
+		"furniture": [{
+			"result": "f_null",
+			"valid_furniture": ["f_cocoon_full_tiny"]
+		}]
+	},
+	{
+		"type": "ter_furn_transform",
+		"id": "cocoon_small_to_digested",
+		"furniture": [{
+			"result": "f_null",
+			"valid_furniture": ["f_cocoon_full_small"]
+		}]
+	},
+	{
+		"type": "ter_furn_transform",
+		"id": "cocoon_large_to_digested",
+		"furniture": [{
+			"result": "f_null",
+			"valid_furniture": ["f_cocoon_full_large"]
+		}]
+	},
+	{
+		"type": "ter_furn_transform",
+		"id": "cocoon_huge_to_digested",
+		"furniture": [{
+			"result": "f_null",
+			"valid_furniture": ["f_cocoon_full_huge"]
+		}]
+	},
+
+	{
+		"type": "effect_on_condition",
+		"id": "ED_eoc_inspect_cocoon_empty",
+		"condition": {
+			"u_has_trait": "FANGS_SPIDER"
+		},
+		"effect": [{
+			"u_message": "Your mouth waters as you get an inhuman urge to wrap some prey in this cocoon."
+		}],
+		"false_effect": [{
+				"u_message": "You're unable to do anything with the cocoon."
+			}
+
+		]
+	},
+
+	{
+		"type": "effect_on_condition",
+		"id": "ED_eoc_inspect_cocoon",
+		"condition": {
+			"u_has_trait": "FANGS_SPIDER"
+		},
+		"effect": [{
+				"u_assign_activity": "ACT_GENERIC_EOC",
+				"duration": "5 minutes"
+			},
+			{
+				"u_transform_radius": 1,
+				"ter_furn_transform": "cocoon_normal_to_digested"
+			},
+			{
+				"u_message": "You spend a while repeatedly driving your fangs deep into the cocoon, injecting it with digestive enzymes. Soon enough, it begins to deform."
+			},
+			{
+				"u_spawn_item": "ED_enzyme_shake",
+				"count": 240,
+				"container": "ED_bag_cocoon"
+			}
+		],
+		"false_effect": [{
+				"u_message": "You're unable to do anything with the cocoon."
+			}
+
+		]
+	},
+
+	{
+		"type": "effect_on_condition",
+		"id": "ED_eoc_inspect_cocoon_tiny",
+		"condition": {
+			"u_has_trait": "FANGS_SPIDER"
+		},
+		"effect": [{
+				"u_assign_activity": "ACT_GENERIC_EOC",
+				"duration": "20 seconds"
+			},
+			{
+				"u_transform_radius": 1,
+				"ter_furn_transform": "cocoon_tiny_to_digested"
+			},
+			{
+				"u_message": "You give the cocoon a single quick bite, and a squirt of digestive enzymes. In a matter of seconds, it begins to soften in your grip."
+			},
+			{
+				"u_spawn_item": "ED_enzyme_shake",
+				"count": 4,
+				"container": "ED_bag_cocoon_tiny"
+			}
+		],
+		"false_effect": [{
+				"u_message": "You're unable to do anything with the cocoon."
+			}
+
+		]
+	},
+	{
+		"type": "effect_on_condition",
+		"id": "ED_eoc_inspect_cocoon_small",
+		"condition": {
+			"u_has_trait": "FANGS_SPIDER"
+		},
+		"effect": [{
+				"u_assign_activity": "ACT_GENERIC_EOC",
+				"duration": "1 minutes"
+			},
+			{
+				"u_transform_radius": 1,
+				"ter_furn_transform": "cocoon_small_to_digested"
+			},
+			{
+				"u_message": "You quickly bite deep into the cocoon, injecting it with digestive enzymes. It soon begins to lose structure beneath your touch."
+			},
+			{
+				"u_spawn_item": "ED_enzyme_shake",
+				"count": 80,
+				"container": "ED_bag_cocoon_small"
+			}
+		],
+		"false_effect": [{
+				"u_message": "You're unable to do anything with the cocoon."
+			}
+
+		]
+	},
+
+
+	{
+		"type": "effect_on_condition",
+		"id": "ED_eoc_inspect_cocoon_large",
+		"condition": {
+			"u_has_trait": "FANGS_SPIDER"
+		},
+		"effect": [{
+				"u_assign_activity": "ACT_GENERIC_EOC",
+				"duration": "20 minutes"
+			},
+			{
+				"u_transform_radius": 1,
+				"ter_furn_transform": "cocoon_large_to_digested"
+			},
+			{
+				"u_message": "You work your way back and forth along your prey, driving your fangs into the cocoon then in turn massaging it as the flesh within begins to break down. It takes a while, but eventually it has fully deformed."
+			},
+			{
+				"u_spawn_item": "ED_enzyme_shake",
+				"count": 800,
+				"container": "ED_bag_cocoon_large"
+			}
+		],
+		"false_effect": [{
+				"u_message": "You're unable to do anything with the cocoon."
+			}
+
+		]
+	},
+
+	{
+		"type": "effect_on_condition",
+		"id": "ED_eoc_inspect_cocoon_huge",
+		"condition": {
+			"u_has_trait": "FANGS_SPIDER"
+		},
+		"effect": [{
+				"u_assign_activity": "ACT_GENERIC_EOC",
+				"duration": "60 minutes"
+			},
+			{
+				"u_transform_radius": 1,
+				"ter_furn_transform": "cocoon_huge_to_digested"
+			},
+			{
+				"u_message": "You work your way back and forth along your prey, driving your fangs into the cocoon then in turn massaging it as the flesh within begins to break down. You have to pass back and forth several times before you're done."
+			},
+			{
+				"u_spawn_item": "ED_enzyme_shake",
+				"count": 1600,
+				"container": "ED_bag_cocoon_huge"
+			}
+		],
+		"false_effect": [{
+				"u_message": "You're unable to do anything with the cocoon."
+			}
+
+		]
+	}
+]

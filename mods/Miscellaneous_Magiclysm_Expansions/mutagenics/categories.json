@@ -1,0 +1,22 @@
+[
+  {
+    "type": "mutation_category",
+    "id": "ORC",
+    "name": "Orc",
+    "threshold_mut": "THRESH_ORC",
+    "mutagen_message": "You feel powerful.",
+    "memorial_message": "Understood martial prowess.",
+    "vitamin": "mutagen_orc",
+    "base_removal_chance": 20
+  },
+  {
+    "type": "mutation_category",
+    "id": "MAGIC",
+    "name": "Attuned Mage",
+    "threshold_mut": "THRESH_MAGIC",
+    "mutagen_message": "Mana falls upon you.",
+    "memorial_message": "Attuned the arcane.",
+    "vitamin": "magicmutagen",
+    "base_removal_chance": 20
+  }
+]

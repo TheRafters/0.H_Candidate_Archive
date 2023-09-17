@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "respawn",
+    "name": "<color_green>Respawn</color>",
+    "authors": [ "Cobweb" ],
+    "maintainers": [ "PlayerUnknown" ],
+    "description": "Craft single use respawn pills and a reusable respawn beacon.  This mod is standalone, to use with any other mod that changes 'EOC_youdied' (such as Sky Island) you will need a compatibility mod.  A compatibility patch for Sky Island is included and should appear in your mod list.  Works on 0.G Experimental version cdda-android-x64-2023-07-27-0727.  ",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]

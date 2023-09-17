@@ -1,0 +1,189 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "respawn_beacon",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_TOOLS",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 4 ], [ "fabrication", 6 ] ],
+    "difficulty": 6,
+    "time": "8 h 45 m",
+    "decomp_learn": 5,
+    "book_learn": [ [ "textbook_electronics", 7 ], [ "recipe_lab_elec", 6 ] ],
+    "using": [ [ "soldering_standard", 10 ], [ "surface_heat", 20 ], [ "plastic_molding", 3 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "SAW_M", "level": 1 }, { "id": "CUT", "level": 2 } ],
+    "proficiencies": [
+      { "proficiency": "prof_plasticworking", "time_multiplier": 1.5 },
+      { "proficiency": "prof_elec_soldering" },
+      { "proficiency": "prof_elec_semiconductors" }
+    ],
+    "components": [
+      [ [ "superglue", 4 ], [ "bone_glue", 4 ] ],
+      [ [ "antenna", 2 ] ],
+      [ [ "motor_micro", 2 ] ],
+      [ [ "amplifier", 4 ] ],
+      [ [ "receiver", 1 ] ],
+      [ [ "plastic_chunk", 12 ] ],
+      [ [ "scrap_aluminum", 4 ] ],
+      [ [ "e_scrap", 2 ] ],
+      [ [ "cable", 8 ] ],
+      [ [ "spring", 2 ] ],
+      [ [ "power_supply", 2 ] ],
+      [ [ "vortex_stone", 2 ] ],
+      [ [ "escape_stone", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "respawn_pill",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "chemistry",
+    "difficulty": 4,
+    "time": "3 h",
+    "batch_time_factors": [ 99, 2 ],
+    "book_learn": [ [ "adv_chemistry", 5 ], [ "recipe_labchem", 4 ] ],
+    "charges": 3,
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_inorganic_chemistry" },
+      { "proficiency": "prof_pharmaceutical" }
+    ],
+    "qualities": [ { "id": "CHEM", "level": 2 }, { "id": "SEPARATE", "level": 1 }, { "id": "ANALYSIS", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 60, "LIST" ] ], [ [ "cotton_patchwork", -1 ], [ "felt_patch", -1 ] ] ],
+    "components": [
+      [ [ "feces_bird", 17 ] ],
+      [ [ "formic_acid", 23 ] ],
+      [ [ "ammonia_liquid", 1 ] ],
+      [ [ "chem_sulphuric_acid", 2 ] ],
+      [ [ "chem_methanol", 97 ] ],
+      [ [ "slime_scrap", 5 ] ],
+      [ [ "lye_powder", 2 ], [ "chem_potassium_hydroxide", 10 ], [ "lye", 1 ], [ "lye_potassium", 1 ] ],
+      [ [ "chem_muriatic_acid", 1 ] ],
+      [ [ "vortex_stone", 1 ] ],
+      [ [ "paper", 2 ] ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "SOUL_BEACON",
+    "name": "Soul Beacon",
+    "points": 0,
+    "description": "You feel as if you know where you'll go when you die.  ",
+    "flags": [ "NON_THRESH" ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_healextras_custom",
+    "//": "Clears up various conditions beyond just your hp.  Should cover most diseases and infections, prevent extreme thirst and starvation, wipe pain, and even cure a few edge cases like being covered in acid.",
+    "effect": [
+      { "math": [ "u_val('stored_kcal')", "=", "max( u_val('stored_kcal'), 9000)" ] },
+      { "math": [ "u_val('thirst')", "=", "min( u_val('thirst'), 800)" ] },
+      { "math": [ "u_val('vitamin', 'name: redcells')", "=", "0" ] },
+      { "math": [ "u_val('vitamin', 'name: bad_food')", "=", "0" ] },
+      { "math": [ "u_val('vitamin', 'name: blood')", "=", "0" ] },
+      { "math": [ "u_val('vitamin', 'name: instability')", "=", "0" ] },
+      { "math": [ "u_pain()", "=", "0" ] },
+      { "math": [ "u_val('rad')", "=", "0" ] },
+      { "u_add_effect": "cureall", "duration": "1 s", "intensity": 1 },
+      { "u_add_effect": "panacea", "duration": "30 s", "intensity": 1 },
+      { "u_lose_effect": "corroding" },
+      { "u_lose_effect": "onfire" },
+      { "u_lose_effect": "dazed" },
+      { "u_lose_effect": "stunned" },
+      { "u_lose_effect": "venom_blind" },
+      { "u_lose_effect": "formication" },
+      { "u_lose_effect": "blisters" },
+      { "u_lose_effect": "frostbite" },
+      { "u_lose_effect": "frostbite_recovery" },
+      { "u_lose_effect": "wet" },
+      { "u_lose_effect": "slimed" },
+      { "u_lose_effect": "migo_atmosphere" },
+      { "u_lose_effect": "fetid_goop" },
+      { "u_lose_effect": "sap" },
+      { "u_lose_effect": "nausea" },
+      { "u_lose_effect": "bleed" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_healall_noreq",
+    "//": "Just a simple EOC to bring all your HP to full, while not addressing most other health factors.",
+    "effect": [
+      {
+        "u_message": "Your body mends itself in the blink of an eye.  Underlying health issues may persist, but your structural integrity is restored."
+      },
+      { "u_set_hp": 999, "only_increase": true },
+      { "run_eocs": [ "EOC_healextras_custom" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_return_OM_beacon",
+    "//": "Teleports you to previously set beacon and heals you. Removes SOUL_BEACON trait.",
+    "effect": [
+      { "u_teleport": { "global_val": "OM_respawn_beacon" }, "force": true },
+      { "run_eocs": [ "EOC_healall_noreq" ] },
+      { "queue_eocs": "EOC_healextras_custom", "time_in_future": "1 s" },
+      { "u_lose_trait": "SOUL_BEACON" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_respawnpill",
+    "//": "Teleports to previously set beacon and heals up enough to not die, called by the escape pill.",
+    "effect": [ 
+      { "u_location_variable": { "global_val": "OM_respawn_beacon" } },
+      { "u_add_trait": "SOUL_BEACON" },
+      {
+        "u_message": "Your respawn point is set.  You will return here upon death, fully healed and retaining all items."
+      } ]
+  },
+  {
+    "id": "respawn_pill",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "consumption_effect_on_conditions": [ "EOC_respawnpill" ],
+    "name": { "str": "respawn pill" },
+    "description": "Eat to set a respawn point and marks your soul. 1 respawn per pill.",
+    "weight": "15 g",
+    "volume": "5 ml",
+    "looks_like": "panacea",
+    "material": [ "plastic" ],
+    "symbol": "!",
+    "flags": [ "TRADER_AVOID", "UNBREAKABLE" ],
+    "freezing_point": -1000,
+    "spoils_in": "10 days",
+    "color": "red"
+  },
+  {
+    "id": "respawn_beacon",
+    "type": "TOOL",
+    "name": { "str": "reusable respawn beacon" },
+    "use_action": { "type": "effect_on_conditions", "description": "Designate your current location as your respawn point.  Prepares your soul for the teleportation if necessary.  ", "effect_on_conditions": [ "EOC_respawnpill" ] },
+    "description": "Activate to set respawn point, repeatedly. 1 respawn per activation.",
+    "weight": "15 g",
+    "volume": "5 ml",
+    "looks_like": "fishing_hook_basic",
+    "material": [ "alien_resin" ],
+    "symbol": "!",
+    "flags": [ "TRADER_AVOID", "UNBREAKABLE" ],
+    "color": "red"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_youdied",
+    "//": "This EOC is called when the player dies.  Before anything else happens, it checks if the player has an escape pill.  If so, it warps you to your respawn point safe and sound, and all your stuff comes with you.  Otherwise, it moves on to other death checks below.",
+    "eoc_type": "PREVENT_DEATH",
+    "condition": { "u_has_trait": "SOUL_BEACON" },
+    "effect": [
+      { "run_eocs": [ "EOC_return_OM_beacon", "EOC_healall_noreq" ] },
+      {
+        "u_message": "Moments before your last breath leaves your body, your soul beacon jolts with a brilliant energy.  Its thin filament immediately snaps tight, reeling you back faster than you can process what it was that just saved your life.  The beacon is spent, but you arrive alive and well.",
+        "popup": true
+      }
+    ]
+  }
+]

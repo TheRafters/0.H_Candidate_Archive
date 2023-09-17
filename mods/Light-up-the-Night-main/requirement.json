@@ -1,0 +1,8 @@
+[
+  {
+    "id": "mining_tools",
+    "type": "requirement",
+    "//": "Compatible with legacy flag TOOL_WRENCH or when installing wheels",
+    "tools": [ [ [ "pickaxe", -1 ], [ "bronze_pickaxe", -1 ], [ "jackhammer", 150 ], [ "elec_jackhammer", 1980 ] ] ]
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "mutation",
+    "id": "perk_RESPAWNER",
+    "name": { "str": "Respawner" },
+    "points": 0,
+    "description": "Activate to mark your current location as your next respawn point.  ",
+    "category": [ "perk" ],
+    "active": true,
+    "activated_eocs": [ "EOC_respawnpill" ]
+  }
+]

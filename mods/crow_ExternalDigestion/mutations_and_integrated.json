@@ -1,0 +1,48 @@
+[
+
+	{
+		"type": "tool_quality",
+		"id": "STRONG_WEB_WEAVING",
+		"name": {
+			"str": "precise web weaving"
+		}
+	},
+
+	{
+		"id": "integrated_spinerette_spider",
+		"type": "ARMOR",
+		"category": "armor",
+		"name": {
+			"str_sp": "spinerrettes"
+		},
+		"description": "Your web-weaving organs are fully developed, allowing for fine control.",
+		"weight": "800 g",
+		"volume": "500 ml",
+		"price": 0,
+		"price_postapoc": 0,
+		"material": ["sclerotin"],
+		"symbol": ";",
+		"color": "brown",
+
+		"qualities": [
+			["STRONG_WEB_WEAVING", 1]
+		],
+		"flags": [
+			"INTEGRATED",
+			"UNBREAKABLE",
+			"PERSONAL",
+			"WATER_FRIENDLY",
+			"PADDED"
+		]
+	},
+
+	{
+		"type": "mutation",
+		"id": "WEB_WEAVER",
+		"name": {
+			"str": "Web Weaver"
+		},
+		"copy-from": "WEB_WEAVER",
+		"integrated_armor": ["integrated_spinerette_spider"]
+	}
+]

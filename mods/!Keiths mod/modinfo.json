@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "magiclysm_extras",
+    "name": "Another Day, Another Dollar",
+    "authors": [ "KeefTeefa" ],
+    "maintainers": [ "KeefTeefa" ],
+    "description": "Think outside the box, reach out to touch base. Hit the ground running then circle back to put a pin in that bottom line. Just remember: Money makes the world go round.",
+    "category": "content",
+    "dependencies": [ "dda", "magiclysm", "new stuff" ]
+  }
+]

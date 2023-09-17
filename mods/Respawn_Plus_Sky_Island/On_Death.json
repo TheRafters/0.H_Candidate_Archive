@@ -1,0 +1,32 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_youdied",
+    "//": "This EOC is called when the player dies.  Before anything else happens, it checks if the player has an escape pill.  If so, it warps you to your respawn point safe and sound, and all your stuff comes with you.  Otherwise, it moves on to other death checks below.",
+    "eoc_type": "PREVENT_DEATH",
+    "condition": { "u_has_trait": "SOUL_BEACON" },
+    "effect": [
+      { "run_eocs": [ "EOC_return_OM_beacon", "EOC_healall_noreq" ] },
+      {
+        "u_message": "Moments before your last breath leaves your body, your soul beacon jolts with a brilliant energy.  Its thin filament immediately snaps tight, reeling you back faster than you can process what it was that just saved your life.  The beacon is spent, but you arrive alive and well.",
+        "popup": true
+      }
+    ],
+    "false_effect": [ { "run_eocs": [ "EOC_death_with_homewardmote" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_death_with_homewardmote",
+    "//": "This EOC is called when the player dies.  Before anything else happens, it checks if the player has a lifeshield mote.  If so, it warps you home safe and sound, counting as neither a loss nor a victory, and all your stuff comes with you.  Otherwise, it moves on to other death checks below.",
+    "eoc_type": "PREVENT_DEATH",
+    "condition": { "u_has_item": "warphome" },
+    "effect": [
+      { "run_eocs": [ "EOC_homewardmote", "EOC_healall" ] },
+      {
+        "u_message": "Moments before your last breath leaves your body, the mote of warp essence on you jolts with a brilliant energy.  Its thin filament immediately snaps tight, reeling you home faster than you can process what it was that just saved your life.  The mote is spent, but you arrive home alive and well.",
+        "popup": true
+      }
+    ],
+    "false_effect": [ { "run_eocs": [ "EOC_deathconfirmed" ] } ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+    "type": "terrain",
+    "id": "t_open_air_rooved_outside",
+    "name": "open air",
+    "description": "An area of open air.",
+    "symbol": " ",
+    "color": "i_cyan",
+    "move_cost": 2,
+    "roof": "t_flat_roof",
+    "trap": "tr_ledge",
+    "flags": [ "TRANSPARENT", "NO_FLOOR", "ROAD", "RAMP_DOWN" ],
+    "examine_action": "ledge"
+  },
+  {
+    "id": "t_open_air_rooved",
+    "type": "terrain",
+    "name": "open air",
+    "description": "An area of open air.",
+    "symbol": " ",
+    "color": "i_cyan",
+    "move_cost": 2,
+    "trap": "tr_ledge",
+    "roof": "t_flat_roof",
+    "examine_action": "ledge",
+    "flags": [ "TRANSPARENT", "NO_FLOOR", "INDOORS", "ROAD", "RAMP_DOWN" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_open_air",
+    "name": "open air",
+    "description": "An area of open air.",
+    "symbol": " ",
+    "color": "i_cyan",
+    "move_cost": 2,
+    "trap": "tr_ledge",
+    "flags": [ "TRANSPARENT", "NO_FLOOR", "ROAD", "RAMP_DOWN" ],
+    "examine_action": "ledge"
+  },

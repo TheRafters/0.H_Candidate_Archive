@@ -1,0 +1,262 @@
+[
+  {
+    "id": "chitin_insert",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat reduce encumberance</good>."
+  },
+  {
+    "id": "chitin_insert_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat reduce encumberance</good>."
+  },
+  {
+    "id": "acidchitin_insert",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat reduce encumberance</good>."
+  },
+  {
+    "id": "acidchitin_insert_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat reduce encumberance</good>."
+  },
+  {
+    "id": "lesser_featherweight_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat reduce encumberance</good>."
+  },
+  {
+    "id": "lesser_featherweight_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat reduce encumberance</good>."
+  },
+  {
+    "id": "lesser_corrosionward_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase resistance to acid</good>."
+  },
+  {
+    "id": "lesser_corrosionward_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase resistance to acid</good>."
+  },
+  {
+    "id": "lesser_refreshingchill_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat reduce its warmth</good>. Best used for the height of summer."
+  },
+  {
+    "id": "lesser_refreshingchill_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat reduce its warmth</good>. Best used for the height of summer."
+  },
+  {
+    "id": "lesser_soothingwarmth_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase its warmth</good>. Best used for the depths of winter."
+  },
+  {
+    "id": "lesser_soothingwarmth_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase its warmth</good>. Best used for the depths of winter."
+  },
+  {
+    "id": "lesser_flameward_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase its resistance to fire</good>."
+  },
+  {
+    "id": "lesser_flameward_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase its resistance to fire</good>."
+  },
+  {
+    "id": "lesser_bladeturn_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase its resistance to cutting and slashing</good>."
+  },
+  {
+    "id": "lesser_bladeturn_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase its resistance to cutting and slashing</good>."
+  },
+  {
+    "id": "lesser_impactshield_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase its resistance to bludgeoning and impacts</good>."
+  },
+  {
+    "id": "lesser_impactshield_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase its resistance to bludgeoning and impacts</good>."
+  },
+  {
+    "id": "lesser_bulletshield_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase its resistance to bullets</good>."
+  },
+  {
+    "id": "lesser_bulletshield_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>somewhat increase its resistance to bullets</good>."
+  },
+  {
+    "id": "featherweight_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>reduce encumberance</good>."
+  },
+  {
+    "id": "featherweight_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>reduce encumberance</good>."
+  },
+  {
+    "id": "corrosionward_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase resistance to acid</good>."
+  },
+  {
+    "id": "corrosionward_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase resistance to acid</good>."
+  },
+  {
+    "id": "refreshingchill_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>reduce its warmth</good>. Best used for the height of summer."
+  },
+  {
+    "id": "refreshingchill_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>reduce its warmth</good>. Best used for the height of summer."
+  },
+  {
+    "id": "soothingwarmth_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its warmth</good>. Best used for the depths of winter."
+  },
+  {
+    "id": "soothingwarmth_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its warmth</good>. Best used for the depths of winter."
+  },
+  {
+    "id": "flameward_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to fire</good>."
+  },
+  {
+    "id": "flameward_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to fire</good>."
+  },
+  {
+    "id": "bladeturn_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to cutting and slashing</good>."
+  },
+  {
+    "id": "bladeturn_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to cutting and slashing</good>."
+  },
+  {
+    "id": "impactshield_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to bludgeoning and impacts</good>."
+  },
+  {
+    "id": "impactshield_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to bludgeoning and impacts</good>."
+  },
+  {
+    "id": "bulletshield_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to bullets</good>."
+  },
+  {
+    "id": "bulletshield_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to bullets</good>."
+  },
+  {
+    "id": "greater_featherweight_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>greatly reduce encumberance</good>."
+  },
+  {
+    "id": "greater_featherweight_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>greatly reduce encumberance</good>."
+  },
+  {
+    "id": "greater_corrosionward_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>greatly increase resistance to acid</good>."
+  },
+  {
+    "id": "greater_corrosionward_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>greatly increase resistance to acid</good>."
+  },
+  {
+    "id": "greater_refreshingchill_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>greatly reduce its warmth</good>. Best used for the height of summer."
+  },
+  {
+    "id": "greater_refreshingchill_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>greatly reduce its warmth</good>. Best used for the height of summer."
+  },
+  {
+    "id": "greater_soothingwarmth_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>greatly increase its warmth</good>. Best used for the depths of winter."
+  },
+  {
+    "id": "greater_soothingwarmth_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>greatly increase its warmth</good>. Best used for the depths of winter."
+  },
+  {
+    "id": "greater_flameward_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>greatly increase its resistance to fire</good>."
+  },
+  {
+    "id": "greater_flameward_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>greatly increase its resistance to fire</good>."
+  },
+  {
+    "id": "greater_bladeturn_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to cutting and slashing</good>."
+  },
+  {
+    "id": "greater_bladeturn_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to cutting and slashing</good>."
+  },
+  {
+    "id": "greater_impactshield_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to bludgeoning and impacts</good>."
+  },
+  {
+    "id": "greater_impactshield_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to bludgeoning and impacts</good>."
+  },
+  {
+    "id": "greater_bulletshield_enchantment",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to bullets</good>."
+  },
+  {
+    "id": "greater_bulletshield_enchantment_thick",
+    "type": "json_flag",
+    "info": "This gear has been enchanted to <good>increase its resistance to bullets</good>."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "Craft_CBMs",
+    "name": "Craftable CBMs",
+    "authors": [ "PsyXypher" ],
+    "maintainers": [ "PsyXypher" ],
+    "description": "Allows players to craft and disassemble CBMs.",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]

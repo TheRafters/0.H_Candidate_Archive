@@ -1,0 +1,12 @@
+[
+  {
+    "id": "integrated_hand_pinchedfingers",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "callused fingers" },
+    "description": "You've dealt so many blows your hands are rough with calluses.  The tips of your fingers can pinch firmly enough to pry nails or turn small bolts.",
+    "copy-from": "integrated_hand_openpalm",
+    "qualities": [ [ "PRY", 3 ], [ "PRYING_NAIL", 1 ], [ "WRENCH", 2 ], [ "WRENCH_FINE", 1 ] ],
+    "melee_damage": { "stab": 5 }
+  }
+]
