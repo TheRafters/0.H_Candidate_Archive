@@ -1,0 +1,35 @@
+[
+#### `bash`
+
+(Optional) Defines whether the object can be bashed and if so, what happens. See "map_bash_info".
+
+#### `deconstruct`
+
+(Optional) Defines whether the object can be deconstructed and if so, what the results shall be. See "map_deconstruct_info".
+
+#### `map_bash_info`
+
+Defines the various things that happen when the player or something else bashes terrain or furniture.
+
+```C++
+{
+    "str_min": 80,
+    "str_max": 180,
+    "str_min_blocked": 15,
+    "str_max_blocked": 100,
+    "str_min_supported": 15,
+    "str_max_supported": 100,
+    "sound": "crunch!",
+    "sound_vol": 2,
+    "sound_fail": "whack!",
+    "sound_fail_vol": 2,
+    "ter_set": "t_dirt",
+    "furn_set": "f_rubble",
+    "explosive": 1,
+    "collapse_radius": 2,
+    "destroy_only": true,
+    "bash_below": true,
+    "tent_centers": ["f_groundsheet", "f_fema_groundsheet", "f_skin_groundsheet"],
+    "items": "bashed_item_result_group"
+}
+]

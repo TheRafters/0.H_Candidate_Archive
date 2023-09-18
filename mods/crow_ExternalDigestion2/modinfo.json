@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "crow_SpiderDigestion2",
+    "name": "Arachnid Digestion Variant 2",
+    "authors": [ "Crow" ],
+    "description": "Modifications of the Arachnid post-threshold mutations to perform external digestion of prey. Why the fuck am I doing this. Variant 2: using recipe crafting rather than construction.",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]

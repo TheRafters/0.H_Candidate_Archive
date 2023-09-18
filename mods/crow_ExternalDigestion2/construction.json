@@ -1,0 +1,48 @@
+[{
+		"type": "construction_group",
+		"id": "ED_structure_webbing",
+		"name": "Weave Structural Webbing"
+	},
+	{
+		"type": "terrain",
+		"id": "t_web_wall",
+		"name": "webbing wall",
+		"looks_like": "fd_web",
+		"description": "A sturdy webbing wall, with enough cross-support to resist low-level attacks.",
+		"symbol": "*",
+		"bgcolor": "white",
+		"move_cost": 0,
+		"coverage": 100,
+		"flags": ["FLAMMABLE", "ALLOW_FIELD_EFFECT", "NOITEM", "BLOCK_WIND", "AUTO_WALL_SYMBOL"],
+		"bash": {
+			"str_min": 10,
+			"str_max": 20,
+			"sound_vol": 2,
+			"sound_fail_vol": 2,
+			"sound": "hsh!",
+			"sound_fail": "tss!",
+			"ter_set": "t_null"
+		}
+	},
+	{
+		"type": "terrain",
+		"id": "t_web_wall_thin",
+		"name": "thin web wall",
+		"looks_like": "t_web_wall",
+		"description": "A thin webbing wall, dense enough to fully block movement but still easy to see through. Rather fragile.",
+		"symbol": "*",
+		"bgcolor": "white",
+		"move_cost": 0,
+		"coverage": 80,
+		"flags": ["FLAMMABLE", "ALLOW_FIELD_EFFECT", "NOITEM", "AUTO_WALL_SYMBOL", "TRANSPARENT"],
+		"bash": {
+			"str_min": 5,
+			"str_max": 10,
+			"sound_vol": 2,
+			"sound_fail_vol": 2,
+			"sound": "hsh!",
+			"sound_fail": "tss!",
+			"ter_set": "t_null"
+		}
+	}
+]

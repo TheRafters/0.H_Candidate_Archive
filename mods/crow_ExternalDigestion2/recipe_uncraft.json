@@ -1,0 +1,56 @@
+[
+  {
+    "result": "ED_bag_cocoon_human",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "time": "10 s",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "components": [ [ [ "skull_human", 1 ] ], [ [ "bone_human", 6 ] ] ]
+  },
+  {
+    "result": "ED_bag_cocoon",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "time": "10 s",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "components": [ [ [ "bone", 8 ] ] ]
+  },
+  {
+    "result": "ED_bag_cocoon_tiny",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "time": "10 s",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "components": [ [ [ "bone", 1 ] ] ]
+  },
+  {
+    "result": "ED_bag_cocoon_small",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "time": "10 s",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "components": [ [ [ "bone", 4 ] ] ]
+  },
+  {
+    "result": "ED_bag_cocoon_large",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "time": "10 s",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "components": [ [ [ "bone", 18 ] ] ]
+  },
+  {
+    "result": "ED_bag_cocoon_huge",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "time": "10 s",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "components": [ [ [ "bone", 40 ] ] ]
+  }
+]

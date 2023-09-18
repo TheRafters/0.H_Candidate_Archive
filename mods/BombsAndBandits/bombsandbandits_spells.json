@@ -212,6 +212,7 @@
     "name": "Bandits - Template: Firestorm",
     "valid_targets": ["self", "ally", "hostile", "ground"],
     "description": "Template: BOOOM!! - You shouldn't see this...",
+    "flags": [ "SILENT" ],
     "effect": "attack",
     "field_id": "fd_fire",
     "field_chance": 2,

@@ -1,0 +1,93 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "ED_corpse_cocoon",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "time": "8 m",
+    "qualities": [ [ { "id": "STRONG_WEB_WEAVING", "level": 1 } ] ],
+    "components": [ [ [ "corpse", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": true
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "ED_corpse_cocoon_human",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "time": "8 m",
+    "qualities": [ [ { "id": "STRONG_WEB_WEAVING", "level": 1 } ] ],
+    "components": [ [ [ "corpse", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": true
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "ED_corpse_cocoon_tiny",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "time": "30 s",
+    "qualities": [ [ { "id": "STRONG_WEB_WEAVING", "level": 1 } ] ],
+    "components": [ [ [ "corpse", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": true
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "ED_corpse_cocoon_small",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "time": "1 m",
+    "qualities": [ [ { "id": "STRONG_WEB_WEAVING", "level": 1 } ] ],
+    "components": [ [ [ "corpse", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": true
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "ED_corpse_cocoon_large",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "time": "20 m",
+    "qualities": [ [ { "id": "STRONG_WEB_WEAVING", "level": 1 } ] ],
+    "components": [ [ [ "corpse", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": true
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "ED_corpse_cocoon_huge",
+    "category": "CC_*",
+    "subcategory": "CSC_*_NESTED",
+    "time": "60 m",
+    "qualities": [ [ { "id": "STRONG_WEB_WEAVING", "level": 1 } ] ],
+    "components": [ [ [ "corpse", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": true
+  },
+  {
+    "type": "nested_category",
+    "id": "nested_cocooning",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "name": "cocooned corpses",
+    "description": "Recipes for webbing up your prey.",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "nested_category_data": [
+      "ED_corpse_cocoon",
+      "ED_corpse_cocoon_human",
+      "ED_corpse_cocoon_tiny",
+      "ED_corpse_cocoon_small",
+      "ED_corpse_cocoon_large",
+      "ED_corpse_cocoon_huge"
+    ]
+  }
+]

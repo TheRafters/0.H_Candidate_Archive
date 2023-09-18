@@ -1,0 +1,211 @@
+[
+  {
+    "id": "ED_corpse_cocoon",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "wrapped cocoon - medium" },
+    "looks_like": "bag_plastic",
+    "description": "Spider silk, woven tight around a body around the size of a desk, or a person. Should preserve the contents fairly well, in a gross kind of way.",
+    "weight": "80 kg",
+    "volume": "60 L",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "cotton", "flesh" ],
+    "symbol": "O",
+    "color": "white",
+    "flags": [ "TRADER_AVOID", "SINGLE_USE" ],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Feed",
+      "effect_on_conditions": [
+        {
+          "id": "ED_eoc_inspect_cocoon",
+          "condition": { "u_has_trait": "FANGS_SPIDER" },
+          "effect": [
+            { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "10 seconds" },
+            {
+              "u_message": "You spend a while repeatedly driving your fangs deep into the cocoon, injecting it with digestive enzymes. Soon enough, it begins to deform."
+            },
+            {
+              "u_spawn_item": "ED_enzyme_shake",
+              "count": 240,
+              "container": "ED_bag_cocoon",
+              "suppress_message": true
+            }
+          ],
+          "false_effect": [ { "u_message": "You're unable to do anything with the cocoon, and discard it." } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ED_corpse_cocoon_human",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "wrapped cocoon - human" },
+    "copy-from": "ED_corpse_cocoon",
+    "looks_like": "ED_bag_cocoon",
+    "description": "Spider silk, woven tightly around a body of the size and shape of a human being.",
+    "weight": "80 kg",
+    "volume": "60 L",
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Feed",
+      "effect_on_conditions": [
+        {
+          "id": "ED_eoc_inspect_cocoon_human",
+          "condition": { "u_has_trait": "FANGS_SPIDER" },
+          "effect": [
+            { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "10 seconds" },
+            {
+              "u_message": "You spend a while repeatedly driving your fangs deep into the cocoon, injecting it with digestive enzymes. Soon enough, it begins to deform, leaving no trace of the person it once was."
+            },
+            {
+              "u_spawn_item": "ED_enzyme_shake",
+              "count": 240,
+              "container": "ED_bag_cocoon_human",
+              "suppress_message": true
+            }
+          ],
+          "false_effect": [ { "u_message": "You're unable to do anything with the cocoon, and discard it." } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ED_corpse_cocoon_tiny",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "wrapped cocoon - tiny" },
+    "copy-from": "ED_corpse_cocoon",
+    "looks_like": "ED_bag_cocoon",
+    "description": "Spider silk, woven tightly around a small body the size of a football. Should preserve the contents, for what little it's worth.",
+    "weight": "2 kg",
+    "volume": "1 L",
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Feed",
+      "effect_on_conditions": [
+        {
+          "id": "ED_eoc_inspect_cocoon_tiny",
+          "condition": { "u_has_trait": "FANGS_SPIDER" },
+          "effect": [
+            { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "5 seconds" },
+            {
+              "u_message": "You give the cocoon a single quick bite, and a squirt of digestive enzymes. In a matter of seconds, it begins to soften in your grip."
+            },
+            {
+              "u_spawn_item": "ED_enzyme_shake",
+              "count": 4,
+              "container": "ED_bag_cocoon_tiny",
+              "suppress_message": true
+            }
+          ],
+          "false_effect": [ { "u_message": "You're unable to do anything with the cocoon, and discard it." } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ED_corpse_cocoon_small",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "wrapped cocoon - small" },
+    "copy-from": "ED_corpse_cocoon",
+    "looks_like": "ED_bag_cocoon",
+    "description": "A small, sealed, watertight wrapping of spider silk around a body the size of a large dog, or a child. Whatever's inside should stay... 'fresh'.",
+    "weight": "30 kg",
+    "volume": "20 L",
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Feed",
+      "effect_on_conditions": [
+        {
+          "id": "ED_eoc_inspect_cocoon_small",
+          "condition": { "u_has_trait": "FANGS_SPIDER" },
+          "effect": [
+            { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "5 seconds" },
+            {
+              "u_message": "You quickly bite deep into the cocoon, injecting it with digestive enzymes. It soon begins to lose structure beneath your touch."
+            },
+            {
+              "u_spawn_item": "ED_enzyme_shake",
+              "count": 80,
+              "container": "ED_bag_cocoon_small",
+              "suppress_message": true
+            }
+          ],
+          "false_effect": [ { "u_message": "You're unable to do anything with the cocoon, and discard it." } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ED_corpse_cocoon_large",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "wrapped cocoon - large" },
+    "copy-from": "ED_corpse_cocoon",
+    "looks_like": "ED_bag_cocoon",
+    "description": "A large cocoon of spidersilk, around a body roughly the size of a bear.",
+    "weight": "300 kg",
+    "volume": "200 L",
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Feed",
+      "effect_on_conditions": [
+        {
+          "id": "ED_eoc_inspect_cocoon_large",
+          "condition": { "u_has_trait": "FANGS_SPIDER" },
+          "effect": [
+            { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "20 seconds" },
+            {
+              "u_message": "You work your way back and forth along your prey, driving your fangs into the cocoon then in turn massaging it as the flesh within begins to break down. It takes a while, but eventually it has fully deformed."
+            },
+            {
+              "u_spawn_item": "ED_enzyme_shake",
+              "count": 800,
+              "container": "ED_bag_cocoon_large",
+              "suppress_message": true
+            }
+          ],
+          "false_effect": [ { "u_message": "You're unable to do anything with the cocoon, and discard it." } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ED_corpse_cocoon_huge",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "wrapped cocoon - huge" },
+    "copy-from": "ED_corpse_cocoon",
+    "looks_like": "ED_bag_cocoon",
+    "description": "A huge watertight cocoon of spidersilk. A corpse roughly the size of a cow should stay moderately fresh within.",
+    "weight": "600 kg",
+    "volume": "400 L",
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Feed",
+      "effect_on_conditions": [
+        {
+          "id": "ED_eoc_inspect_cocoon_huge",
+          "condition": { "u_has_trait": "FANGS_SPIDER" },
+          "effect": [
+            { "u_assign_activity": "ACT_GENERIC_EOC", "duration": "30 seconds" },
+            {
+              "u_message": "You work your way back and forth along your prey, driving your fangs into the cocoon then in turn massaging it as the flesh within begins to break down. You have to pass back and forth several times before you're done."
+            },
+            {
+              "u_spawn_item": "ED_enzyme_shake",
+              "count": 1600,
+              "container": "ED_bag_cocoon_huge",
+              "suppress_message": true
+            }
+          ],
+          "false_effect": [ { "u_message": "You're unable to do anything with the cocoon, and discard it." } ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "ED_enzyme_shake",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "name": { "str": "protein slurry" },
+    "description": "An absolutely rancid slurry of externally digested flesh. It's impossible to tell who or what this used to be.",
+    "weight": "300 g",
+    "volume": "225 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "flags": [ "TRADER_AVOID" ],
+    "fun": 0,
+    "phase": "liquid",
+    "container": "ED_bag_cocoon",
+    "spoils_in": "3 days",
+    "quench": 20,
+    "material": [ "flesh" ],
+    "symbol": "%",
+    "color": "red",
+    "calories": 375,
+    "charges": 1,
+    "vitamins": [ [ "calcium", 2 ], [ "iron", 8 ] ]
+  }
+]

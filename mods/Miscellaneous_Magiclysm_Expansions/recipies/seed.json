@@ -9,8 +9,11 @@
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
     "time": "15 m",
+    "result_mult": 1,
     "autolearn": true,
+    "batch_time_factors": [75, 5],
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 } ],
-    "components": [ [ [ "seed_mushroom", 1 ], [ "seed_mushroom_morel", 1 ] ] ]
+    "components": [ [ [ "mushroom", 1 ], [ "seed_mushroom_morel", 1 ] ] ],
+    "result_eocs": [ {"id": "TEST", "effect": { "u_message": "You feel the magic take hold in the spores." } } ]
   }
 ]
