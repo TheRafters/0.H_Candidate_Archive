@@ -11,24 +11,24 @@
     "material": [ "flesh" ],
     "symbol": "x",
     "color": "magenta",
-    "flags": [ "WATERPROOF", "SKINTIGHT", "SOFT", "ALLOWS_NATURAL_ATTACKS", "NONCONDUCTIVE", "SEMITANGIBLE", "INTEGRATED", "UNBREAKABLE", "PERSONAL", "NO_SALVAGE" ],
+    "flags": [ "WATERPROOF", "SKINTIGHT", "SOFT", "ALLOWS_NATURAL_ATTACKS", "NONCONDUCTIVE", "SEMITANGIBLE", "INTEGRATED", "UNBREAKABLE", "PERSONAL", "NO_SALVAGE", "TARDIS" ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-        "rigid": false,
+        "rigid": true,
         "holster": false,
         "airtight": true,
         "watertight": true,
-        "min_item_volume": "0 ml",
         "max_contains_volume": "160 L",
         "max_contains_weight": "160400 g",
         "max_item_length": "24000 cm",
-        "moves": 0,
+        "moves": 1,
         "volume_multiplier": 0.01,
         "weight_multiplier": 0.8,
-        "spoil_multiplier": 0.1,
+        "spoil_multiplier": 0.01,
         "volume_encumber_modifier": 0.005,
-        "fire_protection": true
+        "fire_protection": true,
+        "inherits_flags": true
       }
     ],
     "armor": [ { "covers": [ "torso" ], "coverage": 0, "encumbrance": -1 } ]
