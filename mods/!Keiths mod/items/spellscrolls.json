@@ -461,7 +461,7 @@
     "looks_like": "fd_gibs_veggy",
     "name": { "str": "baby bush", "str_pl": "baby bushes" },
     "description": "A small handful of leaves and veggies that still loosely cling to life. Nurturing it, you learn a little something about life.",
-    "use_action": { "type": "learn_spell", "spells": [ "precipitate_stick" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_stick" ] }
   },
   {
     "type": "BOOK",
