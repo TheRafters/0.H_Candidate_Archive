@@ -746,7 +746,7 @@
     "emit_fields": [
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
 	  { "emit_id": "emit_bile", "delay": "1 s" },
-      { "emit_id": "emit_acid_splash", "delay": "10 s" },
+      { "emit_id": "emit_acid_vent", "delay": "10 s" },
       { "emit_id": "emit_vault_atmosphere_stream", "delay": "10 s" }
     ],
     "melee_damage": [ { "damage_type": "biological", "amount": 2 } ],
@@ -836,7 +836,7 @@
     "emit_fields": [
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
       { "emit_id": "emit_bile", "delay": "1 s" },
-	  { "emit_id": "emit_acid_splash", "delay": "10 s" },
+	  { "emit_id": "emit_acid_vent", "delay": "10 s" },
       { "emit_id": "emit_vault_atmosphere_stream", "delay": "7 s" }
     ],
     "melee_damage": [ { "damage_type": "biological", "amount": 2 } ],

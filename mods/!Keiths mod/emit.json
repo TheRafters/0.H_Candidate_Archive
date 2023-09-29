@@ -1,0 +1,16 @@
+[
+  {
+    "id": "emit_hot_air4_blast",
+    "type": "emit",
+    "field": "fd_hot_air4",
+    "intensity": 3,
+    "qty": 100
+  },
+  {
+    "id": "emit_acid_vent",
+    "type": "emit",
+    "field": "fd_acid_vent",
+    "intensity": 3,
+    "qty": 4
+  }
+]

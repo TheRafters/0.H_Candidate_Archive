@@ -40,8 +40,7 @@
       { "group": "GROUP_MI-GO_CAMP_OM", "weight": 1, "cost_multiplier": 1, "pack_size": [ 0, 1 ], "starts": "60 days" },
 
       { "group": "GROUP_COCOON_MED_2", "weight": 20, "cost_multiplier": 1, "pack_size": [ 0, 1 ], "starts": "1 days" },
-
-      { "group": "GROUP_CAVE", "weight": 70, "cost_multiplier": 1, "pack_size": [ 0, 1 ] },
+      
       { "group": "GROUP_WILDERNESS_FOREST_INSECT_HARMLESS", "weight": 200, "cost_multiplier": 1, "pack_size": [ 0, 1 ] },
       { "group": "GROUP_WILDERNESS_FOREST_INSECT", "weight": 100, "cost_multiplier": 1, "pack_size": [ 0, 1 ] }
     ]
@@ -196,13 +195,54 @@
         "decay_amount_factor": 3,
         "half_life": "45 seconds",
         "percent_spread": 90,
-        "wandering_field": "fd_fog",
+        "wandering_field": "fd_leave_the_nest",
         "phase": "gas",
         "dirty_transparency_cache": true,
         "display_items": true,
         "display_field": true,
         "looks_like": "fd_fire",
         "decrease_intensity_on_contact": true
+    },
+   {
+    "type": "effect_type",
+    "id": "leavethenest",
+    "name": [ "Leave the Nest" ],
+    "//": "Should let creatures fly out of the crater. Bug: Flying creatures can't fly down. But they CAN fall after it wears off, hopefully?",
+    "desc": [ "You have gained short term unlimited flight." ],
+    "flags": [ "CLIMBS", "CLIMB_NO_LADDER", "FLIES" ]
+   },
+    {
+        "type": "field_type",
+        "id": "fd_leave_the_nest",
+        "intensity_levels": 
+        [ 
+            {   "name": "wispy clouds",
+                "sym": "0",
+                "color": "white",
+                "transparent": true,
+                "dangerous": false,
+                "move_cost": 0,
+                "effects":
+                [
+                  {
+                    "effect_id": "leavethenest",
+                    "min_duration": "3 minutes",
+                    "max_duration": "3 minutes",
+                    "intensity": 1,
+                    "message": "You float free of the earth.",
+                    "message_type": "good"
+                  }
+                ]
+            }
+        ],
+        "half_life": "180 seconds",
+        "percent_spread": 10,
+        "phase": "gas",
+        "dirty_transparency_cache": true,
+        "display_items": true,
+        "display_field": true,
+        "looks_like": "fd_fog",
+        "decrease_intensity_on_contact": false
     },
 
   {
@@ -337,7 +377,19 @@
     "flags": [ "TRANSPARENT", "FLAT", "ROAD", "LADDER" ],
     "bash": { "ter_set": "t_null", "str_min": 75, "str_max": 400, "str_min_supported": 100, "bash_below": true }
   },
-  
+  {
+    "type": "terrain",
+    "id": "t_dirt",
+    "name": "dirt",
+    "description": "It's dirt.  Looks like some fine soil for tillage.  Could also be dug out for construction projects.",
+    "symbol": ".",
+    "color": "brown",
+    "connect_groups": "DIRT",
+    "connects_to": [ "DIRT", "CLAY", "SAND", "MUD", "DIRTMOUND", "CLAYMOUND", "SANDMOUND", "SANDGLASS", "CONCRETE" ],
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "DIGGABLE", "FLAT", "PLOWABLE", "LADDER" ],
+    "bash": { "sound": "thump", "ter_set": "t_null", "str_min": 50, "str_max": 100, "str_min_supported": 100, "bash_below": true }
+  }, 
   {
     "type": "terrain",
     "id": "t_soil",
@@ -347,7 +399,7 @@
     "color": "brown",
     "move_cost": 0,
     "coverage": 100,
-    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "MINEABLE", "BLOCK_WIND" ],
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "MINEABLE", "BLOCK_WIND", "CLIMB_SIMPLE" ],
     "roof": "t_dirt",
     "bash": {
       "str_min": 100,
@@ -368,7 +420,7 @@
     "color": "white",
     "move_cost": 0,
     "coverage": 100,
-    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "MINEABLE", "BLOCK_WIND", "ROAD", "RAMP_UP" ],
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "MINEABLE", "BLOCK_WIND", "ROAD", "CLIMB_SIMPLE" ],
     "roof": "t_rock_floor_no_roof",
     "bash": {
       "str_min": 100,
@@ -394,7 +446,7 @@
       "message": "You finish cutting the metal.",
       "byproducts": [ { "item": "spike", "count": 19 }, { "item": "scrap", "count": 8 } ]
     },
-    "flags": [ "TRANSPARENT", "NOITEM", "PERMEABLE", "THIN_OBSTACLE", "ROAD", "RAMP_UP" ],
+    "flags": [ "TRANSPARENT", "NOITEM", "PERMEABLE", "THIN_OBSTACLE", "ROAD", "CLIMB_EASY" ],
     "connect_groups": "WALL",
     "connects_to": "WALL",
     "oxytorch": {
