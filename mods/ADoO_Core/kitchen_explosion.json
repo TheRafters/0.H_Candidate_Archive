@@ -306,13 +306,48 @@
          { 
           "casing_mass": 1300,
           "fragment_mass": 1300,
-          "recovery": 1,
+          "recovery": 2,
           "drop": "plastic_spoon_kids_boom"
          }
        }
     },
     "revert_to": "egg_hole_puncher_bomb",
     "extend": { "flags": [ "BOMB", "TRADER_AVOID", "DANGEROUS", "SPAWN_ACTIVE", "BANK_NOTE_SHAPED" ] }
+  },
+  {
+    "type": "GENERIC",
+    "category": "other",
+    "id": "plastic_spoon_kids_boom",
+    "name": { "str": "ticking icecream scoop" },
+    "symbol": "u",
+    "proportional": { "weight": 0.7, "volume": 0.5 },
+    "description": "A plastic spoon designed for use by children.",
+    "looks_like": "icecream_scoop",
+    "copy-from": "icecream_scoop",
+    "countdown_interval": "3 seconds",
+    "explode_in_fire": false,
+    "revert_to": "hole_puncher_bomb",
+    "countdown_action": {
+      "type": "explosion",
+        "fields_radius": 0,
+        "fields_type": "fd_disturbed_earth",
+        "fields_min_intensity": 0,
+        "fields_max_intensity": 3,
+        "explosion": {
+          "power": 3900,
+          "distance_factor": 0.5,
+          "fire": false,
+          "max_noise": 0,
+          "shrapnel": 
+           { 
+          "casing_mass": 3000,
+          "fragment_mass": 2800,
+          "recovery": 4,
+          "drop": "hole_puncher_bomb"
+            }
+        }
+    },
+    "extend": { "flags": [ "BOMB", "TRADER_AVOID", "DANGEROUS", "SPAWN_ACTIVE" ] }
   },
   {
     "type": "GENERIC",
@@ -336,40 +371,12 @@
           "power": 120000,
           "distance_factor": 0.3,
           "fire": false,
-          "max_noise": 0
-        }
-    },
-    "extend": { "flags": [ "BOMB", "TRADER_AVOID", "DANGEROUS", "SPAWN_ACTIVE" ] }
-  },
-  {
-    "type": "GENERIC",
-    "category": "other",
-    "id": "plastic_spoon_kids_boom",
-    "name": { "str": "ticking icecream scoop" },
-    "symbol": "u",
-    "proportional": { "weight": 0.7, "volume": 0.5 },
-    "description": "A plastic spoon designed for use by children.",
-    "looks_like": "icecream_scoop",
-    "copy-from": "icecream_scoop",
-    "countdown_interval": "2 seconds",
-    "explode_in_fire": false,
-    "revert_to": "hole_puncher_bomb",
-    "countdown_action": {
-      "type": "explosion",
-        "fields_radius": 0,
-        "fields_type": "fd_disturbed_earth",
-        "fields_min_intensity": 0,
-        "fields_max_intensity": 3,
-        "explosion": {
-          "power": 3900,
-          "distance_factor": 0.5,
-          "fire": false,
           "max_noise": 0,
           "shrapnel": 
            { 
-          "casing_mass": 3000,
-          "fragment_mass": 2800,
-          "recovery": 1,
+          "casing_mass": 119000,
+          "fragment_mass": 240000,
+          "recovery": 4,
           "drop": "hole_puncher_bomb"
             }
         }

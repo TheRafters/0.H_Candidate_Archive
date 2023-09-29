@@ -10,7 +10,7 @@
     "time": "2 m",
     "autolearn": true,
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
-    "components": [ [ [ "coin_quarter", 5 ] ], [ [ "duct_tape", 2 ], [ "string_36", 2 ] ] ]
+    "components": [ [ [ "coin_quarter", 5 ] ], [ [ "nail", 1 ] ], [ [ "duct_tape", 2 ], [ "string_36", 2 ] ] ]
   },
   {
     "id": "quarter_charm",
@@ -25,7 +25,7 @@
     "symbol": "[",
     "looks_like": "coin_quarter",
     "color": "white",
-    "flags": [ "SUN_GLASSES", "PARTIAL_DEAF", "ALLOWS_NATURAL_ATTACKS", "SEMITANGIBLE" ],
+    "flags": [ "SUN_GLASSES", "PARTIAL_DEAF", "ALLOWS_NATURAL_ATTACKS", "SEMITANGIBLE", "SOFT" ],
     "armor": [
       {
         "coverage": 1,
