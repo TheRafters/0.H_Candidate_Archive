@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "jackledead_armory",
+    "name": "Jackledead Armory",
+    "authors": [ "Jackledead" ],
+    "maintainers": [ "Jackledead" ],
+    "description": "Adds Ukrainian firearms and some of my own design.",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]

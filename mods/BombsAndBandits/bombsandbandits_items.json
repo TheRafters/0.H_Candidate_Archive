@@ -15,9 +15,9 @@
     "color": "dark_gray",
     "explode_in_fire": true,
     "explosion": {
-      "power": 8500000,
+      "power": 250000,
       "shrapnel": { "casing_mass": 15000, "fragment_mass": 800 },
-        "max_noise": 10
+        "max_noise": 1
     },
     "use_action": {
       "target": "bandits_high_explosive_bomb_act",
@@ -48,9 +48,9 @@
     "turns_per_charge": 1,
     "explode_in_fire": true,
     "explosion": {
-      "power": 8500000,
+      "power": 250000,
       "shrapnel": { "casing_mass": 15000, "fragment_mass": 800 },
-        "max_noise": 10
+        "max_noise": 1
     },
     "tick_action": [ { "type": "sound", "sound_message": "tick", "sound_volume": 2, "sound_id": "misc", "sound_variant": "lit_fuse" } ],
     "use_action": {
@@ -60,11 +60,11 @@
       "fields_min_intensity": 7,
       "fields_max_intensity": 9,
       "explosion": {
-        "power": 8500000,
+        "power": 250000,
         "distance_factor": 0.8,
         "fire": true,
         "shrapnel": { "casing_mass": 25000, "fragment_mass": 200 },
-        "max_noise": 10
+        "max_noise": 1
       }
     },
     "flags": ["BOMB", "TRADER_AVOID", "DANGEROUS"]

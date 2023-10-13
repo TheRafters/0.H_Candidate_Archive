@@ -125,16 +125,16 @@
       [ "holy_symbol", 15 ],
       [ "pot", 5 ],
       [ "bowl_clay", 10 ],
-      { "item": "candle", "prob": 5, "count": [ 75, 100 ] },
-      { "item": "matches", "prob": 15, "count": [ 15, 20 ] },
-      { "item": "copper", "prob": 5, "count": [ 25, 100 ] },
+      { "item": "candle", "prob": 5, "charges": [ 75, 100 ] },
+      { "item": "matches", "prob": 15, "charges": [ 15, 20 ] },
+      { "item": "copper", "prob": 5, "charges": [ 25, 100 ] },
       { "item": "scrap_copper", "prob": 5, "count": [ 1, 3 ] },
-      { "item": "silver_small", "prob": 10, "count": [ 25, 100 ] },
-      { "item": "gold_small", "prob": 10, "count": [ 25, 100 ] },
+      { "item": "silver_small", "prob": 10, "charges": [ 25, 100 ] },
+      { "item": "gold_small", "prob": 10, "charges": [ 25, 100 ] },
       { "item": "CF_golden_scale", "prob": 20, "count": [ 2, 5 ] },
       { "item": "scrap", "prob": 15, "count": [ 5, 10 ] },
       { "item": "leather", "prob": 15, "count": [ 5, 10 ] },
-      { "item": "paper", "prob": 10, "count": [ 20, 50 ] },
+      { "item": "paper", "prob": 10, "charges": [ 20, 50 ] },
       [ "chem_ethanol", 10 ],
       { "group": "arcana_hunt_random", "prob": 25 },
       { "item": "essence_dull", "prob": 75, "count": [ 15, 45 ] }
@@ -328,7 +328,7 @@
     "id": "rural_church_hunter_haul",
     "type": "item_group",
     "items": [
-      { "item": "meat_pickled", "prob": 25, "count": 2, "container-item": "jar_glass_sealed" },
+      { "prob": 25, "group": "meat_pickled_jar_glass_sealed_2" },
       { "item": "meat_smoked", "prob": 10, "count": 2, "container-item": "wrapper" },
       { "item": "jerky", "prob": 10, "count": 4, "container-item": "wrapper" },
       { "item": "sausage", "prob": 10, "count": 2, "container-item": "wrapper" },
@@ -361,7 +361,7 @@
     "id": "rural_church_start_scales",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "CF_golden_scale", "count": [ 40, 80 ] } ]
+    "entries": [ { "item": "CF_golden_scale", "charges": [ 40, 80 ] } ]
   },
   {
     "id": "rural_church_celine_research",
@@ -384,7 +384,7 @@
       { "group": "cleansing_flame_gear_magic", "prob": 50, "damage": [ 1, 4 ] },
       { "group": "bionics_mil", "prob": 75 },
       { "item": "id_science", "prob": 10 },
-      { "item": "CF_golden_scale", "count": [ 2, 6 ] },
+      { "item": "CF_golden_scale", "charges": [ 2, 6 ] },
       { "item": "arcane_purifier_intel" }
     ]
   },

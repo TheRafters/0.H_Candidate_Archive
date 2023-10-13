@@ -5863,17 +5863,25 @@
 	"energy_increment": -10
   },
   {
+    "type": "item_group",
+    "id": "group_anesthetic_in_condom",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "anesthetic", "prob": 100, "count": 1, "charges": 6000, "container-item": "condom" }
+    ]
+  },
+  {
     "id": "conjure_anesthetic",
     "type": "SPELL",
     "name": "Home Surgeon's Essentials",
     "description": "The company responsible for this spell later apologized and recalled it, citing 'consumer irresponsibility.' Historically, this spell was the subject of the first legal battle revolving around magic and it's properties. The corporation faced no penalty, but it's use was banned throughout the country.",
     "valid_targets": [ "self" ],
     "effect": "spawn_item",
-    "effect_str": "anesthetic",
-	"flags": [ "PERMANENT" ],
+    "effect_str": "group_anesthetic_in_condom",
+	"flags": [ "PERMANENT", "SPAWN_GROUP" ],
     "shape": "blast",
-    "min_damage": 3000,
-    "max_damage": 3000,
+    "min_damage": 1,
+    "max_damage": 1,
     "difficulty": 1,
     "max_level": 10,
 	"energy_source": "MANA",

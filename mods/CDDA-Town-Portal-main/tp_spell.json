@@ -11,7 +11,9 @@
       },
       { "u_add_var": "player_is_away", "value": "1" },
       { "arithmetic": [ { "u_val": "spell_level", "spell": "townportal" }, "=", { "const": 0 } ] },
-      { "arithmetic": [ { "u_val": "spell_exp", "spell": "townportal" }, "=", { "const": 0 } ] }
+      { "arithmetic": [ { "u_val": "spell_exp", "spell": "townportal" }, "=", { "const": 0 } ] },
+      { "arithmetic": [ { "u_val": "spell_level", "spell": "townportalother" }, "=", { "const": 0 } ] },
+      { "arithmetic": [ { "u_val": "spell_exp", "spell": "townportalother" }, "=", { "const": 0 } ] }
     ]
   },
   {
@@ -83,7 +85,7 @@
     "name": "Set Home",
     "description": "Marks where you're currently standing as your home, the place the Town Portal spell will return you to. Setting a home location if one already exists will remove your saved away point if it exists.",
     "valid_targets": [ "self" ],
-    "spell_class": "NONE",
+    "spell_class": "MAGUS",
     "flags": [ "NO_EXPLOSION_SFX", "NO_FAIL", "NO_LEGS", "NO_HANDS", "VERBAL" ],
     "max_level": 0,
     "difficulty": 0,
@@ -105,7 +107,7 @@
     "name": "Town Portal",
     "description": "This spell will warp you to and from your home base. Cast once to warp home, again to warp back out. Be aware this spell takes a minute to cast and should only be used when in safety.",
     "valid_targets": [ "self" ],
-    "spell_class": "NONE",
+    "spell_class": "MAGUS",
     "flags": [ "NO_EXPLOSION_SFX", "NO_FAIL", "NO_LEGS", "NO_HANDS", "VERBAL" ],
     "max_level": 0,
     "difficulty": 0,

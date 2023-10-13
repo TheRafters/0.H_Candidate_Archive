@@ -1,0 +1,8 @@
+[
+  {
+    "id": "ink_standard",
+    "type": "requirement",
+    "//": "should contain all the ink pens",
+    "tools": [ [ [ "pen", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "green_pen", 1 ], [ "red_pen", 1 ], [ "white_pen", 1 ], [ "unending_pen", 1 ], [ "unending_pen_blue", 1 ], [ "unending_pen_green", 1 ], [ "unending_pen_red", 1 ] ] ]
+  }
+]

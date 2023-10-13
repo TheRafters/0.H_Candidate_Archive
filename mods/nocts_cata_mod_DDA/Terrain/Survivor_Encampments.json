@@ -269,8 +269,8 @@
         "E": {
           "items": [
             { "item": "dresser", "chance": 90 },
-            { "item": "civilian_body_armor", "chance": 75 },
-            { "item": "civilian_body_armor", "chance": 50 }
+            { "item": "survival_armor", "chance": 75 },
+            { "item": "survival_armor", "chance": 50 }
           ]
         },
         "F": { "items": [ { "item": "fridge", "chance": 75 }, { "item": "fridgesnacks", "chance": 75 } ] },
@@ -449,8 +449,8 @@
         "D": {
           "items": [
             { "item": "dresser", "chance": 90 },
-            { "item": "civilian_body_armor", "chance": 75 },
-            { "item": "civilian_body_armor", "chance": 50 }
+            { "item": "survival_armor", "chance": 75 },
+            { "item": "survival_armor", "chance": 50 }
           ]
         },
         "b": { "items": { "item": "mansion_bookcase", "chance": 100 } }
@@ -613,8 +613,8 @@
         "D": {
           "items": [
             { "item": "dresser", "chance": 90 },
-            { "item": "civilian_body_armor", "chance": 75 },
-            { "item": "civilian_body_armor", "chance": 50 }
+            { "item": "survival_armor", "chance": 75 },
+            { "item": "survival_armor", "chance": 50 }
           ]
         },
         "b": { "items": { "item": "mansion_bookcase", "chance": 100 } },
@@ -781,8 +781,8 @@
         "D": {
           "items": [
             { "item": "dresser", "chance": 90 },
-            { "item": "civilian_body_armor", "chance": 75 },
-            { "item": "civilian_body_armor", "chance": 50 }
+            { "item": "survival_armor", "chance": 75 },
+            { "item": "survival_armor", "chance": 50 }
           ]
         },
         "R": { "items": { "item": "gas_charging_rack", "chance": 75 } },

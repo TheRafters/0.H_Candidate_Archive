@@ -1,0 +1,367 @@
+[
+  {
+    "type": "ter_furn_transform",
+    "id": "ramp_maker",
+    "terrain": [ {
+    "result": "t_soil_ramp",
+    "valid_terrain": [ "t_soil" ],
+    "valid_flags": [ "BLOCK_WIND" ],
+    "message": "rampy!"
+    } ]
+  },
+  {
+    "id": "sonic_extra_alt",
+    "type": "SPELL",
+    "name": { "str": "Sonic Extra alt" },
+    "description": "Dirty hack to work around bugs in magic code.",
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "shape": "blast",
+    "flags": [ "IGNORE_WALLS", "SILENT", "NO_PROJECTILE" ],
+    "message": "",
+    "effect_str": "ramp_maker",
+    "max_level": 20,
+    "min_damage": 1,
+    "max_damage": 1,
+    "damage_increment": 0,
+    "min_aoe": 8,
+    "max_aoe": 8,
+    "aoe_increment": 0
+  },
+  {
+    "id": "sonic_demolition_pulse_alt",
+    "type": "SPELL",
+    "name": { "str": "Sonic Demolition Pulse alt" },
+    "description": "This adds the actual effect of yeeting terrain in range.",
+    "valid_targets": [ "ground" ],
+    "extra_effects": [ { "id": "sonic_extra_alt", "hit_self": false, "max_level": 10 } ],
+    "message": "",
+    "effect": "bash",
+    "shape": "blast",
+    "max_level": 20,
+    "min_damage": 1,
+    "max_damage": 1,
+    "damage_increment": 0,
+    "min_aoe": 8,
+    "max_aoe": 8,
+    "aoe_increment": 0
+  },
+  {
+    "id": "sonic_blast_pulse_alt",
+    "type": "SPELL",
+    "name": { "str": "Sonic Blast Pulse alt" },
+    "description": "This adds the actual effect of yeeting terrain in range.",
+    "valid_targets": [ "ground" ],
+    "extra_effects": [ { "id": "sonic_extra_alt", "hit_self": false, "max_level": 10 } ],
+    "message": "",
+    "effect": "bash",
+    "shape": "blast",
+    "max_level": 20,
+    "min_damage": 125,
+    "max_damage": 210,
+    "damage_increment": 4.1,
+    "min_aoe": 1,
+    "max_aoe": 7,
+    "aoe_increment": 1.2
+  },
+  {
+    "id": "sonic_spike_alt",
+    "type": "SPELL",
+    "name": { "str": "Sonic Spike alt" },
+    "description": "This splits of the AoE into beefy and stupid beefy depending on distance.",
+    "message": "",
+    "effect": "attack",
+    "shape": "blast",
+    "valid_targets": [ "ground" ],
+    "flags": [ "SILENT", "IGNORE_WALLS", "NO_PROJECTILE" ],
+    "effect_str": "blind",
+    "min_damage": 25,
+    "max_damage": 200,
+    "damage_increment": 8.75,
+    "min_aoe": 2,
+    "max_aoe": 6,
+    "aoe_increment": 0.2,
+    "max_level": 20,
+    "min_duration": 2000,
+    "max_duration": 20000,
+    "duration_increment": 900
+  },
+  {
+    "id": "sonic_demolition_alt",
+    "type": "SPELL",
+    "name": { "str": "Ramp Maker" },
+    "description": "Sonic Demolition\nUsing this spell will unleash a devastating, destructive blast of sonic force, causing a massive earthquake and shattering everything in it's distance.  Anything close enough will take double damage.",
+    "message": "You tremble in terror as you cast this spell but manage to fully control it and unleash the full force of sonic energy",
+    "effect": "attack",
+    "shape": "blast",
+    "extra_effects": [
+      { "id": "sonic_demolition_pulse_alt", "hit_self": false, "max_level": 20 }
+    ],
+    "valid_targets": [ "ground" ],
+    "spell_class": "NONE",
+    "flags": [ "CONCENTRATE", "NO_LEGS", "IGNORE_WALLS", "SILENT", "NO_PROJECTILE" ],
+    "effect_str": "stunned",
+    "min_damage": 1,
+    "max_damage": 1,
+    "damage_increment": 0,
+    "min_aoe": 8,
+    "max_aoe": 8,
+    "aoe_increment": 0,
+    "max_level": 20,
+    "difficulty": 5,
+    "skill": "magic",
+    "base_casting_time": 50,
+    "final_casting_time": 50,
+    "casting_time_increment": 0,
+    "energy_source": "MANA",
+    "base_energy_cost": 10,
+    "final_energy_cost": 10,
+    "energy_increment": 0,
+    "min_duration": 10000,
+    "max_duration": 10000,
+    "duration_increment": 0
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_transform_wall_to_ramp_soil",
+    "effect": [
+      { "u_location_variable": { "global_val": "bomb_location" } },
+      {
+        "u_transform_radius": 6,
+        "ter_furn_transform": "ramp_maker",
+        "target_var": { "global_val": "bomb_location" }
+      },
+      { "u_message": "All the soil walls are converted into soil ramps." }
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "make_a_fucking_ramp",
+    "name": { "str": "Please make the damned ramp" },
+    "description": "Should make a ramp.",
+    "copy-from": "sonic_demolition_pulse_alt",
+    "min_range": 12,
+    "max_range": 12,
+    "effect_str": "sonic_extra_alt"
+  },
+  {
+    "type": "GENERIC",
+    "category": "other",
+    "id": "ramp_maker_device",
+    "name": { "str": "bomb for converting soil walls to soil ramps." },
+    "symbol": "u",
+    "proportional": { "weight": 0.7, "volume": 0.5 },
+    "description": "Designed to convert soil walls to soil ramps.",
+    "looks_like": "icecream_scoop",
+    "copy-from": "icecream_scoop",
+    "countdown_interval": "2 seconds",
+    "explode_in_fire": false,
+    "countdown_action": {
+        "type": "effect_on_conditions", "effect_on_conditions" : ["EOC_transform_wall_to_ramp_soil"]
+    },
+    "extend": { "flags": [ "BOMB", "TRADER_AVOID", "DANGEROUS", "SPAWN_ACTIVE", "ALLOWS_REMOTE_USE" ] }
+  },
+   {
+    "type": "effect_type",
+    "id": "leavethenest",
+    "name": [ "Leave the Nest" ],
+    "//": "Should let creatures fly out of the crater. Bug: Flying creatures can't fly down. But they CAN fall after it wears off, hopefully?",
+    "desc": [ "You have gained short term unlimited flight." ],
+    "flags": [ "CLIMBS", "CLIMB_NO_LADDER", "FLIES" ]
+   },
+    {
+        "type": "field_type",
+        "id": "fd_leave_the_nest",
+        "intensity_levels": 
+        [ 
+            {   "name": "wispy clouds",
+                "sym": "0",
+                "color": "white",
+                "transparent": true,
+                "dangerous": false,
+                "move_cost": 0,
+                "effects":
+                [
+                  {
+                    "effect_id": "leavethenest",
+                    "min_duration": "3 minutes",
+                    "max_duration": "3 minutes",
+                    "intensity": 1,
+                    "message": "You float free of the earth.",
+                    "message_type": "good"
+                  }
+                ]
+            }
+        ],
+        "half_life": "180 seconds",
+        "percent_spread": 10,
+        "phase": "gas",
+        "dirty_transparency_cache": true,
+        "display_items": true,
+        "display_field": true,
+        "looks_like": "fd_fog",
+        "decrease_intensity_on_contact": false
+    },
+  {
+    "type": "furniture",
+    "id": "f_rockladder",
+    "name": "large rock",
+    "looks_like": "rock_large",
+    "description": "A large rock.  Can help you climb to a rooftop, or maybe slow something down.",
+    "symbol": "H",
+    "color": "brown",
+    "move_cost_mod": 3,
+    "required_str": 6,
+    "flags": [ "LADDER", "TRANSPARENT", "SEEN_FROM_ABOVE", "DIFFICULT_Z" ],
+    "examine_action": "deployed_furniture",
+    "deployed_item": "rock_large",
+    "bash": {
+      "str_min": 6,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [
+        { "item": "rock_large", "count": [ 1, 1 ] }
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "rock_large",
+    "symbol": ";",
+    "color": "brown",
+    "name": { "str": "large rock" },
+    "description": "A large, heavy rock, big enough to be used as a primitive anvil or shaped into larger stone items.",
+    "category": "spare_parts",
+    "material": "stone",
+    "weight": "15768 g",
+    "volume": "6 L",
+    "longest_side": "30 cm",
+    "to_hit": -2,
+    "qualities": [ [ "ANVIL", 1 ] ],
+    "use_action": { "type": "deploy_furn", "furn_type": "f_rockladder" },
+    "melee_damage": { "bash": 28 }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rock_floor_no_roof",
+    "name": "rock floor",
+    "description": "A relatively flat area of rock and stone.  Looks stable enough to be mined with the proper mining gear. Can climb to the next level from here?",
+    "symbol": ".",
+    "color": "light_gray",
+    "looks_like": "t_rock_floor",
+    "connect_groups": "ROCKFLOOR",
+    "connects_to": "ROCKFLOOR",
+    "move_cost": 2,
+    "roof": "t_open_air",
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "CLIMB_SIMPLE" ],
+    "bash": { "ter_set": "t_null", "str_min": 75, "str_max": 400, "str_min_supported": 100, "bash_below": true }
+  },
+  {
+    "type": "terrain",
+    "id": "t_dirt",
+    "name": "dirt",
+    "description": "It's dirt.  Looks like some fine soil for tillage.  Could also be dug out for construction projects.",
+    "symbol": ".",
+    "color": "brown",
+    "connect_groups": "DIRT",
+    "connects_to": [ "DIRT", "CLAY", "SAND", "MUD", "DIRTMOUND", "CLAYMOUND", "SANDMOUND", "SANDGLASS", "CONCRETE" ],
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "DIGGABLE", "FLAT", "PLOWABLE", "CLIMB_SIMPLE" ],
+    "bash": { "sound": "thump", "ter_set": "t_null", "str_min": 50, "str_max": 100, "str_min_supported": 100, "bash_below": true }
+  },
+  {
+    "type": "terrain",
+    "id": "t_soil",
+    "name": "solid earth",
+    "description": "A wall of solid earth.",
+    "symbol": "#",
+    "color": "brown",
+    "move_cost": 0,
+    "coverage": 100,
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "MINEABLE", "BLOCK_WIND", "CLIMB_SIMPLE" ],
+    "roof": "t_dirt",
+    "bash": {
+      "str_min": 100,
+      "str_max": 400,
+      "sound": "wham!",
+      "sound_fail": "whump!",
+      "ter_set": "t_dirt",
+      "ter_set_bashed_from_above": "t_dirt",
+      "items": [ { "group": "digging_soil_loam_50L", "count": 20 } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_soil_ramp",
+    "name": "solid earth ramp",
+    "description": "A wall of solid earth.",
+    "symbol": "#",
+    "color": "brown",
+    "move_cost": 0,
+    "coverage": 100,
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "MINEABLE", "BLOCK_WIND", "CLIMB_SIMPLE", "RAMP_UP" ],
+    "roof": "t_dirt",
+    "bash": {
+      "str_min": 100,
+      "str_max": 400,
+      "sound": "wham!",
+      "sound_fail": "whump!",
+      "ter_set": "t_dirt",
+      "ter_set_bashed_from_above": "t_dirt",
+      "items": [ { "group": "digging_soil_loam_50L", "count": 20 } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_rock",
+    "name": "solid rock",
+    "description": "A wall of solid rock, could be full of all kinds of interesting things.  Best grab your pickaxe or equivalent digging implement, and strike the earth!",
+    "symbol": "#",
+    "color": "white",
+    "move_cost": 0,
+    "coverage": 100,
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "MINEABLE", "BLOCK_WIND", "ROAD", "CLIMB_SIMPLE", "RAMP_UP" ],
+    "roof": "t_rock_floor_no_roof",
+    "bash": {
+      "str_min": 100,
+      "str_max": 400,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_rock_floor",
+      "ter_set_bashed_from_above": "t_rock_floor_no_roof",
+      "items": [ { "group": "mining_rock", "count": 1 } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_reb_cage",
+    "name": "rebar cage",
+    "description": "A structural support system made of rebar that appears to be the early stages of a reinforced concrete wall, just missing the poured concrete.",
+    "symbol": "#",
+    "color": "dark_gray",
+    "move_cost": 0,
+    "hacksaw": {
+      "result": "t_pit",
+      "duration": "10 minutes",
+      "message": "You finish cutting the metal.",
+      "byproducts": [ { "item": "spike", "count": 19 }, { "item": "scrap", "count": 8 } ]
+    },
+    "flags": [ "TRANSPARENT", "NOITEM", "PERMEABLE", "THIN_OBSTACLE", "ROAD", "CLIMB_SIMPLE", "RAMP_UP" ],
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "oxytorch": {
+      "result": "t_pit",
+      "duration": "9 seconds",
+      "byproducts": [ { "item": "spike", "count": [ 1, 19 ] }, { "item": "scrap", "count": [ 1, 8 ] } ]
+    },
+    "bash": {
+      "str_min": 20,
+      "str_max": 100,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "ter_set": "t_thconc_floor",
+      "items": [ { "item": "scrap", "count": [ 4, 12 ] }, { "item": "rebar", "count": [ 0, 4 ] } ]
+    }
+  }
+]

@@ -2104,9 +2104,9 @@
     "subtype": "collection",
     "entries": [
       { "item": "arcana_mech_shem" },
-      { "item": "scrap", "count": [ 0, 35 ] },
+      { "item": "scrap", "charges": [ 0, 35 ] },
       { "item": "e_scrap", "count": [ 0, 2 ] },
-      { "item": "copper", "count": [ 0, 350 ] },
+      { "item": "copper", "charges": [ 0, 350 ] },
       { "item": "wire", "count": [ 0, 2 ] },
       { "item": "amplifier", "count": [ 0, 2 ] },
       { "item": "essence_dull", "count": [ 0, 410 ] },

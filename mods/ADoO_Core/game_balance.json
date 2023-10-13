@@ -1,0 +1,9 @@
+[
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "SHOW_MUTATION_SELECTOR",
+    "info": "When mutating, displays a menu which allows players to pick from a list of possible mutations.",
+    "stype": "bool",
+    "value": true
+  }
+]

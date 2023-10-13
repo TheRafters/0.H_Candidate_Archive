@@ -1,0 +1,71 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "TP_TOWNPORTAL_OTHER",
+    "//": "Checks if you're away from home. If so, warps your target home. If not, warps your target out.",
+    "condition": { "u_compare_var": "player_is_away", "op": "==", "value": 1 },
+    "effect": [
+      { "npc_teleport": { "global_val": "TP_HOMEPOINT" }, "force": true },
+      {
+        "u_message": "Mysterious spacetime transports your target home.",
+        "type": "good"
+      }
+    ],
+    "false_effect": [
+      { "npc_teleport": { "global_val": "TP_AWAYPOINT" }, "force": true },
+      {
+        "u_message": "Mysterious spacetime transports your target back to your adventures.",
+        "type": "good"
+      }
+    ]
+  },
+  {
+    "id": "townportalother",
+    "type": "SPELL",
+    "name": "Town Portal Other",
+    "description": "This spell will warp your target to and from your home base. Will send your target home if you are away and away if you are home. Be aware this spell takes a minute to cast and should only be used when in safety.",
+    "valid_targets": [ "ally" ],
+    "spell_class": "MAGUS",
+    "flags": [ "NO_EXPLOSION_SFX", "NO_FAIL", "NO_LEGS", "NO_HANDS", "VERBAL", "NO_PROJECTILE" ],
+    "max_level": 0,
+    "difficulty": 0,
+    "min_range": 5,
+    "max_range": 5,
+    "duration_increment": 1,
+    "effect": "attack",
+    "effect_str": "bless",
+    "extra_effects": [
+      { "id": "townportalother2", "hit_self": true, "max_level": 0 }
+    ],
+    "shape": "blast",
+    "message": "",
+    "energy_source": "NONE",
+    "base_energy_cost": 0,
+    "final_energy_cost": 0,
+    "base_casting_time": 6000,
+    "final_casting_time": 6000
+  },
+  {
+    "id": "townportalother2",
+    "type": "SPELL",
+    "name": "Town Portal Other 2",
+    "description": "This spell will warp your target to and from your home base. Will send your target home if you are away and away if you are home. Be aware this spell takes a minute to cast and should only be used when in safety.",
+    "valid_targets": [ "ally" ],
+    "spell_class": "MAGUS",
+    "flags": [ "NO_EXPLOSION_SFX", "NO_FAIL", "NO_LEGS", "NO_HANDS", "VERBAL" ],
+    "max_level": 0,
+    "difficulty": 0,
+    "min_range": 1,
+    "max_range": 1,
+    "duration_increment": 1,
+    "effect": "effect_on_condition",
+    "effect_str": "TP_TOWNPORTAL_OTHER",
+    "shape": "blast",
+    "message": "",
+    "energy_source": "NONE",
+    "base_energy_cost": 0,
+    "final_energy_cost": 0,
+    "base_casting_time": 0,
+    "final_casting_time": 0
+  }
+]

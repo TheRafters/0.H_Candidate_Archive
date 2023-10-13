@@ -94,7 +94,7 @@
         "B": { "item": "bed", "chance": 30 },
         "C": { "item": "arcana_mansion_art", "chance": 100 },
         "J": { "item": "clutter_bathroom", "chance": 15 },
-        "M": { "item": "sewing_group", "chance": 40 },
+        "M": { "item": "sewing_room", "chance": 40 },
         "N": { "item": "softdrugs", "chance": 45 },
         "V": { "item": "a_television", "chance": 100 },
         "Z": { "item": "dresser_servant", "chance": 45 },

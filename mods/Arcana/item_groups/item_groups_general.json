@@ -69,18 +69,18 @@
       [ "holy_symbol", 5 ],
       [ "pot", 5 ],
       [ "bowl_clay", 15 ],
-      { "item": "candle", "prob": 10, "count": [ 75, 100 ] },
-      { "item": "matches", "prob": 15, "count": [ 15, 20 ] },
-      { "item": "copper", "prob": 5, "count": [ 25, 100 ] },
+      { "item": "candle", "prob": 10, "charges": [ 75, 100 ] },
+      { "item": "matches", "prob": 15, "charges": [ 15, 20 ] },
+      { "item": "copper", "prob": 5, "charges": [ 25, 100 ] },
       { "item": "scrap_copper", "prob": 10, "count": [ 1, 3 ] },
-      { "item": "silver_small", "prob": 20, "count": [ 25, 100 ] },
-      { "item": "gold_small", "prob": 20, "count": [ 25, 100 ] },
+      { "item": "silver_small", "prob": 20, "charges": [ 25, 100 ] },
+      { "item": "gold_small", "prob": 20, "charges": [ 25, 100 ] },
       { "group": "gemstones", "prob": 5 },
       { "item": "scrap", "prob": 10, "count": [ 1, 10 ] },
-      { "item": "feather", "prob": 5, "count": [ 10, 20 ] },
-      { "item": "thread", "prob": 5, "count": [ 30, 90 ] },
+      { "item": "feather", "prob": 5, "charges": [ 10, 20 ] },
+      { "item": "thread", "prob": 5, "charges": [ 30, 90 ] },
       { "item": "bone", "prob": 5, "count": [ 1, 5 ] },
-      { "item": "paper", "prob": 5, "count": [ 20, 50 ] },
+      { "item": "paper", "prob": 5, "charges": [ 20, 50 ] },
       [ "chem_ethanol", 10 ],
       { "group": "arcana_hunt_random", "prob": 25 },
       { "item": "essence", "prob": 25, "count": [ 1, 3 ] },
@@ -425,6 +425,45 @@
         "distribution": [ { "group": "magic_tools", "prob": 75 }, { "group": "magic_items", "prob": 25 } ],
         "prob": 10
       }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mine_storage",
+    "items": [
+      [ "shovel", 10 ],
+      [ "pickaxe", 2 ],
+      [ "bucket", 20 ],
+      [ "rock", 40 ],
+      [ "rock_large", 10 ],
+      { "group": "tools_toolbox", "prob": 5 },
+      [ "coal_lump", 20 ],
+      [ "material_shrd_limestone", 40 ],
+      [ "material_niter", 5 ],
+      [ "chem_rdx", 5 ],
+      [ "chem_hmtd", 10 ]
+    ]
+  },
+  {
+    "id": "sewing_room",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      { "group": "suits", "prob": 50, "damage": [ 0, 2 ] },
+      [ "scissors", 50 ],
+      [ "thread", 50 ],
+      { "group": "pants", "prob": 40, "damage": [ 0, 2 ] },
+      { "group": "shirts", "prob": 40, "damage": [ 0, 2 ] },
+      [ "knitting_needles", 40 ],
+      [ "string_36", 40 ],
+      [ "yarn", 40 ],
+      { "group": "bed", "prob": 30, "damage": [ 0, 2 ] },
+      { "item": "sewing_kit", "prob": 30, "charges": [ 0, 25 ] },
+      [ "cotton_patchwork", 30 ],
+      [ "lycra_patch", 15 ],
+      [ "nylon", 10 ],
+      { "item": "tailors_kit", "prob": 20, "charges": [ 0, 100 ] },
+      [ "kevlar_shears", 5 ]
     ]
   }
 ]

@@ -311,7 +311,7 @@
          }
        }
     },
-    "revert_to": "egg_hole_puncher_bomb",
+    "revert_to": "hole_puncher_bomb",
     "extend": { "flags": [ "BOMB", "TRADER_AVOID", "DANGEROUS", "SPAWN_ACTIVE", "BANK_NOTE_SHAPED" ] }
   },
   {
@@ -361,6 +361,7 @@
     "copy-from": "icecream_scoop",
     "countdown_interval": "2 seconds",
     "explode_in_fire": false,
+    "revert_to": "ramp_maker_device",
     "countdown_action": {
       "type": "explosion",
         "fields_radius": 0,

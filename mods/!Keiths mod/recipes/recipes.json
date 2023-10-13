@@ -687,7 +687,7 @@
     "time": "24 h",
     "autolearn": true,
     "book_learn": [ [ "wayward_memory_VM", 1 ] ],
-    "using": [ [ "drawing_tool", 100 ] ],
+    "using": [ [ "drawing_tool", 500 ] ],
     "components": [
       [ [ "paper", 100 ] ],
       [ [ "crystallized_ink", 3 ] ],
