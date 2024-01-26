@@ -1,0 +1,597 @@
+[
+    {
+        "type": "effect_type",
+        "id": "dust_inhalation",
+        "name": ["You smell it", "You taste it.", "You feel it.", "It feels you.", "It tastes you.", "It smells you.", "It is inside."],
+        "desc": [
+            "You draw in a faint whiff of dust.",
+            "Noticeable amounts of dust fill your lungs.",
+            "Dense clouds of dust enter your lungs.",
+            "You inhale an overwhelming amount of dust.",
+            "You choke on a suffocating amount of dust.",
+            "You suffer as dust fills your lungs.",
+            "Your lungs seize, refusing to take in the dust."
+        ],
+        "apply_message": [
+            ["You smell it.", "bad"],
+            ["It enters your lungs.", "bad"],
+            ["Dense clouds of it enter your lungs.", "bad"],
+            ["You inhale an overwhelming amount of it.", "bad"],
+            ["You inhale it and barely enough air.", "bad"],
+            ["You struggle to draw breath, but only draw it deeper.", "bad"],
+            ["You try to breath, but it denies you.", "bad"]
+        ],
+        "miss_messages": [["Your lungs burn, you feel it.", 80]],
+        "decay_messages": [["You cough up something that squirms and bite down. It tastes good.", "good"],
+                            ["You cough up something black and breathe easier.", "good"],
+                            ["You cough up something brown and breathe easier.", "good"],
+                            ["You cough up something purple and taste copper.", "good"],
+                            ["You cough up something yellow. That burns, but you breathe easier.", "good"],
+                            ["You cough up something green and breathe easier.", "good"],
+                            ["You cough up something red and breathe easier.", "good"]],
+        "harmful_cough": true,
+        "dur_add_perc": 150,
+        "max_duration": "20 m",
+        "max_intensity": 7,
+        "max_effective_intensity": 7,
+        "int_add_val": 1,
+        "int_decay_tick": 170,
+        "int_decay_step": -2,
+        "int_decay_remove": true,
+        "scaling_mods": {
+            "str_mod": [-1], "dex_mod": [-1], "per_mod": [-1], "cough_chance": [25]
+        },
+        "limb_score_mods": [{
+            "limb_score": "breathing", "resist_modifier": 1, "scaling": -0.21
+        },
+            {
+                "limb_score": "reaction", "resist_modifier": 1, "scaling": -0.1
+            },
+            {
+                "limb_score": "balance", "resist_modifier": 1, "scaling": -0.1
+            },
+            {
+                "limb_score": "lift", "resist_modifier": 1, "scaling": -0.1
+            },
+            {
+                "limb_score": "manip", "resist_modifier": 1, "scaling": -0.1
+            }],
+        "flags": ["EFFECT_LIMB_SCORE_MOD"],
+        "show_in_info": true
+    },
+    {
+        "type": "effect_type",
+        "id": "covered_in_dust",
+        "name": ["Covered in Dust"],
+        "desc": [
+            "The dust gets everywhere."
+        ],
+        "apply_message": [
+            ["The dust gets everywhere.", "bad"]
+        ],
+        "remove_message": "It falls away.",
+        "miss_messages": [["Why is there so much of it?", 80]],
+
+        "max_duration": "12 s",
+        "int_add_val": 1,
+        "dur_add_perc": 150,
+        "max_intensity": 7,
+        "scaling_mods": {
+            "cough_chance": [50]
+        },
+        "limb_score_mods": [{
+            "limb_score": "breathing", "resist_modifier": 1, "scaling": -0.15
+        }],
+        "show_in_info": true,
+        "enchantments": [
+            "ench_dust_blaster"
+        ]
+    },
+    {
+        "type": "enchantment",
+        "id": "ench_dust_blaster",
+        "intermittent_activation": {
+            "effects": [ {
+                "frequency": "1 seconds", "spell_effects": [ {
+                    "id": "aoe_dust_blast"
+                }]
+            }]
+        }
+    },
+    {
+        "id": "emit_rubble_dust_enchantment",
+        "type": "emit",
+        "field": "fd_rubble_dust_lurking",
+        "intensity": 1,
+        "chance": 7,
+        "qty": 1
+    },
+    {
+        "id": "fd_rubble_dust_wandering",
+        "type": "field_type",
+        "display_items": true,
+        "display_field": true,
+        "looks_like": "fd_smoke",
+        "dirty_transparency_cache": false,
+        "intensity_levels": [{
+            "name": "dust motes",
+            "translucency": 25,
+            "color": "yellow",
+            "sym": "o",
+            "scent_neutralization": 6,
+            "dangerous": false,
+            "effects": [{
+                "effect_id": "dust_inhalation",
+                "body_part": "mouth",
+                "message": "You see dust in the air.",
+                "is_environmental": false,
+                "intensity": 1,
+                "min_duration": "5 seconds",
+                "max_duration": "10 seconds",
+                "immune_inside_vehicle": false,
+                "immunity_data": {
+                    "body_part_env_resistance": [["mouth", 3]]
+                }
+            }]
+        }, 
+        { "//": "repeat last entry" }, { "//": "repeat last entry" }, { "//": "repeat last entry" 
+            
+        }],
+        "immunity_data": {
+            "body_part_env_resistance": [ [ "leg", 12 ], [ "foot", 12 ] ]
+            },
+        "phase": "gas",
+        "percent_spread": 5,
+        "apply_slime_factor": 5,
+        "half_life": "5 turns",
+        "outdoor_age_speedup": "30 seconds",
+        "underwater_age_speedup": "19 minutes",
+        "decay_amount_factor": 1,
+        "has_fume": false,
+        "priority": 9
+    },
+    {
+        "id": "fd_rubble_dust_lurking",
+        "type": "field_type",
+        "display_items": false,
+        "display_field": true,
+        "looks_like": "fd_rubble",
+        "dirty_transparency_cache": false,
+        "intensity_levels": [{
+            "name": "inert dust",
+            "translucency": 0,
+            "transparent": true,
+            "color": "white",
+            "sym": "*",
+            "light_emitted": 5,
+            "convection_temperature_mod": 1,
+            "effects": [{
+                "effect_id": "covered_in_dust",
+                "message": "Your footsteps kick up a cloud of dust.",
+                "intensity": 1,
+                "min_duration": "5 seconds",
+                "max_duration": "8 seconds"
+            }]
+        }],
+        "immunity_data": {
+            "body_part_env_resistance": [ [ "leg", 12 ], [ "foot", 12 ] ]
+            },
+        "phase": "liquid",
+        "apply_slime_factor": 5,
+        "half_life": "10 minutes",
+        "outdoor_age_speedup": "30 seconds",
+        "underwater_age_speedup": "19 minutes",
+        "decay_amount_factor": 1,
+        "has_fume": false,
+        "priority": 10,
+        "bash": {
+            "str_min": 3,
+            "str_max": 12,
+            "sound_vol": 3,
+            "sound_fail_vol": 5,
+            "sound": "swish",
+            "sound_fail": "scrap",
+            "msg_success": "You carefully clear a path through the dusty ground.",
+            "move_cost": 200
+            }
+    },
+    {
+        "id": "fd_rubble_dust",
+        "type": "field_type",
+        "display_items": false,
+        "display_field": true,
+        "looks_like": "fd_fog",
+        "description_affix": "covered_in",
+        "dirty_transparency_cache": false,
+        "intensity_levels": [{
+            "name": "dust",
+            "translucency": 25,
+            "color": "yellow",
+            "sym": "o",
+            "scent_neutralization": 6,
+            "intensity_upgrade_chance": 16,
+            "intensity_upgrade_duration": "15 seconds",
+            "dangerous": false,
+            "effects": [{
+                "effect_id": "dust_inhalation",
+                "body_part": "mouth",
+                "message": "You smell the dust in the air.",
+                "is_environmental": false,
+                "intensity": 3,
+                "min_duration": "5 seconds",
+                "max_duration": "10 seconds",
+                "immune_inside_vehicle": false,
+                "immunity_data": {
+                    "body_part_env_resistance": [["mouth", 3]]
+                }
+            }]
+        }, 
+            { "//": "repeat last entry" }, { "//": "repeat last entry" }, { "//": "repeat last entry" },
+            {
+                "name": "bright cloud",
+                "translucency": 50,
+                "color": "brown",
+                "sym": "x",
+                "light_emitted": 5,
+                "scent_neutralization": 6,
+                "intensity_upgrade_chance": 11,
+                "intensity_upgrade_duration": "15 seconds",
+                "dangerous": true,
+                "effects": [{
+                    "effect_id": "dust_inhalation",
+                    "body_part": "mouth",
+                    "message": "You taste the dust in the air.",
+                    "is_environmental": false,
+                    "intensity": 5,
+                    "min_duration": "15 seconds",
+                    "max_duration": "45 seconds",
+                    "immunity_data": {
+                        "body_part_env_resistance": [["mouth", 7]]
+                    }
+                }]
+            }, 
+            { "//": "repeat last entry" }, { "//": "repeat last entry" }, { "//": "repeat last entry" },
+            {
+                "name": "dark cloud",
+                "translucency": 99,
+                "transparent": true,
+                "light_emitted": 0,
+                "color": "black",
+                "sym": "X",
+                "scent_neutralization": 12,
+                "intensity_upgrade_chance": 100,
+                "intensity_upgrade_duration": "30 seconds",
+                "extra_radiation_min": 0,
+                "extra_radiation_max": 0.001,
+                "effects": [{
+                    "effect_id": "dust_inhalation",
+                    "body_part": "mouth",
+                    "message": "You choke on the dust.",
+                    "is_environmental": true,
+                    "intensity": 7,
+                    "min_duration": "60 seconds",
+                    "max_duration": "180 seconds"
+                }]
+            }, 
+            { "//": "repeat last entry" }, { "//": "repeat last entry" }, { "//": "repeat last entry" }],
+        "immunity_data": {
+            "body_part_env_resistance": [["mouth", 15]]
+        },
+        "gas_absorption_factor": 0.0001,
+        "phase": "gas",
+        "percent_spread": 30,
+        "half_life": "45 seconds",
+        "outdoor_age_speedup": "1 seconds",
+        "underwater_age_speedup": "9 minutes",
+        "decay_amount_factor": 1,
+        "has_fume": true,
+        "priority": 1,
+        "mopsafe": false,
+        "bash": {
+            "str_min": 3,
+            "str_max": 20,
+            "sound_vol": 3,
+            "sound_fail_vol": 5,
+            "sound": "swoosh",
+            "sound_fail": "swish",
+            "msg_success": "You wave your hands in the air like you just don't care.",
+            "move_cost": 300
+        }
+    },
+    {
+        "type": "SPELL",
+        "id": "aoe_dust_blast",
+        "name": {
+            "str": "Many dust clouds appear."
+        },
+        "description": "Many dust clouds appear",
+        "valid_targets": ["ground" ],
+        "effect": "attack",
+        "flags": [ "WONDER", "NO_PROJECTILE", "NO_EXPLOSION_SFX", "RANDOM_DAMAGE" ],
+        "shape": "blast",
+        "extra_effects": [ { "id": "aoe_dust_cloud_light" }, { "id": "aoe_dust_cloud_medium" }, { "id": "aoe_dust_cloud_heavy" } ],
+        "min_damage": 12,
+        "max_damage": 12,
+        "message": ""
+    },
+    {
+        "type": "SPELL",
+        "id": "aoe_dust_cloud_light",
+        "name": {
+            "str": "A dust cloud appears nearby."
+        },
+        "description": "A dust cloud appears",
+        "valid_targets": ["ground"],
+        "effect": "attack",
+        "flags": ["NO_PROJECTILE", "NO_EXPLOSION_SFX"],
+        "shape": "blast",
+        "min_aoe": 3,
+        "max_aoe": 3,
+        "field_id": "fd_rubble_dust",
+        "field_chance": 50,
+        "min_field_intensity": 4,
+        "max_field_intensity": 4,
+        "message": ""
+    },
+    {
+        "type": "SPELL",
+        "id": "aoe_dust_cloud_medium",
+        "name": {
+            "str": "A dust cloud appears nearby."
+        },
+        "description": "A dust cloud appears",
+        "valid_targets": ["ground"],
+        "effect": "attack",
+        "flags": ["NO_PROJECTILE", "NO_EXPLOSION_SFX"],
+        "shape": "blast",
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "field_id": "fd_rubble_dust",
+        "field_chance": 75,
+        "min_field_intensity": 8,
+        "max_field_intensity": 8,
+        "message": ""
+    },
+    {
+        "type": "SPELL",
+        "id": "aoe_dust_cloud_heavy",
+        "name": {
+            "str": "A dust cloud appears nearby."
+        },
+        "description": "A dust cloud appears",
+        "valid_targets": ["ground"],
+        "effect": "attack",
+        "flags": ["NO_PROJECTILE", "NO_EXPLOSION_SFX"],
+        "shape": "blast",
+        "min_aoe": 1,
+        "max_aoe": 1,
+        "field_id": "fd_rubble_dust",
+        "field_chance": 100,
+        "min_field_intensity": 12,
+        "max_field_intensity": 12,
+        "message": ""
+    },
+    {
+        "id": "emit_rubble_dust",
+        "type": "emit",
+        "field": "fd_rubble_dust_lurking",
+        "intensity": 1,
+        "chance": 33,
+        "qty": 1
+    },
+    {
+        "type": "trap",
+        "id": "tr_disturbed_rubble_unused",
+        "name": "dusty rubble",
+        "color": "brown",
+        "symbol": "^",
+        "visibility": 0,
+        "avoidance": 1000,
+        "difficulty": 99,
+        "trap_radius": 0,
+        "always_invisible": false,
+        "action": "none",
+        "spell_data": {
+            "id": "aoe_dust_blast"
+        },
+        "trigger_weight": "100 g",
+        "flags": ["UNCONSUMED"],
+        "trigger_message_u": "You disturb the rubble.",
+        "trigger_message_npc": "<npcname> disturbs the rubble.",
+        "sound_threshold": 5
+    },
+    {
+        "type": "furniture",
+        "id": "f_rubble",
+        "name": "dusty pile of rubble",
+        "symbol": "^",
+        "description": "A pile of various metals, bricks, and other building materials.  You could clear it with a shovel. Something...organic is mixed in. It seems to be emitting motes of light into the air.",
+        "color": "light_gray",
+        "move_cost_mod": 6,
+        "max_volume": "750 L",
+        "required_str": -1,
+        "flags": [
+            "TRANSPARENT",
+            "UNSTABLE",
+            "ROUGH",
+            "PLACE_ITEM",
+            "MOUNTABLE",
+            "CONTAINER",
+            "SEALED",
+            "ALLOW_FIELD_EFFECT",
+            "TINY",
+            "RUBBLE",
+            "ALLOW_ON_OPEN_AIR"
+        ],
+        "emissions": ["emit_rubble_dust"],
+        "examine_action": "rubble"
+    },
+    {
+        "name": "GROUP_EGG_HOLEPUNCH",
+        "type": "monstergroup",
+        "default": "mon_chicken_boom",
+        "monsters": [{
+            "monster": "mon_chicken_boom", "weight": 1000
+        }]
+    },
+    {
+        "type": "COMESTIBLE",
+        "id": "egg_hole_puncher_bomb",
+        "name": {
+            "str": "paper egg"
+        },
+        "symbol": "u",
+        "description": "A piece of paper with a picture of an egg exploding.",
+        "looks_like": "plastic_spoon",
+        "copy-from": "egg_bird",
+        "spoils_in": "1 seconds",
+        "freezing_point": -100,
+        "rot_spawn": "GROUP_EGG_HOLEPUNCH",
+        "rot_spawn_chance": 100,
+        "extend": {
+            "flags": [ "BANK_NOTE_SHAPED" ]
+        }
+    },
+    {
+        "type": "item_group",
+        "subtype": "collection",
+        "id": "cash_register_empty",
+        "container-item": "cash_register",
+        "items": [["survnote", 5], ["icecream_scoop", 75], ["egg_hole_puncher_bomb", 50]]
+    },
+    {
+        "type": "GENERIC",
+        "category": "other",
+        "id": "icecream_scoop",
+        "name": {
+            "str": "Wall Clearing Bomb"
+        },
+        "symbol": "u",
+        "description": "Distributes bombs to knock down walls.",
+        "looks_like": "icecream_scoop",
+        "copy-from": "icecream_scoop",
+        "explode_in_fire": false,
+        "countdown_interval": "4 seconds",
+        "countdown_action": {
+            "type": "explosion",
+            "fields_type": "fd_electricity",
+            "fields_radius": 3,
+            "fields_min_intensity": 1,
+            "fields_max_intensity": 3,
+            "explosion": {
+                "power": 2600,
+                "distance_factor": 0.5,
+                "fire": false,
+                "max_noise": 0,
+                "shrapnel":
+                {
+                    "casing_mass": 1300,
+                    "fragment_mass": 1300,
+                    "recovery": 2,
+                    "drop": "distribution_bomb"
+                }
+            }
+        },
+        "revert_to": "hole_puncher_bomb",
+        "extend": {
+            "flags": ["BOMB", "TRADER_AVOID", "DANGEROUS", "SPAWN_ACTIVE", "BANK_NOTE_SHAPED"]
+        }
+    },
+    {
+        "type": "GENERIC",
+        "category": "other",
+        "id": "distribution_bomb",
+        "name": {
+            "str": "Distribution Bomb"
+        },
+        "symbol": "u",
+        "description": "Distributes bombs to produce craters.",
+        "looks_like": "icecream_scoop",
+        "copy-from": "icecream_scoop",
+        "countdown_interval": "3 seconds",
+        "explode_in_fire": false,
+        "countdown_action": {
+            "type": "explosion",
+            "fields_radius": 0,
+            "fields_type": "fd_disturbed_earth",
+            "fields_min_intensity": 0,
+            "fields_max_intensity": 3,
+            "explosion": {
+                "power": 3900,
+                "distance_factor": 0.5,
+                "fire": false,
+                "max_noise": 0,
+                "shrapnel":
+                {
+                    "casing_mass": 3000,
+                    "fragment_mass": 2800,
+                    "recovery": 4,
+                    "drop": "hole_puncher_bomb"
+                }
+            }
+        },
+        "revert_to": "hole_puncher_bomb",
+        "extend": {
+            "flags": ["BOMB", "TRADER_AVOID", "DANGEROUS", "SPAWN_ACTIVE"]
+        }
+    },
+    {
+        "type": "GENERIC",
+        "category": "other",
+        "id": "hole_puncher_bomb",
+        "name": {
+            "str": "subway access bomb"
+        },
+        "symbol": "u",
+        "description": "Bomb designed to punch down 3 levels.",
+        "looks_like": "icecream_scoop",
+        "copy-from": "icecream_scoop",
+        "countdown_interval": "2 seconds",
+        "explode_in_fire": false,
+        "countdown_action": {
+            "type": "explosion",
+            "fields_radius": 0,
+            "fields_type": "fd_disturbed_earth",
+            "fields_min_intensity": 0,
+            "fields_max_intensity": 2,
+            "explosion": {
+                "power": 120000,
+                "distance_factor": 0.3,
+                "fire": false,
+                "max_noise": 0,
+                "shrapnel":
+                {
+                    "casing_mass": 119000,
+                    "fragment_mass": 240000,
+                    "recovery": 4,
+                    "drop": "hole_puncher_bomb"
+                }
+            }
+        },
+        "revert_to": "hole_puncher_bomb",
+        "extend": {
+            "flags": ["BOMB", "TRADER_AVOID", "DANGEROUS", "SPAWN_ACTIVE"]
+        }
+    },
+    {
+        "type": "GENERIC",
+        "category": "other",
+        "id": "trap_dropper_bomb",
+        "name": {
+            "str": "bomb for dropping traps"
+        },
+        "symbol": "u",
+        "description": "Designed to punch down 3 levels.",
+        "looks_like": "icecream_scoop",
+        "copy-from": "icecream_scoop",
+        "countdown_interval": "2 seconds",
+        "explode_in_fire": false,
+        "countdown_action": {
+            "type": "place_trap",
+            "trap": "tr_disturbed_rubble_unused"
+        },
+        "revert_to": "hole_puncher_bomb",
+        "extend": {
+            "flags": ["BOMB", "TRADER_AVOID", "DANGEROUS", "SPAWN_ACTIVE"]
+        }
+    }]

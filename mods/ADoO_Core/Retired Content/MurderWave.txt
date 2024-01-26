@@ -1,0 +1,193 @@
+[
+    {
+        "type": "effect_type",
+        "id": "dust_inhalation",
+        "name": ["Inhaled Some Dust", "Inhaled Plenty of Dust", "Dust Inhalation", "Bad Dust Inhalation"],
+        "desc": [
+            "You draw in a faint whiff of dust.",
+            "Noticeable amount of dust fills your lungs.",
+            "Dense cloud of dust enter your lungs.",
+            "You inhale an overwhelming amount of dust."
+        ],
+        "apply_message": [
+            ["You draw in a faint whiff of dust.", "bad"],
+            ["Noticeable amount of dust fills your lungs.", "bad"],
+            ["Dense cloud of dust enter your lungs.", "bad"],
+            ["You inhale an overwhelming amount of dust.", "bad"]
+        ],
+        "miss_messages": [["Your lungs burn from the dust.", 1]],
+        "harmful_cough": true,
+        "max_duration": "3 m",
+        "max_intensity": 4,
+        "int_decay_tick": 40,
+        "scaling_mods": {
+            "str_mod": [-1], "dex_mod": [-1], "cough_chance": [10]
+        },
+        "limb_score_mods": [{
+            "limb_score": "breathing", "resist_modifier": 1, "scaling": -0.25
+        },
+            {
+                "limb_score": "reaction", "resist_modifier": 1, "scaling": -0.1
+            },
+            {
+                "limb_score": "balance", "resist_modifier": 1, "scaling": -0.1
+            },
+            {
+                "limb_score": "lift", "resist_modifier": 1, "scaling": -0.1
+            },
+            {
+                "limb_score": "manip", "resist_modifier": 1, "scaling": -0.1
+            }],
+        "flags": ["EFFECT_LIMB_SCORE_MOD"],
+        "show_in_info": true
+    },
+    {
+        "id": "fd_rubble_dust",
+        "type": "field_type",
+        "display_items": false,
+        "display_field": true,
+        "looks_like": "fd_methsmoke",
+        "description_affix": "covered_in",
+        "dirty_transparency_cache": true,
+        "intensity_levels": [{
+            "name": "dust cloud",
+            "translucency": 3,
+            "color": "yellow",
+            "sym": "o",
+            "scent_neutralization": 3,
+            "intensity_upgrade_chance": 50,
+            "intensity_upgrade_duration": "30 seconds",
+            "dangerous": true,
+            "effects": [{
+                "effect_id": "dust_inhalation",
+                "body_part": "mouth",
+                "is_environmental": true,
+                "intensity": 1,
+                "min_duration": "5 seconds",
+                "max_duration": "10 seconds",
+                "immune_inside_vehicle": true
+            }]
+        },
+            {
+                "name": "thick dust cloud",
+                "translucency": 6,
+                "color": "brown",
+                "sym": "x",
+                "scent_neutralization": 6,
+                "effects": [{
+                    "effect_id": "dust_inhalation",
+                    "body_part": "mouth",
+                    "is_environmental": false,
+                    "intensity": 2,
+                    "min_duration": "15 seconds",
+                    "max_duration": "45 seconds"
+                }]
+            },
+            {
+                "name": "choking dust cloud",
+                "translucency": 10,
+                "move_cost": 120,
+                "color": "black",
+                "sym": "X",
+                "light_override": 2,
+                "scent_neutralization": 12,
+                "intensity_upgrade_chance": 50,
+                "intensity_upgrade_duration": "3 seconds",
+                "extra_radiation_min": 1,
+                "extra_radiation_max": 1,
+                "radiation_hurt_damage_min": 1,
+                "radiation_hurt_damage_max": 1,
+                "radiation_hurt_message": "You feel an unpleasant itch, everywhere.",
+                "effects": [{
+                    "effect_id": "dust_inhalation",
+                    "body_part": "mouth",
+                    "intensity": 3,
+                    "min_duration": "60 seconds",
+                    "max_duration": "180 seconds"
+                }]
+            },
+            {
+                "name": "glowing dust cloud",
+                "translucency": 100,
+                "transparent": false,
+                "move_cost": 120,
+                "color": "green",
+                "sym": "*",
+                "light_emitted": 4,
+                "scent_neutralization": 12,
+                "extra_radiation_min": 1,
+                "extra_radiation_max": 2,
+                "radiation_hurt_damage_min": 1,
+                "radiation_hurt_damage_max": 3,
+                "radiation_hurt_message": "You feel an unpleasant itch, everywhere.",
+                "effects": [{
+                    "effect_id": "dust_inhalation",
+                    "body_part": "mouth",
+                    "intensity": 4,
+                    "min_duration": "120 seconds",
+                    "max_duration": "180 seconds"
+                }]
+            }],
+        "immunity_data": {
+            "body_part_env_resistance": [["mouth", 7]]
+        },
+        "gas_absorption_factor": 0.05,
+        "phase": "gas",
+        "percent_spread": 90,
+        "half_life": "10 minutes",
+        "outdoor_age_speedup": "3 minutes",
+        "underwater_age_speedup": "9 minutes",
+        "decay_amount_factor": 1,
+        "has_fume": true,
+        "wandering_field": "fd_rubble_dust",
+        "priority": 8,
+        "mopsafe": false,
+        "bash": {
+            "str_min": 3,
+            "str_max": 20,
+            "sound_vol": 3,
+            "sound_fail_vol": 5,
+            "sound": "swoosh",
+            "sound_fail": "swish",
+            "msg_success": "You wave your hands in the air like you just don't care.",
+            "move_cost": 300,
+            "items": [{
+                "item": "rag", "count": [1, 1]
+            }]
+        }
+    },
+    {
+        "id": "emit_rubble_dust",
+        "type": "emit",
+        "field": "fd_rubble_dust",
+        "intensity": 4,
+        "chance": 25,
+        "qty": 5
+    },
+    {
+        "type": "furniture",
+        "id": "f_rubble",
+        "name": "pile of rubble",
+        "symbol": "^",
+        "description": "A pile of various metals, bricks, and other building materials.  You could clear it with a shovel. Something...organic is mixed in. It seems to be emitting motes of light into the air.",
+        "color": "light_gray",
+        "move_cost_mod": 6,
+        "max_volume": "750 L",
+        "required_str": -1,
+        "flags": [
+            "TRANSPARENT",
+            "UNSTABLE",
+            "ROUGH",
+            "PLACE_ITEM",
+            "MOUNTABLE",
+            "CONTAINER",
+            "SEALED",
+            "ALLOW_FIELD_EFFECT",
+            "TINY",
+            "RUBBLE",
+            "ALLOW_ON_OPEN_AIR"
+        ],
+        "emissions": ["emit_rubble_dust"],
+        "examine_action": "rubble"
+    }
+]

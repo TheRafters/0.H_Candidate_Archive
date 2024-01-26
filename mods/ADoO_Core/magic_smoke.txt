@@ -1,0 +1,147 @@
+[
+  {
+    "id": "fd_cigsmoke",
+    "type": "field_type",
+    "legacy_enum_id": 33,
+    "intensity_levels": [
+      { "name": "swirl of tobacco smoke", "translucency": 5,
+        "effects": [
+          {
+            "effect_id": "took_anticonvulsant_visible",
+            "intensity": 1,
+            "min_duration": "10 seconds",
+            "max_duration": "360 seconds"
+          },
+          {
+            "effect_id": "valium",
+            "intensity": 1,
+            "min_duration": "10 seconds",
+            "max_duration": "360 seconds"
+          },
+          {
+            "effect_id": "took_xanax",
+            "intensity": 1,
+            "min_duration": "10 seconds",
+            "max_duration": "360 seconds"
+          },
+          {
+            "effect_id": "prophylactic_antivenom",
+            "intensity": 1,
+            "min_duration": "10 seconds",
+            "max_duration": "360 seconds"
+          },
+          {
+            "effect_id": "happy",
+            "intensity": 1,
+            "min_duration": "10 seconds",
+            "max_duration": "30 seconds"
+          },
+          {
+            "effect_id": "supercharged",
+            "intensity": 1,
+            "min_duration": "1 seconds",
+            "max_duration": "3 seconds"
+          },
+          {
+            "effect_id": "common_cold_immunity",
+            "intensity": 1,
+            "min_duration": "10 seconds",
+            "max_duration": "30 seconds"
+          },
+          {
+            "effect_id": "flushot",
+            "intensity": 1,
+            "min_duration": "10 seconds",
+            "max_duration": "30 seconds"
+          },
+          {
+            "effect_id": "pblue",
+            "intensity": 1,
+            "min_duration": "10 seconds",
+            "max_duration": "30 seconds"
+          },
+          {
+            "effect_id": "iodine",
+            "intensity": 1,
+            "min_duration": "10 seconds",
+            "max_duration": "30 seconds"
+          }
+        ] },
+      { "name": "tobacco smoke", "color": "light_gray" },
+      { "name": "thick tobacco smoke", "color": "dark_gray" }
+    ],
+    "decay_amount_factor": 5,
+    "percent_spread": 250,
+    "outdoor_age_speedup": "6 minutes",
+    "dirty_transparency_cache": true,
+    "priority": 8,
+    "half_life": "35 minutes",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_field": true,
+    "looks_like": "fd_smoke"
+  },
+  {
+    "id": "fd_weedsmoke",
+    "type": "field_type",
+    "legacy_enum_id": 34,
+    "intensity_levels": [
+      { "name": "swirl of pot smoke", "translucency": 5 },
+      { "name": "pot smoke", "color": "light_gray" },
+      { "name": "thick pot smoke", "color": "dark_gray" }
+    ],
+    "npc_complain": { "chance": 20, "issue": "weed_smoke", "duration": "10 minutes", "speech": "<weed_smoke>" },
+    "decay_amount_factor": 5,
+    "percent_spread": 200,
+    "outdoor_age_speedup": "6 minutes",
+    "dirty_transparency_cache": true,
+    "priority": 8,
+    "half_life": "325 turns",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_field": true,
+    "looks_like": "fd_cigsmoke"
+  },
+  {
+    "id": "fd_cracksmoke",
+    "type": "field_type",
+    "legacy_enum_id": 35,
+    "intensity_levels": [
+      { "name": "swirl of crack smoke", "translucency": 5 },
+      { "name": "crack smoke", "color": "light_gray" },
+      { "name": "thick crack smoke", "color": "dark_gray" }
+    ],
+    "npc_complain": { "chance": 20, "issue": "crack_smoke", "duration": "30 minutes", "speech": "<crack_smoke>" },
+    "decay_amount_factor": 5,
+    "percent_spread": 175,
+    "outdoor_age_speedup": "8 minutes",
+    "dirty_transparency_cache": true,
+    "priority": 8,
+    "half_life": "225 turns",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_field": true,
+    "looks_like": "fd_cigsmoke"
+  },
+  {
+    "id": "fd_methsmoke",
+    "type": "field_type",
+    "legacy_enum_id": 36,
+    "intensity_levels": [
+      { "name": "swirl of meth smoke", "translucency": 5 },
+      { "name": "meth smoke", "color": "light_gray" },
+      { "name": "thick meth smoke", "color": "dark_gray" }
+    ],
+    "npc_complain": { "chance": 20, "issue": "meth_smoke", "duration": "30 minutes", "speech": "<meth_smoke>" },
+    "decay_amount_factor": 5,
+    "percent_spread": 175,
+    "outdoor_age_speedup": "7 minutes",
+    "dirty_transparency_cache": true,
+    "priority": 8,
+    "half_life": "275 turns",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_field": true,
+    "looks_like": "fd_smoke"
+  }
+]

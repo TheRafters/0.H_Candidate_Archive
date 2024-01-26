@@ -213,7 +213,7 @@
         "append": true
       }
     ],
-    "melee_damage": { "bash": 6 }
+    "melee_damage": { "bash": 0 }
   },
   {
     "id": "hat_hard_hooded",
@@ -401,6 +401,6 @@
         "append": true
       }
     ],
-    "melee_damage": { "bash": 6 }
+    "melee_damage": { "bash": 0 }
   }
 ]
