@@ -17,6 +17,7 @@
   {
     "type": "recipe",
     "result": "javelin_stone",
+    "activity_level": "LIGHT_EXERCISE",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_PIERCING",
     "skill_used": "fabrication",
@@ -38,7 +39,7 @@
     ],
     "components": [
       [ [ "spear_wood", 1 ], [ "pointy_stick", 1 ] ],
-      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "cotton_patchwork", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
       [ [ "duct_tape", 20 ], [ "filament", 20, "LIST" ] ],
       [ [ "rock_flaking", 1 ], [ "sharp_rock", 1 ], [ "ceramic_shard", 1 ] ]
     ]
@@ -46,6 +47,7 @@
   {
     "type": "recipe",
     "result": "javelin_copper",
+    "activity_level": "LIGHT_EXERCISE",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_PIERCING",
     "skill_used": "fabrication",

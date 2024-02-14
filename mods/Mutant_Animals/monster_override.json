@@ -98,9 +98,9 @@
     "delete": { "upgrades": { "half_life": 17, "into": "mon_coyote_small" } }
   },
   {
-    "id": "mon_frog_giant",
+    "id": "mon_fowler_toad",
     "type": "MONSTER",
-    "copy-from": "mon_frog_giant",
+    "copy-from": "mon_fowler_toad",
     "upgrades": { "half_life": 91, "into": "mon_frog_devil" }
   },
   {

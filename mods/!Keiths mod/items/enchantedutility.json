@@ -635,7 +635,7 @@
     "material": [ "plastic" ],
     "symbol": "[",
     "looks_like": "briefcase",
-    "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+    "properties": { "creature_size_capacity": "HUGE" },
     "color": "light_gray",
     "sided": true,
     "charges_per_use": 3,
@@ -2332,7 +2332,7 @@
     "material": [ "steel" ],
     "symbol": "I",
     "color": "black",
-    "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+    "properties": { "creature_size_capacity": "HUGE" },
     "use_action": [ "CAPTURE_MONSTER_ACT" ],
     "pocket_data": [
       {
@@ -2356,7 +2356,7 @@
     "symbol": "`",
     "looks_like": "mirror",
     "description": "A piece of paper that has been magically enhanced to have the property of containment. Small objects or creatures can be stored inside. Most commonly used by mages to store magic circles.",
-    "properties": [ [ "creature_size_capacity", "MEDIUM" ] ],
+    "properties": { "creature_size_capacity": "MEDIUM" },
     "use_action": [ "CAPTURE_MONSTER_ACT" ],
     "price": 50000,
     "material": [ "paper" ],

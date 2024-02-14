@@ -1,0 +1,2 @@
+Ensure the recipes work.
+Convert nano tool to use EOC selector for morphs instead of transform.

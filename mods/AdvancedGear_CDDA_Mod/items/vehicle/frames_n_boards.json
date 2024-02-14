@@ -1,0 +1,451 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "nano_frame",
+    "name": { "str": "nanotech hybrid frame" },
+    "description": "A large frame made of steel and reinforced with nanites.  Useful for crafting.",
+    "looks_like": "frame",
+    "symbol": "+",
+    "weight": "20000 g",
+    "volume": "15 L",
+    "to_hit": -5,
+    "color": "cyan",
+    "material": [ "steel", "nanite" ],
+    "techniques": [ "DEF_DISARM" ],
+    "melee_damage": { "bash": 20, "cut": 0 },
+    "category": "veh_parts",
+    "price": "55 USD",
+    "price_postapoc": 2500
+  },
+  {
+    "id": "nanotech_frame",
+    "type": "vehicle_part",
+    "name": { "str": "nanotech hybrid frame" },
+    "item": "nano_frame",
+    "location": "structure",
+    "color": "dark_gray",
+    "durability": 3000,
+    "description": "A heavy metal framework infused with nanites working to augment the durability.  Other vehicle components can be mounted on it, and it can be attached to other frames to increase the vehicle's size.",
+    "looks_like": "frame",
+    "folded_volume": "6250 ml",
+    "folding_time": "30 seconds",
+    "unfolding_time": "30 seconds",
+    "breaks_into": [ { "item": "nano_frame", "count": [ 0, 1 ] } ],
+    "damage_reduction": { "all": 150 },
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "welding_standard", 10 ] ] },
+      "removal": { "skills": [ [ "mechanics", 1 ] ], "using": "vehicle_weld_removal" },
+      "repair": { "skills": [ [ "mechanics", 1 ] ], "time": "5 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "flags": [ "MOUNTABLE" ],
+    "variants": [
+      { "id": "horizontal", "label": "Horizontal", "symbols": "──│───│─", "symbols_broken": "#" },
+      {
+        "id": "horizontal_front",
+        "label": "Front Horizontal",
+        "symbols": "──│───│─",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "horizontal_rear",
+        "label": "Rear Horizontal",
+        "symbols": "──│───│─",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "horizontal_2",
+        "label": "Thick Horizontal",
+        "symbols": "━━┃━━━┃━",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "horizontal_2_front",
+        "label": "Front Thick Horizontal",
+        "symbols": "━━┃━━━┃━",
+        "symbols_broken": "#"
+      },
+      { "id": "vertical", "label": "Vertical", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_left", "label": "Left Vertical", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_right", "label": "Right Vertical", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_T_left", "label": "Left T Joint", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_T_right", "label": "Right T Joint", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_2", "label": "Thick Vertical", "symbols": "┃┃━┃┃┃━┃", "symbols_broken": "#" },
+      {
+        "id": "vertical_2_left",
+        "label": "Left Thick Vertical",
+        "symbols": "┃┃━┃┃┃━┃",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "vertical_2_right",
+        "label": "Right Thick Vertical",
+        "symbols": "┃┃━┃┃┃━┃",
+        "symbols_broken": "#"
+      },
+      { "id": "cover", "label": "Cover", "symbols": "^^<vvv>^", "symbols_broken": "#" },
+      { "id": "cross", "label": "Cross", "symbols": "┼X┼X┼X┼X", "symbols_broken": "#" },
+      { "id": "ne", "label": "Front Right", "symbols": "┐┐┌└└└┘┐", "symbols_broken": "#" },
+      { "id": "nw", "label": "Front Left", "symbols": "┌┌└┘┘┘┐┌", "symbols_broken": "#" },
+      { "id": "se", "label": "Rear Right", "symbols": "┘┘┐┌┌┌└┘", "symbols_broken": "#" },
+      { "id": "sw", "label": "Rear Left", "symbols": "└└┘┐┐┐┌└", "symbols_broken": "#" }
+    ]
+  },
+  {
+    "id": "nanotech_frame_cover",
+    "type": "vehicle_part",
+    "copy-from": "nanotech_frame",
+    "looks_like": "hdframe_cover"
+  },
+  {
+    "id": "nanotech_frame_cross",
+    "type": "vehicle_part",
+    "copy-from": "nanotech_frame",
+    "looks_like": "hdframe_cross",
+    "extend": { "flags": [ "INITIAL_PART" ] }
+  },
+  {
+    "id": "nanotech_frame_horizontal",
+    "copy-from": "nanotech_frame",
+    "looks_like": "hdframe_horizontal",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame_horizontal_2",
+    "copy-from": "nanotech_frame",
+    "looks_like": "hdframe_horizontal_2",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame_ne",
+    "copy-from": "nanotech_frame",
+    "looks_like": "hdframe_ne",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame_nw",
+    "copy-from": "nanotech_frame",
+    "looks_like": "hdframe_nw",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame_se",
+    "copy-from": "nanotech_frame",
+    "looks_like": "hdframe_se",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame_sw",
+    "copy-from": "nanotech_frame",
+    "looks_like": "hdframe_sw",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame_vertical",
+    "copy-from": "nanotech_frame",
+    "looks_like": "hdframe_vertical",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame_vertical_2",
+    "copy-from": "nanotech_frame",
+    "looks_like": "hdframe_vertical_2",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame2",
+    "type": "vehicle_part",
+    "name": { "str": "nanotech frame" },
+    "item": "xl_nanite_cluster",
+    "location": "structure",
+    "color": "dark_gray",
+    "durability": 7500,
+    "description": "A large cluster of nanites actively forming a support network for other structures to attach to.  Other vehicle components can be mounted on it, and it can be attached to other frames to increase the vehicle's size.",
+    "looks_like": "frame",
+    "folded_volume": "2 L",
+    "folding_time": "30 seconds",
+    "unfolding_time": "30 seconds",
+    "breaks_into": [ { "item": "xl_nanite_cluster", "count": [ 1, 1 ] } ],
+    "damage_reduction": { "all": 500 },
+    "requirements": {
+      "install": { "skills": [ [ "computer", 0 ] ], "time": "1 m", "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
+      "removal": { "skills": [ [ "computer", 0 ] ], "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
+      "repair": { "skills": [ [ "computer", 0 ] ], "time": "1 m", "qualities": [ { "id": "NANO_PRO", "level": 1 } ] }
+    },
+    "flags": [ "MOUNTABLE" ],
+    "variants": [
+      { "id": "horizontal", "label": "Horizontal", "symbols": "──│───│─", "symbols_broken": "#" },
+      {
+        "id": "horizontal_front",
+        "label": "Front Horizontal",
+        "symbols": "──│───│─",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "horizontal_rear",
+        "label": "Rear Horizontal",
+        "symbols": "──│───│─",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "horizontal_2",
+        "label": "Thick Horizontal",
+        "symbols": "━━┃━━━┃━",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "horizontal_2_front",
+        "label": "Front Thick Horizontal",
+        "symbols": "━━┃━━━┃━",
+        "symbols_broken": "#"
+      },
+      { "id": "vertical", "label": "Vertical", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_left", "label": "Left Vertical", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_right", "label": "Right Vertical", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_T_left", "label": "Left T Joint", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_T_right", "label": "Right T Joint", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_2", "label": "Thick Vertical", "symbols": "┃┃━┃┃┃━┃", "symbols_broken": "#" },
+      {
+        "id": "vertical_2_left",
+        "label": "Left Thick Vertical",
+        "symbols": "┃┃━┃┃┃━┃",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "vertical_2_right",
+        "label": "Right Thick Vertical",
+        "symbols": "┃┃━┃┃┃━┃",
+        "symbols_broken": "#"
+      },
+      { "id": "cover", "label": "Cover", "symbols": "^^<vvv>^", "symbols_broken": "#" },
+      { "id": "cross", "label": "Cross", "symbols": "┼X┼X┼X┼X", "symbols_broken": "#" },
+      { "id": "ne", "label": "Front Right", "symbols": "┐┐┌└└└┘┐", "symbols_broken": "#" },
+      { "id": "nw", "label": "Front Left", "symbols": "┌┌└┘┘┘┐┌", "symbols_broken": "#" },
+      { "id": "se", "label": "Rear Right", "symbols": "┘┘┐┌┌┌└┘", "symbols_broken": "#" },
+      { "id": "sw", "label": "Rear Left", "symbols": "└└┘┐┐┐┌└", "symbols_broken": "#" }
+    ]
+  },
+  {
+    "id": "nanotech_frame2_cover",
+    "type": "vehicle_part",
+    "copy-from": "nanotech_frame2",
+    "looks_like": "hdframe_cover"
+  },
+  {
+    "id": "nanotech_frame2_cross",
+    "type": "vehicle_part",
+    "copy-from": "nanotech_frame2",
+    "looks_like": "hdframe_cross",
+    "extend": { "flags": [ "INITIAL_PART" ] }
+  },
+  {
+    "id": "nanotech_frame2_horizontal",
+    "copy-from": "nanotech_frame2",
+    "looks_like": "hdframe_horizontal",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame2_horizontal_2",
+    "copy-from": "nanotech_frame2",
+    "looks_like": "hdframe_horizontal_2",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame2_ne",
+    "copy-from": "nanotech_frame2",
+    "looks_like": "hdframe_ne",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame2_nw",
+    "copy-from": "nanotech_frame2",
+    "looks_like": "hdframe_nw",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame2_se",
+    "copy-from": "nanotech_frame2",
+    "looks_like": "hdframe_se",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame2_sw",
+    "copy-from": "nanotech_frame2",
+    "looks_like": "hdframe_sw",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame2_vertical",
+    "copy-from": "nanotech_frame2",
+    "looks_like": "hdframe_vertical",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanotech_frame2_vertical_2",
+    "copy-from": "nanotech_frame2",
+    "looks_like": "hdframe_vertical_2",
+    "type": "vehicle_part"
+  },
+  {
+    "id": "nanoboard",
+    "type": "vehicle_part",
+    "name": { "str": "nanotech board" },
+    "item": "xl_nanite_cluster",
+    "location": "center",
+    "color": "dark_gray",
+    "durability": 5000,
+    "folded_volume": "6250 ml",
+    "size": 120,
+    "description": "A strong metal wall.  Keeps zombies outside the vehicle and prevents people from seeing through it.",
+    "breaks_into": [ { "item": "xl_nanite_cluster", "count": [ 1, 1 ] } ],
+    "requirements": {
+      "install": { "skills": [ [ "computer", 0 ] ], "time": "1 m", "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
+      "removal": { "skills": [ [ "computer", 0 ] ], "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
+      "repair": { "skills": [ [ "computer", 0 ] ], "time": "1 m", "qualities": [ { "id": "NANO_PRO", "level": 1 } ] }
+    },
+    "flags": [ "AISLE", "OPAQUE", "OBSTACLE", "TOOL_NONE", "FLAT_SURF", "CARGO", "COVERED" ],
+    "damage_reduction": { "all": 400 },
+    "variants": [
+      { "id": "horizontal", "label": "Horizontal", "symbols": "──│───│─", "symbols_broken": "#" },
+      {
+        "id": "horizontal_front",
+        "label": "Front Horizontal",
+        "symbols": "──│───│─",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "horizontal_rear",
+        "label": "Rear Horizontal",
+        "symbols": "──│───│─",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "horizontal_2",
+        "label": "Thick Horizontal",
+        "symbols": "━━┃━━━┃━",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "horizontal_2_front",
+        "label": "Front Thick Horizontal",
+        "symbols": "━━┃━━━┃━",
+        "symbols_broken": "#"
+      },
+      { "id": "vertical", "label": "Vertical", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_left", "label": "Left Vertical", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_right", "label": "Right Vertical", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_T_left", "label": "Left T Joint", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_T_right", "label": "Right T Joint", "symbols": "│\\─/│\\─/", "symbols_broken": "#" },
+      { "id": "vertical_2", "label": "Thick Vertical", "symbols": "┃┃━┃┃┃━┃", "symbols_broken": "#" },
+      {
+        "id": "vertical_2_left",
+        "label": "Left Thick Vertical",
+        "symbols": "┃┃━┃┃┃━┃",
+        "symbols_broken": "#"
+      },
+      {
+        "id": "vertical_2_right",
+        "label": "Right Thick Vertical",
+        "symbols": "┃┃━┃┃┃━┃",
+        "symbols_broken": "#"
+      },
+      { "id": "cover", "label": "Cover", "symbols": "^^<vvv>^", "symbols_broken": "#" },
+      { "id": "cross", "label": "Cross", "symbols": "┼X┼X┼X┼X", "symbols_broken": "#" },
+      { "id": "ne", "label": "Front Right", "symbols": "┐┐┌└└└┘┐", "symbols_broken": "#" },
+      { "id": "nw", "label": "Front Left", "symbols": "┌┌└┘┘┘┐┌", "symbols_broken": "#" },
+      { "id": "se", "label": "Rear Right", "symbols": "┘┘┐┌┌┌└┘", "symbols_broken": "#" },
+      { "id": "sw", "label": "Rear Left", "symbols": "└└┘┐┐┐┌└", "symbols_broken": "#" }
+    ]
+  },
+  {
+    "id": "nanohalfboard",
+    "copy-from": "nanoboard",
+    "type": "vehicle_part",
+    "name": { "str": "nanotech quarterpanel" },
+    "description": "A half-height strong metal wall.  Keeps zombies outside the vehicle but allows people to see over it.",
+    "delete": { "flags": [ "OPAQUE" ] }
+  },
+  {
+    "id": "nanoboard_horizontal",
+    "copy-from": "nanoboard",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_horizontal"
+  },
+  {
+    "id": "nanohalfboard_horizontal",
+    "copy-from": "nanohalfboard",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_horizontal"
+  },
+  {
+    "id": "nanohalfboard_horizontal_2",
+    "copy-from": "nanohalfboard",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_horizontal_2"
+  },
+  {
+    "id": "nanoboard_ne",
+    "copy-from": "nanoboard",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_ne"
+  },
+  {
+    "id": "nanohalfboard_ne",
+    "copy-from": "nanohalfboard",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_ne"
+  },
+  {
+    "id": "nanoboard_nw",
+    "copy-from": "nanoboard",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_nw"
+  },
+  {
+    "id": "nanohalfboard_nw",
+    "copy-from": "nanohalfboard",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_nw"
+  },
+  {
+    "id": "nanoboard_se",
+    "copy-from": "nanoboard",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_se"
+  },
+  {
+    "id": "nanohalfboard_se",
+    "copy-from": "nanohalfboard",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_se"
+  },
+  {
+    "id": "nanoboard_sw",
+    "copy-from": "nanoboard",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_sw"
+  },
+  {
+    "id": "nanohalfboard_sw",
+    "copy-from": "nanohalfboard",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_sw"
+  },
+  {
+    "id": "nanoboard_vertical",
+    "copy-from": "nanoboard",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_vertical"
+  },
+  {
+    "id": "nanohalfboard_vertical",
+    "copy-from": "nanohalfboard",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_vertical"
+  },
+  {
+    "id": "nanohalfboard_vertical_2",
+    "copy-from": "nanohalfboard",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_vertical_2"
+  }
+]

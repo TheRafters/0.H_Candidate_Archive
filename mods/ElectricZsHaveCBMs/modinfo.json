@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "ElectricZCBMS",
+    "name": "Electric Zombies Have CBMs",
+    "authors": [ "Unknown" ],
+    "description": "Restores the ability to dissect CBMs from electric zombies.",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]

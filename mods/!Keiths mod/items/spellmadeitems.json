@@ -1143,6 +1143,9 @@
       "target": "mtoken_pocketsaw",
       "active": false,
       "moves": 0,
+      "ammo_scale": 0,
+      "need_charges": 0,
+      "target_charges": 1,
       "msg": "You say the command word engraved on the machine gun, and it rapidly shrinks and morphs into a shiny silver token!"
     },
     "valid_mod_locations": [

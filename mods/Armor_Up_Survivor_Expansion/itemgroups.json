@@ -1,0 +1,31 @@
+[
+    {
+    "type": "item_group",
+    "id": "civilian_armor",
+    "subtype": "distribution",
+    "//": "armor that a civilian might have.",
+    "entries": [ { "group": "civilian_face_armor", "prob": 20 }, { "group": "civilian_body_armor", "prob": 20 }, { "group": "survivor_body_armor", "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "survivor_body_armor",
+    "subtype": "distribution",
+    "//": "armor that a survivor might have.",
+    "entries": [
+      { "item": "environmental_skinsuit", "prob": 5 },
+      { "item": "survivor_skinsuit", "prob": 15 },
+      { "item": "survivor_alloyplate", "prob": 5 },
+      { "item": "armor_alloyplate", "prob": 5 },
+      { "item": "survivor_lightplate", "prob": 10 },
+      { "item": "armored_pack", "prob": 10 },
+      { "group": "survivorzed_suits", "prob": 5 },
+      { "group": "survivorzed_tops", "prob": 5 },
+      { "group": "survivorzed_bottoms", "prob": 5 },
+      { "group": "survivorzed_gloves", "prob": 5 },
+      { "group": "survivorzed_boots", "prob": 5 },
+      { "group": "survivorzed_head", "prob": 5 },
+      { "group": "survivorzed_extra", "prob": 5 },
+      { "group": "museum_armor", "prob": 5 }
+    ]
+  }
+]

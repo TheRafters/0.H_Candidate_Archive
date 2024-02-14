@@ -1,0 +1,64 @@
+[
+  {
+    "id": "disorientation",
+    "type": "effect_type",
+    "name": [ "Disoriented" ],
+    "desc": [ "You feel confused and disoriented." ],
+    "apply_message": "You begin to feel disoriented.",
+    "remove_message": "You no longer feel disoriented.",
+    "rating": "bad",
+    "max_duration": "3 m",
+    "miss_messages": [ [ "You feel disoriented.", 2 ] ],
+    "base_mods": {
+      "speed_mod": [ -20 ],
+      "int_mod": [ -2 ],
+      "dex_mod": [ -2 ],
+      "per_mod": [ -2 ]
+    }
+  },
+  {
+    "id": "slime_dash",
+    "type": "effect_type",
+    "base_mods": {
+      "dodge_mod": [ 2 ],
+      "hit_mod": [ 3 ]
+    },
+    "scaling_mods": {
+      "hit_mod": [ 2 ]
+    },
+    "max_duration": "3 s"
+  },
+  {
+    "id": "slime_boosted",
+    "type": "effect_type",
+    "name": [ "Boosted" ],
+    "max_intensity": 20,
+    "max_duration": "5 m",
+    "base_mods": {
+      "speed_mod": [ 5 ]
+    },
+    "scaling_mods": {
+      "speed_mod": [ 5 ]
+    },
+    "int_dur_factor": "15 s",
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "dissolving",
+    "name": [ "Dissolving" ],
+    "desc": [ "The chemical is beginning to dissolve you!" ],
+    "apply_message": "The chemical begins to dissolve you!",
+    "rating": "bad",
+    "max_duration": "40 s",
+    "max_intensity": 5,
+    "int_dur_factor": "5 s",
+    "base_mods": {
+      "hurt_min": [ 1 ],
+      "hurt_max": [ 3 ],
+      "hurt_chance": [ 1 ], 
+      "hurt_chance_bot": [ 5 ] 
+    },
+    "scaling_mods": { "hurt_chance": [ 1 ] }
+  }
+]

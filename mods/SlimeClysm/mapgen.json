@@ -1,0 +1,141 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "slime_forest" ],
+    "weight": 1000,
+    "object": {
+      "predecessor_mapgen": "forest",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": {
+        " ": [ "t_null", "t_null", "t_null", "t_slime" ]
+      },
+      "furniture": { " ": "f_null" },
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "place_monster": [ 
+        { 
+          "group": "GROUP_SLIME_FOREST",
+          "x": [ 0, 23 ], "y": [ 0, 23 ],
+          "chance": 4, 
+          "repeat": 10,
+          "pack_size": [ 2, 5 ],
+          "spawn_data": { "patrol": [ { "x": [ 0, 23 ], "y": [ 0, 23 ] } ] }
+        },
+        { 
+          "group": "GROUP_SLIME_FOREST",
+          "x": [ 0, 23 ], "y": [ 0, 23 ],
+          "chance": 10, 
+          "repeat": 30,
+          "spawn_data": { "patrol": [ { "x": [ 0, 23 ], "y": [ 0, 23 ] } ] }
+        }
+      ]
+    }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "slime_forest",
+    "name": "slime forest",
+    "see_cost": 2,
+    "color": "light_green",
+    "sym": "F",
+    "mondensity": 5,
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "sc_slime_forest",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "slime_forest_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "slime_forest_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "slime_forest_north" },
+      { "point": [ -1, 0, 0 ], "overmap": "slime_forest_north" },
+      { "point": [ 0, -1, 0 ], "overmap": "slime_forest_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "slime_forest_north" },
+      { "point": [ 1, -1, 0 ], "overmap": "slime_forest_north" },
+      { "point": [ -1, 1, 0 ], "overmap": "slime_forest_north" },
+      { "point": [ -1, -1, 0 ], "overmap": "slime_forest_north" }
+    ],
+    "locations": [ "forest" ],
+    "city_distance": [ 1, -1 ],
+    "occurrences": [ 0, 40 ],
+    "flags": [ "WILDERNESS", "BLOB" ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "pond_field" ],
+    "weight": 100,
+    "object": {
+      "rotation": [ 0, 3 ],
+      "predecessor_mapgen": "forest",
+      "rows": [
+        "                        ",
+        "                        ",
+        "       ??????????       ",
+        "    ????????????????    ",
+        "   ?????]]]]]]]]?????   ",
+        "   ???]]]]]]]]]]]]???   ",
+        "   ??]]]]******]]]]??   ",
+        "  ???]]**********]]???  ",
+        "  ??]]]**[[[[[[**]]]??  ",
+        "  ??]]**[[[[[[[[**]]??  ",
+        "  ??]]**[[~~~~[[**]]??  ",
+        "  ??]]**[[~~~~[[**]]??  ",
+        "  ??]]**[[~~~~[[**]]??  ",
+        "  ??]]**[[~~~~[[**]]??  ",
+        "  ??]]**[[[[[[[[**]]??  ",
+        "  ??]]]**[[[[[[**]]]??  ",
+        "  ???]]**********]]???  ",
+        "   ??]]]]******]]]]??   ",
+        "   ???]]]]]]]]]]]]???   ",
+        "   ?????]]]]]]]]?????   ",
+        "    ????????????????    ",
+        "       ??????????       ",
+        "                        ",
+        "                        "
+      ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "terrain": {
+        "?": [ [ "t_water_sh", 2 ], [ "t_region_groundcover", 20 ] ],
+        "]": [ [ "t_water_sh", 6 ], "t_region_soil", "t_region_groundcover" ],
+        "*": "t_water_sh",
+        "[": [ [ "t_water_dp", 2 ], [ "t_water_sh", 3 ] ],
+        "~": "t_water_dp"
+      },
+      "nested": {
+        "]": { "chunks": [ [ "pond_water_furniture", 8 ], [ "null", 92 ] ] },
+        "*": { "chunks": [ [ "pond_water_furniture", 8 ], [ "null", 92 ] ] },
+        "[": { "chunks": [ [ "pond_water_furniture", 8 ], [ "null", 92 ] ] },
+        "~": { "chunks": [ [ "pond_water_furniture", 8 ], [ "null", 92 ] ] }
+      },
+      "place_monster": [
+        { "group": "GROUP_AQUA_SLIME", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 5 }
+      ]
+    }
+  }
+]

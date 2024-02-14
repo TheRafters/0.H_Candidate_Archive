@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "adv_gear",
+    "name": "Advanced Gear Goats Edition",
+    "authors": [ "Shard" ],
+    "maintainers": [ "The Goat God", "Cobweb" ],
+    "description": "Extremely high-end items based around nanotech and 3D printing, mutations to be added later. [Cobweb's log: Updated to Oct-13-23 - vehicle parts are going to need some work.]",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]

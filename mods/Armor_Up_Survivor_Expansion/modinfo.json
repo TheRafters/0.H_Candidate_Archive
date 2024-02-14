@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "ArmUpSurvEx",
+    "name": "Armor Up! Survivor Expansion",
+    "authors": [ "darktoes", "Cobweb" ],
+    "description": "A few extra bits of Survivor-grade armor.[Cobweb's log: updated to Oct-13-23 . Added the armor to civilian armor drops, should be fun.]",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]

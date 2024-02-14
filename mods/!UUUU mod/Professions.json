@@ -196,7 +196,9 @@
           { "group": "charged_smart_phone" },
           { "item": "wrench", "container-item": "tool_belt" },
           { "group": "charged_soldering_iron" },
-          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "welder" },
+          { "group": "tools_mechanic" },
+          { "group": "tools_mechanic" },
+          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "backpack_leather" },
           { "item": "bot_tinyflamedrone", "custom-flags": [ "auto_wield" ] }
         ]
       },
@@ -219,7 +221,9 @@
           { "group": "charged_smart_phone" },
           { "item": "wrench", "container-item": "tool_belt" },
           { "group": "charged_soldering_iron" },
-          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "welder" },
+          { "group": "tools_mechanic" },
+          { "group": "tools_mechanic" },
+          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "backpack_leather" },
           { "item": "bot_smalldrilldrone", "custom-flags": [ "auto_wield" ] }
         ]
       },
@@ -242,7 +246,9 @@
           { "group": "charged_smart_phone" },
           { "item": "wrench", "container-item": "tool_belt" },
           { "group": "charged_soldering_iron" },
-          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "welder" },
+          { "group": "tools_mechanic" },
+          { "group": "tools_mechanic" },
+          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "backpack_leather" },
           { "item": "bot_mediumsawwalker", "custom-flags": [ "auto_wield" ] }
         ]
       },
@@ -265,7 +271,9 @@
           { "group": "charged_smart_phone" },
           { "item": "wrench", "container-item": "tool_belt" },
           { "group": "charged_soldering_iron" },
-          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "welder" },
+          { "group": "tools_mechanic" },
+          { "group": "tools_mechanic" },
+          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "backpack_leather" },
           { "item": "bot_largebladewalkersteel", "custom-flags": [ "auto_wield" ] }
         ]
       },

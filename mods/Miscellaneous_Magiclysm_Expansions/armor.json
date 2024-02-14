@@ -17,7 +17,7 @@
     "symbol": "#",
     "color": "red",
     "warmth": 25,
-    "flags": [ "STURDY" ],
+    "flags": [ "STURDY", "SOFT" ],
     "material_thickness": 8,
     "environmental_protection": 40,
     "armor": [
@@ -44,7 +44,7 @@
     "symbol": "#",
     "color": "green",
     "warmth": 25,
-    "flags": [ "STURDY" ],
+    "flags": [ "STURDY", "SOFT" ],
     "material_thickness": 800,
     "environmental_protection": 2147483647,
     "armor": [

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "slimeclysm",
+    "name": "Slime-a-clysm",
+    "authors": [ "fungamer2" ],
+    "maintainers": [ "fungamer2" ],
+    "description": "A world full of various slime creatures. [Cobweb's log: Adapted to experimental 10-13-23: increased spawns in slime forest, removed blacklists/whitelists. ]",
+    "category": "total_conversion",
+    "dependencies": [ "dda" ]
+  }
+]

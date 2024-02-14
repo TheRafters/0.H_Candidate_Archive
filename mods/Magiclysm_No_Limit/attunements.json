@@ -52,7 +52,7 @@
     "valid": false,
     "description": "Animists are known for their blood magic, and being a Biomancer you are able to take it another step further by strengthening your blood.  The dark arts have opened to you, and while dangerous, are incredible to behold.",
     "prereqs": [ "BIOMANCER", "ANIMIST" ],
-    "enchantments": [ "BLOOD_MAGE", "BLOOD_MAGE_HEALING" ],
+    "enchantments": [ "BLOOD_MAGE" ],
     "spells_learned": [ [ "banishment_greater", 5 ], [ "demonic_possession", 5 ] ],
     "flags": [ "ATTUNEMENT", "BLEED_IMMUNE" ]
   },
@@ -295,7 +295,7 @@
     "description": "Deeply attuned to the spiritual fabric that shapes and nurtures the natural world, shamans call upon the primeval spirits of nature for aid and advice.  Be careful however, for ancient spirits are fickle and unknowable things.",
     "prereqs": [ "ANIMIST", "DRUID" ],
     "spells_learned": [ [ "butterfly_swarm", 5 ], [ "summon_shambling_mound", 5 ] ],
-    "enchantments": [ "SHAMAN", "SHAMAN_MANA_REGEN" ],
+    "enchantments": [ "SHAMAN" ],
     "flags": [ "ATTUNEMENT" ]
   },
   {

@@ -1,0 +1,20 @@
+[ 
+
+{
+    "id": "dissect_elec_zombie",
+    "type": "harvest",
+    "message": "You carefully dig for CBMs in the crackling husk of the zombie.",
+    "entries": [
+      
+      {
+        "drop": "llbionics",
+        "type": "bionic_group",
+        "flags": [ "FILTHY", "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ],
+        "base_num": [ 0, 3 ],
+        "scale_num": [ 0.1, 0.6 ],
+        "max": 5
+      }
+    ]
+  }
+]

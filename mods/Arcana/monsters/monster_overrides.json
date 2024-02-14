@@ -54,12 +54,6 @@
     "death_drops": "mon_worm_small_death_drops"
   },
   {
-    "id": "mon_cockatrice",
-    "copy-from": "mon_cockatrice",
-    "type": "MONSTER",
-    "death_drops": "mon_cockatrice_death_drops"
-  },
-  {
     "id": "mon_sludge_crawler",
     "copy-from": "mon_sludge_crawler",
     "type": "MONSTER",
@@ -680,7 +674,7 @@
     "melee_dice_sides": 4,
     "dodge": 2,
     "harvest": "zombie",
-    "special_attacks": [ [ "FEAR_PARALYZE", 0 ], { "type": "bite", "cooldown": 5 } ],
+    "special_attacks": [ { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "" }, { "type": "bite", "cooldown": 5 } ],
     "death_drops": "mon_flesh_angel_death_drops",
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "HARDTOSHOOT", "ATTACKMON", "FLIES", "HUMAN", "POISON", "REVIVES", "FILTHY" ]
   },

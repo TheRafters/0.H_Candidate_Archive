@@ -397,8 +397,7 @@
         "trigger_weight": "100 g",
         "flags": ["UNCONSUMED"],
         "trigger_message_u": "You disturb the rubble.",
-        "trigger_message_npc": "<npcname> disturbs the rubble.",
-        "sound_threshold": 5
+        "trigger_message_npc": "<npcname> disturbs the rubble."
     },
     {
         "type": "furniture",

@@ -120,7 +120,7 @@
   },
   {
     "id": "mon_frog_devil",
-    "copy-from": "mon_frog_giant",
+    "copy-from": "mon_proxy_frog",
     "type": "MONSTER",
     "name": { "str": "devil frog" },
     "description": "A mutated bullfrog with jagged teeth and horms.  Its bright red skin is said to produce hallucinagenic toxins.",
@@ -156,7 +156,7 @@
   {
     "id": "mon_gamma_toad",
     "type": "MONSTER",
-    "copy-from": "mon_frog_giant",
+    "copy-from": "mon_strange_giganfrog",
     "name": { "str": "gamma-toad" },
     "description": "A common toad that has mutated into a huge radioactive monstrosity.  It pulses with heat, energy, and malice.",
     "species": [ "ABERRATION" ],

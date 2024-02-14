@@ -1,5 +1,6 @@
 [{
 		"type": "recipe",
+        "activity_level": "LIGHT_EXERCISE",
 		"result": "lesser_rune_stencil",
 		"category": "CC_ENCHANTED",
 		"subcategory": "CSC_ENCHANTED_TOOLS",
@@ -7,6 +8,7 @@
 		"skills_required": ["spellcraft", 4],
 		"difficulty": 2,
 		"time": "120m",
+    "batch_time_factors": [ 90, 5 ],
 		"autolearn": true,
 		"qualities": [{
 			"id": "CHISEL",
@@ -23,6 +25,7 @@
 	},
 	{
 		"type": "recipe",
+        "activity_level": "LIGHT_EXERCISE",
 		"result": "rune_stencil",
 		"category": "CC_ENCHANTED",
 		"subcategory": "CSC_ENCHANTED_TOOLS",
@@ -30,6 +33,7 @@
 		"skills_required": ["spellcraft", 5],
 		"difficulty": 2,
 		"time": "120m",
+    "batch_time_factors": [ 85, 5 ],
 		"autolearn": true,
 		"qualities": [{
 			"id": "CHISEL",
@@ -46,6 +50,7 @@
 	},
 	{
 		"type": "recipe",
+        "activity_level": "LIGHT_EXERCISE",
 		"result": "greater_rune_stencil",
 		"category": "CC_ENCHANTED",
 		"subcategory": "CSC_ENCHANTED_TOOLS",
@@ -53,6 +58,7 @@
 		"skills_required": ["spellcraft", 6],
 		"difficulty": 2,
 		"time": "120m",
+    "batch_time_factors": [ 80, 5 ],
 		"autolearn": true,
 		"qualities": [{
 			"id": "CHISEL",

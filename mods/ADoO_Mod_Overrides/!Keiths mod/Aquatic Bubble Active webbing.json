@@ -1,0 +1,65 @@
+[
+  {
+    "id": "aquatic_aura",
+    "type": "ARMOR",
+    "name": { "str": "Aquatic Bubble" },
+    "description": "A bubble that has formed around the caster to protect them. At casting, the caster can also choose to have this bubble appear as gills on their body or some other apparatus that has the same effect.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
+    "flags": [
+      "PERSONAL",
+      "SEMITANGIBLE",
+      "WATERPROOF",
+	  "WATER_FRIENDLY", 
+	  "REBREATHER",
+	  "ONLY_ONE",
+      "TRADER_AVOID",
+      "AURA",
+      "INTEGRATED",
+      "NONCONDUCTIVE"
+    ],
+    "material": [ "magical_material" ],
+    "symbol": ".",
+    "color": "brown",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_ELEC", "add": 5 } ],
+          "mutations": [ "AQUAMAN_NO_WEB", "THIRST" ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "AQUAMAN_NO_WEB",
+    "name": { "str": "Partial Aquatic Adaptation" },
+    "points": 3,
+    "starting_trait": true,
+    "description": "Your swimming is magically enhanced. You hate being in water much less and you can breathe underwater.",
+    "types": [ "GILLS", "EYES" ],
+    "category": [ "HUMAN" ],
+    "flags": [ "GILLS", "EYE_MEMBRANE" ],
+    "wet_protection": [
+      { "part": "head", "good": 100 },
+      { "part": "eyes", "good": 100 },
+      { "part": "mouth", "good": 100 },
+      { "part": "arm_l", "good": 100 },
+      { "part": "arm_r", "good": 100 },
+      { "part": "leg_l", "good": 100 },
+      { "part": "leg_r", "good": 100 },
+      { "part": "foot_l", "good": 100 },
+      { "part": "foot_r", "good": 100 },
+      { "part": "hand_l", "good": 100 },
+      { "part": "hand_r", "good": 100 },
+      { "part": "torso", "good": 100 }
+    ]
+  }
+    ]

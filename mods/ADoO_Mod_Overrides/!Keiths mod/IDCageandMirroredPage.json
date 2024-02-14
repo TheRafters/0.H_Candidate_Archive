@@ -1,0 +1,57 @@
+[
+  {
+    "id": "interdimensional_cage",
+    "type": "TOOL",
+    "name": { "str": "interdimensional cage" },
+    "description": "A dark black box that only seems large enough to hold a small bird, but you could fit just about anybody in there.",
+    "weight": "100 g",
+    "volume": "1000 ml",
+    "price": 300000,
+    "melee_damage": { "bash": 5, "cut": 1 },
+    "material": [ "steel" ],
+    "symbol": "I",
+    "color": "black",
+    "properties": { "creature_size_capacity": "HUGE" },
+    "use_action": [ "CAPTURE_MONSTER_ACT" ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "75 L",
+        "max_contains_weight": "120 kg",
+        "rigid": true,
+        "max_item_length": "10000 cm",
+        "weight_multiplier": 0.4,
+        "moves": 10
+      }
+    ],
+    "flags": [ "TRADER_AVOID", "TARDIS", "RADIO_INVOKE_PROC", "RADIO_MODABLE" ]
+  },
+  {
+    "type": "TOOL",
+    "id": "mirrored_page",
+    "name": { "str": "mirrored page" },
+    "weight": "7 g",
+    "color": "white",
+    "symbol": "`",
+    "looks_like": "mirror",
+    "description": "A piece of paper that has been magically enhanced to have the property of containment. Small objects or creatures can be stored inside. Most commonly used by mages to store magic circles.",
+    "properties": { "creature_size_capacity": "LARGE" },
+    "use_action": [ "CAPTURE_MONSTER_ACT" ],
+    "price": 50000,
+    "material": [ "paper" ],
+    "volume": "7 ml",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "80 L",
+        "max_contains_weight": "800 kg",
+        "max_item_length": "28000 cm",
+        "rigid": true,
+        "weight_multiplier": 0.0,
+        "moves": 10
+      }
+    ],
+    "flags": [ "TARDIS", "ZERO_WEIGHT" ],
+    "longest_side": "297 mm"
+  }
+  ]

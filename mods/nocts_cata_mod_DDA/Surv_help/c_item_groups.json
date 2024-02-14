@@ -118,9 +118,13 @@
   {
     "id": "sketchy_cabin_guard_weapons",
     "type": "item_group",
-    "magazine": 100,
-    "ammo": 75,
-    "items": [ [ "makarov", 25 ], [ "ak47", 5 ], [ "ak74", 10 ], [ "sks", 10 ], [ "shotgun_d", 50 ] ]
+    "items": [
+      { "group": "nested_makarov", "prob": 25 },
+      { "group": "nested_ak47", "prob": 5 },
+      { "group": "nested_ak74", "prob": 10 },
+      { "group": "nested_sks", "prob": 10 },
+      { "group": "nested_shotgun_d", "prob": 50 }
+    ]
   },
   {
     "id": "sketchy_cabin_gore",
@@ -382,19 +386,19 @@
     "type": "item_group",
     "id": "c_mi_go_advanced_dissection_slaver",
     "subtype": "distribution",
-    "items": [ [ "c_mi_go_beam_broken", 3 ], [ "c_mi_go_wings_broken", 1 ] ]
+    "items": [ [ "c_mi_go_beam_broken", 4 ], [ "c_mi_go_wings_broken", 1 ] ]
   },
   {
     "type": "item_group",
     "id": "c_mi_go_advanced_dissection_surgeon",
     "subtype": "distribution",
-    "items": [ [ "c_mi_go_claw_broken", 3 ], [ "c_mi_go_wings_broken", 1 ] ]
+    "items": [ [ "c_mi_go_claw_broken", 4 ], [ "c_mi_go_wings_broken", 1 ] ]
   },
   {
     "type": "item_group",
     "id": "c_mi_go_advanced_dissection_guard",
     "subtype": "distribution",
-    "items": [ [ "c_mi_go_carapace_broken", 2 ], [ "c_mi_go_beam_broken", 1 ] ]
+    "items": [ [ "c_mi_go_carapace_broken", 3 ], [ "c_mi_go_beam_broken", 2 ] ]
   },
   {
     "type": "item_group",

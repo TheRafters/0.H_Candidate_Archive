@@ -1,0 +1,48 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "custom_freq_ps",
+    "name": "Custom Frequencey For Portal Storms",
+    "authors": [ "GuardianDll" ],
+    "description": "Allow to tweak portal storm frequency at the start of the game.",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "portal_storm_frequency",
+    "eoc_type": "EVENT",
+    "required_event": "game_start",
+    "global": true,
+    "effect": [
+      {
+        "math": [
+          "ps_min_woc",
+          "=",
+          "num_input('Minimal time between portal storms, in days.  Default is 5 days, \"Frequent Portal Storms\" scenario is 1 day', 5) * 86400"
+        ]
+      },
+      {
+        "math": [
+          "ps_max_woc",
+          "=",
+          "num_input('Maximum time between portal storms, in days.  Default is 18 days, \"Frequent Portal Storms\" scenario is 2 days', 18) * 86400"
+        ]
+      },
+      { "run_eocs": "portal_storm_frequency_validation" },
+      {
+        "u_message": "To change the values in the mid game, go to \"debug menu\" -> \"game\" -> \"activate EOC\" and search \"portal_storm_frequency\"",
+        "type": "info"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "portal_storm_frequency_validation",
+    "condition": { "math": [ "ps_min_woc", ">", "ps_max_woc" ] },
+    "effect": [
+      { "u_message": "Min time is bigger than max time, please don't break the game.", "popup": true },
+      { "run_eocs": "portal_storm_frequency" }
+    ]
+  }
+]

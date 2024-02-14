@@ -1,0 +1,111 @@
+[
+  {
+
+
+"//abstract": "Replace entries in magiclysm, has no function if loaded from ADoO. replacing an abstract doesn't retroactively redo all the items that copy-from that abstract before your changed it with ADoO.",
+
+
+    "abstract": "mring_copper",
+    "type": "TOOL_ARMOR",
+    "name": "copper magic ring",
+    "description": "A generic copper magic ring.",
+    "weight": "4 g",
+    "volume": "1 ml",
+    "price": 5000,
+    "price_postapoc": "20 USD",
+    "material": [ "copper" ],
+    "symbol": "[",
+    "color": "light_red",
+    "looks_like": "copper_ring",
+    "sided": true,
+    "warmth": 0,
+    "flags": [ "WATER_FRIENDLY", "ALLOWS_NATURAL_ATTACKS", "SUPER_FANCY", "PERSONAL", "SEMITANGIBLE", "PADDED" ],
+    "armor": [
+      {
+        "encumbrance": 0,
+        "coverage": 0,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ],
+        "rigid_layer_only": false
+      }
+    ]
+  },
+  {
+    "abstract": "mring_silver",
+    "type": "TOOL_ARMOR",
+    "name": "magic ring",
+    "description": "A generic silver magic ring.",
+    "weight": "5 g",
+    "volume": "1 ml",
+    "price": 5000,
+    "price_postapoc": "20 USD",
+    "material": [ "silver" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "silver_ring",
+    "sided": true,
+    "warmth": 0,
+    "flags": [ "WATER_FRIENDLY", "ALLOWS_NATURAL_ATTACKS", "SUPER_FANCY", "PERSONAL", "SEMITANGIBLE", "PADDED" ],
+    "armor": [
+      {
+        "encumbrance": 0,
+        "coverage": 0,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ],
+        "rigid_layer_only": false
+      }
+    ]
+  },
+  {
+    "abstract": "mring_gold",
+    "type": "TOOL_ARMOR",
+    "name": "magic ring",
+    "description": "A generic gold magic ring.",
+    "weight": "9 g",
+    "volume": "1 ml",
+    "price": 5000,
+    "price_postapoc": "20 USD",
+    "material": [ "gold" ],
+    "symbol": "[",
+    "color": "yellow",
+    "looks_like": "gold_ring",
+    "sided": true,
+    "warmth": 0,
+    "flags": [ "WATER_FRIENDLY", "ALLOWS_NATURAL_ATTACKS", "SUPER_FANCY", "PERSONAL", "SEMITANGIBLE", "PADDED" ],
+    "armor": [
+      {
+        "encumbrance": 0,
+        "coverage": 0,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ],
+        "rigid_layer_only": false
+      }
+    ]
+  },
+  {
+    "abstract": "mring_platinum",
+    "type": "TOOL_ARMOR",
+    "name": "magic ring",
+    "description": "A generic platinum magic ring.",
+    "weight": "11 g",
+    "volume": "1 ml",
+    "price": 5000,
+    "price_postapoc": "20 USD",
+    "material": [ "platinum" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "platinum_ring",
+    "sided": true,
+    "warmth": 0,
+    "flags": [ "WATER_FRIENDLY", "ALLOWS_NATURAL_ATTACKS", "SUPER_FANCY", "PERSONAL", "SEMITANGIBLE", "PADDED" ],
+    "armor": [
+      {
+        "encumbrance": 0,
+        "coverage": 0,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ],
+        "rigid_layer_only": false
+      }
+    ]
+  }    
+]

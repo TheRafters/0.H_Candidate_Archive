@@ -1,0 +1,91 @@
+[
+  {
+    "id": "protect_env_minimal",
+    "type": "ARMOR",
+    "name": { "str": "aura of minimal protection", "str_pl": "auras of minimal protection" },
+    "description": "An all-encompassing, invisible layer of magical aura that protects you from the environment, somewhat.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "o",
+    "color": "blue",
+    "material": [ "magical_material" ],
+    "environmental_protection": 7,
+    "flags": [
+      "AURA",
+      "SEMITANGIBLE",
+      "TRADER_AVOID",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE",
+      "UNBREAKABLE",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+    "armor": [
+      {
+        "encumbrance": 0,
+        "coverage": 100,
+        "covers": [ "leg_l", "leg_r", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "head", "foot_l", "foot_r", "mouth", "eyes" ]
+      }
+    ]
+  },
+  {
+    "id": "protection_aura_minimal",
+    "type": "SPELL",
+    "name": { "str": "Aura of Minimal Protection" },
+    "description": "Encases your whole body in a magical aura that protects you from the environment, somewhat.",
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "spawn_item",
+    "effect_str": "protect_env_minimal",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 1,
+    "max_level": 1,
+    "flags": [ "NO_FAIL", "SILENT", "NO_EXPLOSION_SFX" ],
+    "min_duration": 6000,
+    "max_duration": 6000
+  },
+  {
+    "type": "enchantment",
+    "id": "ench_env_prot_mouth_7",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "8 seconds", "spell_effects": [ { "id": "protection_aura_minimal", "hit_self": true } ] } ] }
+  },
+  {
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "id": "cigar_lit",
+    "name": { "str": "cigar" },
+    "color": "brown",
+    "symbol": "!",
+    "description": "The smoke billowing from this cigar has a sweet, musty odor that soothes your body and heightens your mind.",
+    "weight": "9 g",
+    "volume": "15 ml",
+    "category": "drugs",
+    "emits": [ "emit_tobacco_trail" ],
+    "use_action": [
+      { "type": "firestarter", "moves": 200, "moves_slow": 2000 },
+      {
+        "target": "cigar",
+        "msg": "You extinguish the cigar.",
+        "active": false,
+        "menu_text": "Extinguish",
+        "type": "transform"
+      }
+    ],
+    "material": [ "paper" ],
+    "armor_data": {
+      "warmth": 4,
+      "armor": [
+        {
+          "material": [ { "type": "paper", "covered_by_mat": 100, "thickness": 0.1 } ],
+          "encumbrance": 10,
+          "coverage": 70,
+          "covers": [ "mouth" ]
+        }
+      ]
+    },
+    "flags": [ "LIGHT_2", "TOBACCO", "TRADER_AVOID", "FIRESTARTER", "FRAGILE", "OVERSIZE", "FANCY" ],
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "id": "cigar_enchantment" }, { "has": "WORN", "condition": "ALWAYS", "id": "ench_env_prot_mouth_7" } ] }
+  }
+]

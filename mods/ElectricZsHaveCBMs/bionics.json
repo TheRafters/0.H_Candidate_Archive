@@ -1,0 +1,19 @@
+[
+  {
+    "type": "item_group",
+    "id": "llbionics",
+    "items": [
+      [ "bio_power_storage", 5 ],
+      [ "bio_dis_shock", 20 ],
+      [ "bio_glowy", 30 ],
+      [ "bio_shock", 5 ],
+      [ "bio_leaky", 20 ],
+      [ "bio_spasm", 10 ],
+      [ "bio_stiff", 20 ],
+      [ "bio_faulty_electromagnetic_leak", 40 ],
+	  [ "bio_trickle", 1],
+	  [ "bio_ups", 1],
+	  [ "bio_chain_lightning", 1]
+    ]
+  }
+]

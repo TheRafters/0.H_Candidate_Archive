@@ -1257,7 +1257,7 @@
     "material": [ "alien_liquid" ],
     "symbol": "O",
     "color": "white",
-	"properties": [ [ "creature_size_capacity", "MEDIUM" ] ],
+	"properties": { "creature_size_capacity": "MEDIUM" },
     "use_action": [ "CAPTURE_MONSTER_ACT" ],
     "pocket_data": [
       {
@@ -1374,7 +1374,7 @@
       "type": "gemstone"
     }
   ],
-  "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+  "properties": { "creature_size_capacity": "HUGE" },
   "use_action": [ "CAPTURE_MONSTER_ACT" ],
   "pocket_data": [
     {

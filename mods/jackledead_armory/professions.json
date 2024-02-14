@@ -8,6 +8,15 @@
   {
     "type": "item_group",
     "subtype": "collection",
+    "id": "vp_k_standard_2_mags",
+    "entries": [
+      { "item": "vp_kunytsya_20rd_mag", "ammo-item": "9x18mm", "charges": 20 },
+      { "item": "vp_kunytsya_20rd_mag", "ammo-item": "9x18mm", "charges": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
     "id": "army_mags_tos30",
     "entries": [
       { "item": "tos_30_mag", "ammo-item": "9x18mmfmj", "charges": 30 },
@@ -819,6 +828,53 @@
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",  
+    "id": "univ_prof_virologist_prepper",
+    "name": "Former Virology Professor",
+    "description": "You were a professor of virology at the local university before the outbreak. You retired early and started prepping for the apocalypse you saw coming. Though, even with that gun you're still a nerd.",
+    "points": 8,
+    "traits": [ "PROF_MED" ],
+    "proficiencies": [ "prof_intro_chemistry", "prof_intro_biology", "prof_organic_chemistry", "prof_wound_care"],
+    "skills": [
+      { "level": 5, "name": "chemistry" },
+      { "level": 3, "name": "firstaid" },
+      { "level": 3, "name": "computer" },
+      { "level": 3, "name": "speech" },  
+      { "level": 2, "name": "fabrication" },
+      { "level": 2, "name": "electronics" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "items": [ 
+          "dress_shirt", 
+          "socks",
+          "boots",
+          "knit_scarf",
+          "glasses_safety",
+          "gloves_tactical",
+          "hat_knit",
+          "mbag",
+          "laynard_pistol_sling"
+        ],
+        "entries": [
+          { "item": "stab_vest", "variant": "airsoft_stab_vest" },
+          { "group": "charged_smart_phone"},
+          { "item": "mask_dust" },
+          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 400, "container-item": "chemistry_set" },
+          { "group": "vp_k_standard_2_mags" },
+          { "item": "vp_kunytsya", "ammo-item": "9x18mm", "charges": 20, "contents-item": ["hair_trigger"], "custom-flags": [ "auto_wield" ] },
+          { "item": "knife_pry_fixed", "container-item": "scabbard" },
+          { "item": "pants", "variant": "pants_british_khaki" }  
+        ]
+      },
+      "male": [ "briefs" ],    
+      "female": [ "bra", "panties" ]
     }
   }
 ]

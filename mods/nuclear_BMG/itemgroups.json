@@ -1,0 +1,64 @@
+[
+   {
+    "type": "item_group",
+    "id": "ammo_pistol_milspec",
+    "copy-from": "ammo_pistol_milspec",
+    "//": "Military specification pistol ammo found at military sites.",
+    "extend": {
+        "items": [
+            [ "nuclear_ball", 5 ]
+        ]
+   }},
+   {
+    "type": "item_group",
+    "id": "ammo_rifle_milspec",
+    "copy-from": "ammo_rifle_milspec",
+    "//": "Military specification rifle ammo found at military sites.",
+    "extend": {
+        "items": [
+            [ "nuclear_ball", 5 ]
+        ]
+   }},
+   {
+    "type": "item_group",
+    "id": "ammo_pistol_obscure",
+    "copy-from": "ammo_pistol_obscure",
+    "//": "Imported or otherwise very obscure pistol ammo.",
+    "extend": {
+        "items": [
+            [ "nuclear_ball", 5 ]
+        ]
+   }},
+   {
+    "type": "item_group",
+    "id": "ammo_pistol_obscure_collection",
+    "copy-from": "ammo_pistol_obscure_collection",
+    "//": "Imported or otherwise very obscure pistol ammo.",
+    "subtype": "collection",
+    "extend": {
+        "items": [
+            [ "nuclear_ball", 5 ]
+        ]
+   }},
+   {
+    "type": "item_group",
+    "id": "ammo_rifle_obscure",
+    "copy-from": "ammo_rifle_obscure",
+    "//": "Imported or otherwise very obscure rifle ammo.",
+    "extend": {
+        "items": [
+            [ "nuclear_ball", 5 ]
+        ]
+   }},
+   {
+    "type": "item_group",
+    "id": "ammo_rifle_obscure_collection",
+    "copy-from": "ammo_rifle_obscure_collection",
+    "//": "Imported or otherwise very obscure rifle ammo.",
+    "subtype": "collection",
+    "extend": {
+        "items": [
+            [ "nuclear_ball", 5 ]
+        ]
+   }}
+]

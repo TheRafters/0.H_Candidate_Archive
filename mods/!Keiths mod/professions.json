@@ -406,7 +406,11 @@
       "both": {
         "items": [ "dress_shirt", "pants", "money_hundred", "socks", "boots", "all_purpose_watch" ],
         "entries": [
-          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "chemistry_set" }
+          { "group": "tools_science" },
+          { "group": "tools_science" },
+          { "group": "tools_science" },
+          { "group": "tools_science" },
+          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "backpack_leather" }
         ]
       },
       "male": [ "briefs" ],
